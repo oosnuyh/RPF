@@ -32,6 +32,9 @@
   --bank-kdbcap: #7a6a9c;
   --bank-imsec: #a0785a;
   --bank-imcap: #4a8a8a;
+  --bank-crefia: #6a7a5a;
+  --bank-kcis: #4a6a8a;
+  --bank-kinfa: #b8622a;
   --shadow: 0 1px 2px rgba(27,36,48,0.04), 0 4px 16px rgba(27,36,48,0.04);
 }
 @media (prefers-color-scheme: dark) {
@@ -63,6 +66,9 @@
     --bank-kdbcap: #b8a8d6;
     --bank-imsec: #d1ab85;
     --bank-imcap: #7ec4c4;
+    --bank-crefia: #a3b38a;
+    --bank-kcis: #8aa8c9;
+    --bank-kinfa: #e0955a;
     --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 20px rgba(0,0,0,0.25);
   }
 }
@@ -75,6 +81,7 @@
   --bank-kdb: #7f9bc9; --bank-wfcap: #e0a08e; --bank-ibkcap: #a3c9a3;
   --bank-bok: #d19bab; --bank-kpost: #7ecfd6; --bank-kdbcap: #b8a8d6;
   --bank-imsec: #d1ab85; --bank-imcap: #7ec4c4;
+  --bank-crefia: #a3b38a; --bank-kcis: #8aa8c9; --bank-kinfa: #e0955a;
   --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 20px rgba(0,0,0,0.25);
 }
 :root[data-theme="light"] {
@@ -86,6 +93,7 @@
   --bank-kdb: #35507a; --bank-wfcap: #b56a5a; --bank-ibkcap: #6b8f6b;
   --bank-bok: #7a3f52; --bank-kpost: #3a9ca3; --bank-kdbcap: #7a6a9c;
   --bank-imsec: #a0785a; --bank-imcap: #4a8a8a;
+  --bank-crefia: #6a7a5a; --bank-kcis: #4a6a8a; --bank-kinfa: #b8622a;
   --shadow: 0 1px 2px rgba(27,36,48,0.04), 0 4px 16px rgba(27,36,48,0.04);
 }
 
@@ -251,6 +259,9 @@ td { padding: 10px 14px; vertical-align: top; }
 .chip-KDB캐피탈 { background: color-mix(in srgb, var(--bank-kdbcap) 16%, transparent); color: var(--bank-kdbcap); }
 .chip-iM증권 { background: color-mix(in srgb, var(--bank-imsec) 16%, transparent); color: var(--bank-imsec); }
 .chip-iM캐피탈 { background: color-mix(in srgb, var(--bank-imcap) 16%, transparent); color: var(--bank-imcap); }
+.chip-여신금융협회 { background: color-mix(in srgb, var(--bank-crefia) 16%, transparent); color: var(--bank-crefia); }
+.chip-신용정보원 { background: color-mix(in srgb, var(--bank-kcis) 16%, transparent); color: var(--bank-kcis); }
+.chip-서민금융진흥원 { background: color-mix(in srgb, var(--bank-kinfa) 16%, transparent); color: var(--bank-kinfa); }
 
 .pill {
   display: inline-block;
@@ -288,29 +299,29 @@ footer {
   <div class="masthead">
     <div>
       <h1>은행·카드사·SI사 입찰·구매 공고 모니터</h1>
-      <div class="sub">우리은행 · IBK기업은행 · 카카오뱅크 · 국민은행 · iM뱅크 · 산업은행 · 한국은행 · 우정사업본부 · 우리카드 · 신한카드 · 비씨카드 · 국민카드 · 우리캐피탈 · IBK캐피탈 · KDB캐피탈 · iM증권 · iM캐피탈 · SK AX · LG CNS · 삼성SDS · 총 20개사 공고 통합 현황</div>
+      <div class="sub">우리은행 · IBK기업은행 · 카카오뱅크 · 국민은행 · iM뱅크 · 산업은행 · 한국은행 · 우정사업본부 · 우리카드 · 신한카드 · 비씨카드 · 국민카드 · 우리캐피탈 · IBK캐피탈 · KDB캐피탈 · iM증권 · iM캐피탈 · SK AX · LG CNS · 삼성SDS · 여신금융협회 · 신용정보원 · 서민금융진흥원 · 총 23개사 공고 통합 현황</div>
     </div>
-    <div class="sub">최근 갱신 2026-07-21 17:25</div>
+    <div class="sub">최근 갱신 2026-07-21 17:57</div>
   </div>
 
   <div class="stat-row">
     <div class="stat-card stat-new">
-      <div class="num">8</div>
+      <div class="num">2</div>
       <div class="label">이번 실행 신규 공고</div>
     </div>
     <div class="stat-card">
-      <div class="num">583</div>
+      <div class="num">739</div>
       <div class="label">현재 추적 중인 공고 (회사별 최근분)</div>
     </div>
     <div class="stat-card">
-      <div class="num">20</div>
+      <div class="num">23</div>
       <div class="label">모니터링 회사 수</div>
     </div>
   </div>
 
   <div class="toolbar">
-    <button class="filter-chip active" data-filter="__all__">전체 <span class="fc-count">583</span></button>
-    <button class="filter-chip" data-filter="우리은행">우리은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK기업은행">IBK기업은행 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="카카오뱅크">카카오뱅크 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="국민은행">국민은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="iM뱅크">iM뱅크 <span class="fc-count">8</span></button><button class="filter-chip" data-filter="산업은행">산업은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="한국은행">한국은행 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="우정사업본부">우정사업본부 <span class="fc-count">0</span></button><button class="filter-chip" data-filter="우리카드">우리카드 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="신한카드">신한카드 <span class="fc-count">2</span></button><button class="filter-chip" data-filter="비씨카드">비씨카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="국민카드">국민카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="우리캐피탈">우리캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK캐피탈">IBK캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="KDB캐피탈">KDB캐피탈 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="iM증권">iM증권 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="iM캐피탈">iM캐피탈 <span class="fc-count">31</span></button><button class="filter-chip" data-filter="SK AX">SK AX <span class="fc-count">0</span></button><button class="filter-chip" data-filter="LG CNS">LG CNS <span class="fc-count">1</span></button><button class="filter-chip" data-filter="삼성SDS">삼성SDS <span class="fc-count">1</span></button>
+    <button class="filter-chip active" data-filter="__all__">전체 <span class="fc-count">739</span></button>
+    <button class="filter-chip" data-filter="우리은행">우리은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK기업은행">IBK기업은행 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="카카오뱅크">카카오뱅크 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="국민은행">국민은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="iM뱅크">iM뱅크 <span class="fc-count">8</span></button><button class="filter-chip" data-filter="산업은행">산업은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="한국은행">한국은행 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="우정사업본부">우정사업본부 <span class="fc-count">0</span></button><button class="filter-chip" data-filter="우리카드">우리카드 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="신한카드">신한카드 <span class="fc-count">2</span></button><button class="filter-chip" data-filter="비씨카드">비씨카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="국민카드">국민카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="우리캐피탈">우리캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK캐피탈">IBK캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="KDB캐피탈">KDB캐피탈 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="iM증권">iM증권 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="iM캐피탈">iM캐피탈 <span class="fc-count">31</span></button><button class="filter-chip" data-filter="SK AX">SK AX <span class="fc-count">0</span></button><button class="filter-chip" data-filter="LG CNS">LG CNS <span class="fc-count">1</span></button><button class="filter-chip" data-filter="삼성SDS">삼성SDS <span class="fc-count">1</span></button><button class="filter-chip" data-filter="여신금융협회">여신금융협회 <span class="fc-count">34</span></button><button class="filter-chip" data-filter="신용정보원">신용정보원 <span class="fc-count">47</span></button><button class="filter-chip" data-filter="서민금융진흥원">서민금융진흥원 <span class="fc-count">75</span></button>
     <input class="search-input" type="search" placeholder="제목 검색..." id="searchBox">
   </div>
 
@@ -333,12 +344,20 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="IBK기업은행" data-title="[poc 공고] 자금운용부 노후 업무용pc 교체 추진(pc)">
+          <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
+          <td class="c-date">2026-07-21</td>
+          <td class="c-title">
+            <a href="https://www.ibksystem.co.kr/board/read?brdId=BRD002&amp;atclNo=ee2c3aef-63eb-4da3-900e-0b83a54a180d" target="_blank" rel="noopener">[POC 공고] 자금운용부 노후 업무용PC 교체 추진(PC)</a>
+            <span class="pill pill-new">신규</span>
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK기업은행" data-title="[입찰공고]ibk저축은행 안면인식 개선을 위한 gpu서버 구매(긴급)">
           <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
           <td class="c-date">2026-07-21</td>
           <td class="c-title">
             <a href="https://www.ibksystem.co.kr/board/read?brdId=BRD002&amp;atclNo=664992e0-d12a-42a2-8d04-9412a1cc96bb" target="_blank" rel="noopener">[입찰공고]IBK저축은행 안면인식 개선을 위한 GPU서버 구매(긴급)</a>
-            <span class="pill pill-new">신규</span>
+            
           </td>
         </tr>
         <tr class="row" data-bank="IBK기업은행" data-title="[입찰 재공고] 2021년 통합 백업 라이선스 증설분 유지관리 2026 연장">
@@ -346,7 +365,7 @@ footer {
           <td class="c-date">2026-07-21</td>
           <td class="c-title">
             <a href="https://www.ibksystem.co.kr/board/read?brdId=BRD002&amp;atclNo=29c22cbd-8c87-41c4-803e-1d9f56f9cc58" target="_blank" rel="noopener">[입찰 재공고] 2021년 통합 백업 라이선스 증설분 유지관리 2026 연장</a>
-            <span class="pill pill-new">신규</span>
+            
           </td>
         </tr>
         <tr class="row" data-bank="IBK기업은행" data-title="[입찰 재공고] 전자금융 로그관리 솔루션 유지관리 2026 연장">
@@ -354,7 +373,7 @@ footer {
           <td class="c-date">2026-07-21</td>
           <td class="c-title">
             <a href="https://www.ibksystem.co.kr/board/read?brdId=BRD002&amp;atclNo=3be849e6-f33a-4154-b657-c93d2c24f8cc" target="_blank" rel="noopener">[입찰 재공고] 전자금융 로그관리 솔루션 유지관리 2026 연장</a>
-            <span class="pill pill-new">신규</span>
+            
           </td>
         </tr>
         <tr class="row" data-bank="IBK기업은행" data-title="[입찰 재공고] 업무용pc 바이오인증시스템 구축 유지관리 2026 연장">
@@ -362,7 +381,7 @@ footer {
           <td class="c-date">2026-07-21</td>
           <td class="c-title">
             <a href="https://www.ibksystem.co.kr/board/read?brdId=BRD002&amp;atclNo=03df4f40-3f07-4b03-b441-6137bb9ee450" target="_blank" rel="noopener">[입찰 재공고] 업무용PC 바이오인증시스템 구축 유지관리 2026 연장</a>
-            <span class="pill pill-new">신규</span>
+            
           </td>
         </tr>
         <tr class="row" data-bank="IBK기업은행" data-title="[입찰 재공고] 문서보안시스템 업그레이드 유지관리 (디스크)">
@@ -370,7 +389,7 @@ footer {
           <td class="c-date">2026-07-21</td>
           <td class="c-title">
             <a href="https://www.ibksystem.co.kr/board/read?brdId=BRD002&amp;atclNo=96390eaf-49d5-480e-b652-70592b845f73" target="_blank" rel="noopener">[입찰 재공고] 문서보안시스템 업그레이드 유지관리 (디스크)</a>
-            <span class="pill pill-new">신규</span>
+            
           </td>
         </tr>
         <tr class="row" data-bank="IBK기업은행" data-title="[입찰 재공고] 중소기업중앙회 주거래은행 통합자금관리시스템 고도화(l4스위치)">
@@ -378,7 +397,7 @@ footer {
           <td class="c-date">2026-07-21</td>
           <td class="c-title">
             <a href="https://www.ibksystem.co.kr/board/read?brdId=BRD002&amp;atclNo=9360e7c6-52e7-40b1-aad9-d090e8d76784" target="_blank" rel="noopener">[입찰 재공고] 중소기업중앙회 주거래은행 통합자금관리시스템 고도화(L4스위치)</a>
-            <span class="pill pill-new">신규</span>
+            
           </td>
         </tr>
         <tr class="row" data-bank="IBK기업은행" data-title="[제안요청 공고] 보안 취약점 통합관리시스템 고도화">
@@ -386,7 +405,7 @@ footer {
           <td class="c-date">2026-07-21</td>
           <td class="c-title">
             <a href="https://www.ibksystem.co.kr/board/read?brdId=BRD002&amp;atclNo=1ce5d3d8-7892-4fe7-b29d-9efbec3abd39" target="_blank" rel="noopener">[제안요청 공고] 보안 취약점 통합관리시스템 고도화</a>
-            <span class="pill pill-new">신규</span>
+            
           </td>
         </tr>
         <tr class="row" data-bank="국민은행" data-title="[kb국민은행] 음성상담 agent 도입 및 콜봇 서비스 고도화 구축 제안요청 공고">
@@ -394,6 +413,14 @@ footer {
           <td class="c-date">2026-07-21</td>
           <td class="c-title">
             <a href="https://omoney.kbstar.com/quics?page=C018592&amp;boardId=648&amp;compId=b031439&amp;articleId=145664&amp;bbsMode=view&amp;viewPage=1&amp;articleClass=&amp;searchCondition=title&amp;searchStr=" target="_blank" rel="noopener">[KB국민은행] 음성상담 Agent 도입 및 콜봇 서비스 고도화 구축 제안요청 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="iM뱅크" data-title="『자금세탁방지(aml) 부분 고도화 사업』 업체 선정을 위한 사업자 모집 공고">
+          <td class="c-bank"><span class="chip chip-iM뱅크">iM뱅크</span></td>
+          <td class="c-date">2026-07-21</td>
+          <td class="c-title">
+            <a href="https://www.imbank.co.kr/bbs_ebz_10010_bord.act?bbsId=NEW001&amp;siteCd=03&amp;menuCd=A" target="_blank" rel="noopener">『자금세탁방지(AML) 부분 고도화 사업』 업체 선정을 위한 사업자 모집 공고</a>
             <span class="pill pill-new">신규</span>
           </td>
         </tr>
@@ -645,6 +672,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[재공고입찰] 2026년 (거점)중계기관 업무 위수탁 점검 표준보고서 작성 용역">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2026-07-14</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1868" target="_blank" rel="noopener">[재공고입찰] 2026년 (거점)중계기관 업무 위수탁 점검 표준보고서 작성 용역</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리은행" data-title="단국대학교 스마트캠퍼스 고도화 구축 제안요청 공고">
           <td class="c-bank"><span class="chip chip-우리은행">우리은행</span></td>
           <td class="c-date">2026-07-13</td>
@@ -837,6 +872,30 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 ai 기반 통합 플랫폼 구축 감리 용역">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-07-09</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34958" target="_blank" rel="noopener">서민금융진흥원 AI 기반 통합 플랫폼 구축 감리 용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 비금융 서민 대안cb 개발 사업">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-07-09</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34957" target="_blank" rel="noopener">서민금융진흥원 비금융 서민 대안CB 개발 사업</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 데이터소산을 위한 idc 상면 임차의 건">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-07-09</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34956" target="_blank" rel="noopener">서민금융진흥원 데이터소산을 위한 IDC 상면 임차의 건</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리은행" data-title="테스트자동화 솔루션 구축 제안요청 공고">
           <td class="c-bank"><span class="chip chip-우리은행">우리은행</span></td>
           <td class="c-date">2026-07-08</td>
@@ -962,6 +1021,14 @@ footer {
           <td class="c-date">2026-07-07</td>
           <td class="c-title">
             <a href="https://www.kdb.co.kr/CHBIPR23N00.act?_mnuId=IHIHIR0087" target="_blank" rel="noopener">한국산업은행 세무조정용역 제안서 평가결과 공개</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[재공고입찰] 분석계 시스템 교체 등 사업">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2026-07-07</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1867" target="_blank" rel="noopener">[재공고입찰] 분석계 시스템 교체 등 사업</a>
             
           </td>
         </tr>
@@ -1221,6 +1288,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="신용정보원" data-title="(입찰공고) 2026년 (거점)중계기관 업무 위수탁 점검 표준보고서 작성 용역">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2026-06-30</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1865" target="_blank" rel="noopener">(입찰공고) 2026년 (거점)중계기관 업무 위수탁 점검 표준보고서 작성 용역</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK기업은행" data-title="[제안요청 재공고]ibk신용정보 채권 회수 가능성 분석모델 구축 및 운영 시스템 구축">
           <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
           <td class="c-date">2026-06-29</td>
@@ -1357,6 +1432,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고] sas 분석 소프트웨어 라이선스 구매(개찰완료)">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2026-06-25</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1859" target="_blank" rel="noopener">[입찰공고] SAS 분석 소프트웨어 라이선스 구매(개찰완료)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고] 분석계 시스템 교체 등 사업">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2026-06-25</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1861" target="_blank" rel="noopener">[입찰공고] 분석계 시스템 교체 등 사업</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK기업은행" data-title="[입찰공고] 서버모니터링 시스템 고도화용 스토리지 증설">
           <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
           <td class="c-date">2026-06-24</td>
@@ -1370,14 +1461,6 @@ footer {
           <td class="c-date">2026-06-24</td>
           <td class="c-title">
             <a href="https://www.ibksystem.co.kr/board/read?brdId=BRD002&amp;atclNo=460c71c9-1764-4960-b4d4-68318dc86014" target="_blank" rel="noopener">[입찰공고] 중소기업중앙회 주거래은행 통합자금관리시스템 고도화(미들웨어)</a>
-            
-          </td>
-        </tr>
-        <tr class="row" data-bank="IBK기업은행" data-title="[입찰공고] 중소기업중앙회 주거래은행 통합자금관리시스템 고도화(l4스위치)">
-          <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
-          <td class="c-date">2026-06-24</td>
-          <td class="c-title">
-            <a href="https://www.ibksystem.co.kr/board/read?brdId=BRD002&amp;atclNo=f493160c-6c75-4e1f-aed2-2342f732ecc3" target="_blank" rel="noopener">[입찰공고] 중소기업중앙회 주거래은행 통합자금관리시스템 고도화(L4스위치)</a>
             
           </td>
         </tr>
@@ -1485,6 +1568,38 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="기록물 분류체계 구축 및 기록관리시스템 isp 수립 용역">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-06-19</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34818" target="_blank" rel="noopener">기록물 분류체계 구축 및 기록관리시스템 ISP 수립 용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융 잇다 서비스 고도화 구축사업">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-06-19</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34817" target="_blank" rel="noopener">서민금융 잇다 서비스 고도화 구축사업</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 신분증 진위확인 서비스 연계 구축">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-06-19</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34816" target="_blank" rel="noopener">서민금융진흥원 신분증 진위확인 서비스 연계 구축</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="보증상품 시스템 고도화 감리 용역(재공고)">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-06-19</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34815" target="_blank" rel="noopener">보증상품 시스템 고도화 감리 용역(재공고)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="국민은행" data-title="2026년 일반용도품(상자류) 연간단가 구매 입찰 재공고">
           <td class="c-bank"><span class="chip chip-국민은행">국민은행</span></td>
           <td class="c-date">2026-06-18</td>
@@ -1538,6 +1653,14 @@ footer {
           <td class="c-date">2026-06-17</td>
           <td class="c-title">
             <a href="https://www.woorifcapital.com/intro/tndr/view.do?bdwrNo=1081&amp;menuNo=000000000000000000000000000763" target="_blank" rel="noopener">(마감)(재공고) 한국신용정보원 차세대 IT시스템 VPN 구축 사업</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[입찰공고] 신용카드 모집인 사이버교육 콘텐츠 수정 개발">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2026-06-17</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161905" target="_blank" rel="noopener">[입찰공고] 신용카드 모집인 사이버교육 콘텐츠 수정 개발</a>
             
           </td>
         </tr>
@@ -1821,6 +1944,46 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="2026년 서민금융진흥원 업무용 중고 차량 임차(재공고)">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-05-29</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34698" target="_blank" rel="noopener">2026년 서민금융진흥원 업무용 중고 차량 임차(재공고)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 전용회선 신규 개통의 건(재공고)">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-05-29</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34697" target="_blank" rel="noopener">서민금융진흥원 전용회선 신규 개통의 건(재공고)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="보증상품 시스템 고도화 감리 용역">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-05-29</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34696" target="_blank" rel="noopener">보증상품 시스템 고도화 감리 용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="2026년 서민금융진흥원 업무용 중고 차량 임차">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-05-29</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34695" target="_blank" rel="noopener">2026년 서민금융진흥원 업무용 중고 차량 임차</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="시장리스크 관리시스템 asp 도입 용역(재공고)">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-05-29</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34694" target="_blank" rel="noopener">시장리스크 관리시스템 ASP 도입 용역(재공고)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="iM뱅크" data-title="『fds(이상금융탐지시스템) 업그레이드』 업체 선정을 위한 사업자 모집 공고">
           <td class="c-bank"><span class="chip chip-iM뱅크">iM뱅크</span></td>
           <td class="c-date">2026-05-28</td>
@@ -1901,14 +2064,6 @@ footer {
             
           </td>
         </tr>
-        <tr class="row" data-bank="iM뱅크" data-title="「전자금융 거래(jex)로그 관리 시스템 구축」 사업자 모집 공고">
-          <td class="c-bank"><span class="chip chip-iM뱅크">iM뱅크</span></td>
-          <td class="c-date">2026-05-22</td>
-          <td class="c-title">
-            <a href="https://www.imbank.co.kr/bbs_ebz_10010_bord.act?bbsId=NEW001&amp;siteCd=03&amp;menuCd=A" target="_blank" rel="noopener">「전자금융 거래(JEX)로그 관리 시스템 구축」 사업자 모집 공고</a>
-            
-          </td>
-        </tr>
         <tr class="row" data-bank="IBK캐피탈" data-title="[ibk캐피탈]  대체투자 스트레스 테스트 구축을  위한  용역  입찰공고">
           <td class="c-bank"><span class="chip chip-IBK캐피탈">IBK캐피탈</span></td>
           <td class="c-date">2026-05-22</td>
@@ -1954,6 +2109,22 @@ footer {
           <td class="c-date">2026-05-20</td>
           <td class="c-title">
             <a href="https://www.kdb.co.kr/CHBIPR23N00.act?_mnuId=IHIHIR0087" target="_blank" rel="noopener">「2026년 KDB NextONE 광주」위탁운영사 제안서 평가결과 공개</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="협회 대출성 금융상품 판매・대리중개업자 등록시스템 전면 개편 사업 재공고 입찰">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2026-05-20</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161895" target="_blank" rel="noopener">협회 대출성 금융상품 판매・대리중개업자 등록시스템 전면 개편 사업 재공고 입찰</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[리스 재공고 입찰] 차세대 it시스템 인프라 구축 사업 리스 재공고 입찰">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2026-05-20</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1854" target="_blank" rel="noopener">[리스 재공고 입찰] 차세대 IT시스템 인프라 구축 사업 리스 재공고 입찰</a>
             
           </td>
         </tr>
@@ -2026,6 +2197,14 @@ footer {
           <td class="c-date">2026-05-15</td>
           <td class="c-title">
             <a href="https://www.kdb.co.kr/CHBIPR23N00.act?_mnuId=IHIHIR0087" target="_blank" rel="noopener">2026~2028회계연도 첨단전략산업기금 외부회계감사 용역」 제안서 평가결과 공개</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[리스입찰] 차세대 it시스템 인프라 구축 사업 리스회사 선정">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2026-05-15</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1853" target="_blank" rel="noopener">[리스입찰] 차세대 IT시스템 인프라 구축 사업 리스회사 선정</a>
             
           </td>
         </tr>
@@ -2133,6 +2312,30 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="2026년 서민금융진흥원 업무용차량 임차">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-05-11</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34596" target="_blank" rel="noopener">2026년 서민금융진흥원 업무용차량 임차</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="26년 재무상담 모바일 녹취 서비스 도입">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-05-11</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34595" target="_blank" rel="noopener">26년 재무상담 모바일 녹취 서비스 도입</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="시장리스크 관리시스템 asp 도입 용역">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-05-11</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34594" target="_blank" rel="noopener">시장리스크 관리시스템 ASP 도입 용역</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리카드" data-title="[입찰재공고] 노후 백업장비 교체 및 증설">
           <td class="c-bank"><span class="chip chip-우리카드">우리카드</span></td>
           <td class="c-date">2026-05-08</td>
@@ -2173,6 +2376,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 전용회선 신규 개통의 건">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-05-04</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34576" target="_blank" rel="noopener">서민금융진흥원 전용회선 신규 개통의 건</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="재해복구시스템 고도화 정보전략계획(isp) 수립 용역(변경공고)">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-05-04</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34575" target="_blank" rel="noopener">재해복구시스템 고도화 정보전략계획(ISP) 수립 용역(변경공고)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="산업은행" data-title="첨단전략산업기금 운영 고도화를 위한 용역">
           <td class="c-bank"><span class="chip chip-산업은행">산업은행</span></td>
           <td class="c-date">2026-04-30</td>
@@ -2205,6 +2424,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[입찰공고] 협회 대출성 금융상품 판매・대리중개업자 등록시스템 전면 개편 사업">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2026-04-30</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161887" target="_blank" rel="noopener">[입찰공고] 협회 대출성 금융상품 판매・대리중개업자 등록시스템 전면 개편 사업</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리카드" data-title="ai ocr기반 심사 자동화 도입을 위한 poc 실시 공고">
           <td class="c-bank"><span class="chip chip-우리카드">우리카드</span></td>
           <td class="c-date">2026-04-29</td>
@@ -2226,6 +2453,38 @@ footer {
           <td class="c-date">2026-04-28</td>
           <td class="c-title">
             <a href="https://www.kdb.co.kr/CHBIPR23N00.act?_mnuId=IHIHIR0087" target="_blank" rel="noopener">(긴급) 한국산업은행 2025년도 모펀드 성과평가</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[리스입찰] 차세대 it시스템 인프라 구축 사업 리스회사 선정">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2026-04-28</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1851" target="_blank" rel="noopener">[리스입찰] 차세대 IT시스템 인프라 구축 사업 리스회사 선정</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="재해복구시스템 고도화 정보전략계획(isp) 수립 용역">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-04-28</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34536" target="_blank" rel="noopener">재해복구시스템 고도화 정보전략계획(ISP) 수립 용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 ai 기반 통합 플랫폼 구축 사업">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-04-28</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34535" target="_blank" rel="noopener">서민금융진흥원 AI 기반 통합 플랫폼 구축 사업</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="보증상품 시스템 고도화 사업(재공고)">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-04-28</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34534" target="_blank" rel="noopener">보증상품 시스템 고도화 사업(재공고)</a>
             
           </td>
         </tr>
@@ -2333,6 +2592,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="보증상품 시스템 고도화 사업">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-04-03</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34362" target="_blank" rel="noopener">보증상품 시스템 고도화 사업</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="산업은행" data-title="첨단전략산업기금 세무조정 및 회계·세무 자문용역">
           <td class="c-bank"><span class="chip chip-산업은행">산업은행</span></td>
           <td class="c-date">2026-04-02</td>
@@ -2357,6 +2624,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[재입찰공고] 2026년 대학생・지역아동센터 금융교육사업 운영">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2026-04-02</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161875" target="_blank" rel="noopener">[재입찰공고] 2026년 대학생・지역아동센터 금융교육사업 운영</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[재공고입찰] '26년도 기반시설 취약점 분석평가 용역">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2026-04-02</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1846" target="_blank" rel="noopener">[재공고입찰] '26년도 기반시설 취약점 분석평가 용역</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="산업은행" data-title="「국민성장펀드 재정관리 수탁은행 선정」 제안서 평가결과 공개">
           <td class="c-bank"><span class="chip chip-산업은행">산업은행</span></td>
           <td class="c-date">2026-04-01</td>
@@ -2378,6 +2661,22 @@ footer {
           <td class="c-date">2026-03-30</td>
           <td class="c-title">
             <a href="https://www.smart-together.com/srm/" target="_blank" rel="noopener">공사/외주 부문 협력회사 Pool 선정평가 기준 변경 안내</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[재공고입찰] 성장모형 등급 산출 플랫폼 및 소상공인 통합 db 구축 사업">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2026-03-26</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1843" target="_blank" rel="noopener">[재공고입찰] 성장모형 등급 산출 플랫폼 및 소상공인 통합 DB 구축 사업</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 데이터베이스 인프라 고도화">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-03-25</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34254" target="_blank" rel="noopener">서민금융진흥원 데이터베이스 인프라 고도화</a>
             
           </td>
         </tr>
@@ -2469,6 +2768,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[입찰공고] 2026년 대학생・지역아동센터 금융교육사업 운영">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2026-03-16</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161869" target="_blank" rel="noopener">[입찰공고] 2026년 대학생・지역아동센터 금융교육사업 운영</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="2026년 서민금융진흥원 업무용 차량 임차">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-03-16</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34215" target="_blank" rel="noopener">2026년 서민금융진흥원 업무용 차량 임차</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리은행" data-title="모바일웹시스템 노후화(eos) 대응 인프라 구축 (팀스톤 os모니터링 부문) 사업 입찰 공고">
           <td class="c-bank"><span class="chip chip-우리은행">우리은행</span></td>
           <td class="c-date">2026-03-13</td>
@@ -2493,6 +2808,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고] 성장모형 등급 산출 플랫폼 및 소상공인 통합 db 구축 사업  (수정공고)">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2026-03-12</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1834" target="_blank" rel="noopener">[입찰공고] 성장모형 등급 산출 플랫폼 및 소상공인 통합 DB 구축 사업  (수정공고)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리카드" data-title="[입찰공고] 보안usb 시스템 구축[이중화솔루션]">
           <td class="c-bank"><span class="chip chip-우리카드">우리카드</span></td>
           <td class="c-date">2026-03-11</td>
@@ -2514,6 +2837,14 @@ footer {
           <td class="c-date">2026-03-10</td>
           <td class="c-title">
             <a href="https://spot.wooribank.com/pot/Dream?withyou=BPPBC0038" target="_blank" rel="noopener">국내 AML 시스템 고도화 사업 제안요청 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고] '26년도 기반시설 취약점 분석평가 용역">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2026-03-10</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1832" target="_blank" rel="noopener">[입찰공고] '26년도 기반시설 취약점 분석평가 용역</a>
             
           </td>
         </tr>
@@ -2613,6 +2944,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고] 2026년 금융분야 마이데이터 종합지원 시스템 고도화 사업">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2026-02-25</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1830" target="_blank" rel="noopener">[입찰공고] 2026년 금융분야 마이데이터 종합지원 시스템 고도화 사업</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리카드" data-title="[입찰공고] 정보보안포탈시스템 구축[이중화솔루션]">
           <td class="c-bank"><span class="chip chip-우리카드">우리카드</span></td>
           <td class="c-date">2026-02-20</td>
@@ -2709,6 +3048,30 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="’26년 서민금융진흥원 업무용 복합기 임차 및 유지보수 용역">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-02-19</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34016" target="_blank" rel="noopener">’26년 서민금융진흥원 업무용 복합기 임차 및 유지보수 용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="행낭·화물 배송관리 위·수탁 용역">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-02-19</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34015" target="_blank" rel="noopener">행낭·화물 배송관리 위·수탁 용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="2026년 서민금융진흥원 메뉴개발컨설팅 운영대행 용역">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-02-19</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34014" target="_blank" rel="noopener">2026년 서민금융진흥원 메뉴개발컨설팅 운영대행 용역</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리캐피탈" data-title="마감 (재공고)2026년 우리금융캐피탈 렌터카 보험 위탁 제휴사 선정 공고">
           <td class="c-bank"><span class="chip chip-우리캐피탈">우리캐피탈</span></td>
           <td class="c-date">2026-02-11</td>
@@ -2717,11 +3080,27 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="2026년 근로자지원프로그램(kinfa통통) 운영 용역(재공고)">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-02-10</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33934" target="_blank" rel="noopener">2026년 근로자지원프로그램(KINFA통통) 운영 용역(재공고)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리카드" data-title="[제안공고] 이미지 내 개인정보 검출 시스템 도입(종합평가)">
           <td class="c-bank"><span class="chip chip-우리카드">우리카드</span></td>
           <td class="c-date">2026-02-09</td>
           <td class="c-title">
             <a href="https://pc.wooricard.com/dcpc/yh1/cct/cct02/anc/H1CCT202S04.do" target="_blank" rel="noopener">[제안공고] 이미지 내 개인정보 검출 시스템 도입(종합평가)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[입찰공고]정보시스템 및 정보보호 마스터플랜(ismp) 수립 컨설팅">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2026-02-09</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161855" target="_blank" rel="noopener">[입찰공고]정보시스템 및 정보보호 마스터플랜(ISMP) 수립 컨설팅</a>
             
           </td>
         </tr>
@@ -2773,11 +3152,27 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="2026년 근로자지원프로그램(kinfa통통) 운영 용역">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-01-27</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33875" target="_blank" rel="noopener">2026년 근로자지원프로그램(KINFA통통) 운영 용역</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="iM캐피탈" data-title="[입찰공고] 2026년 im캐피탈 채권 매각 주간사 선정">
           <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
           <td class="c-date">2026-01-23</td>
           <td class="c-title">
             <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">[입찰공고] 2026년 iM캐피탈 채권 매각 주간사 선정</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 2026년  채용대행 용역">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-01-22</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33856" target="_blank" rel="noopener">서민금융진흥원 2026년  채용대행 용역</a>
             
           </td>
         </tr>
@@ -2829,6 +3224,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 2026~2028 회계연도 외부 회계감사인 선정">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-01-15</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33794" target="_blank" rel="noopener">서민금융진흥원 2026~2028 회계연도 외부 회계감사인 선정</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리캐피탈" data-title="(마감)2026년 우리금융캐피탈 데이터통신 회선비용 통합 재과금 계약 사업 입찰 공고">
           <td class="c-bank"><span class="chip chip-우리캐피탈">우리캐피탈</span></td>
           <td class="c-date">2026-01-13</td>
@@ -2837,11 +3240,59 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="2026년 서민금융진흥원 업무용 차량 임차">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-01-13</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33760" target="_blank" rel="noopener">2026년 서민금융진흥원 업무용 차량 임차</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="청년 자산형성 통합 플랫폼 시스템 구축 감리 용역">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-01-12</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33755" target="_blank" rel="noopener">청년 자산형성 통합 플랫폼 시스템 구축 감리 용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="웹 기반 재무상담 시스템 구축">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-01-12</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33754" target="_blank" rel="noopener">웹 기반 재무상담 시스템 구축</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리캐피탈" data-title="2026년 우리금융캐피탈 모바일 시스템 유지보수 사업 입찰 공고">
           <td class="c-bank"><span class="chip chip-우리캐피탈">우리캐피탈</span></td>
           <td class="c-date">2026-01-09</td>
           <td class="c-title">
             <a href="https://www.woorifcapital.com/intro/tndr/view.do?bdwrNo=1024&amp;menuNo=000000000000000000000000000763" target="_blank" rel="noopener">2026년 우리금융캐피탈 모바일 시스템 유지보수 사업 입찰 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[재입찰공고] 2026년 임직원 단체보험">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2026-01-02</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161846" target="_blank" rel="noopener">[재입찰공고] 2026년 임직원 단체보험</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 청년 자산형성 통합 플랫폼 구축 사업 상용sw 직접구매">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-01-02</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33702" target="_blank" rel="noopener">서민금융진흥원 청년 자산형성 통합 플랫폼 구축 사업 상용SW 직접구매</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 청년 자산형성 통합 플랫폼 시스템 구축">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2026-01-02</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33701" target="_blank" rel="noopener">서민금융진흥원 청년 자산형성 통합 플랫폼 시스템 구축</a>
             
           </td>
         </tr>
@@ -2949,6 +3400,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[입찰공고] 2026년 임직원 단체보험">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2025-12-19</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161842" target="_blank" rel="noopener">[입찰공고] 2026년 임직원 단체보험</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리캐피탈" data-title="(마감)2026년 우리금융캐피탈 콜시스템 유지보수 사업 입찰 공고">
           <td class="c-bank"><span class="chip chip-우리캐피탈">우리캐피탈</span></td>
           <td class="c-date">2025-12-18</td>
@@ -2997,11 +3456,43 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="2026년 서민금융진흥원 청년미래적금 종합홍보대행 용역">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-12-15</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33615" target="_blank" rel="noopener">2026년 서민금융진흥원 청년미래적금 종합홍보대행 용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="2026년 서민금융진흥원 본인확인 서비스">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-12-15</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33614" target="_blank" rel="noopener">2026년 서민금융진흥원 본인확인 서비스</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[입찰공고] 협회 비교공시시스템 고도화 사업">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2025-12-12</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161840" target="_blank" rel="noopener">[입찰공고] 협회 비교공시시스템 고도화 사업</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리캐피탈" data-title="2026년 우리금융캐피탈 it과제 통합추진 전담반 운영 사업 입찰 공고">
           <td class="c-bank"><span class="chip chip-우리캐피탈">우리캐피탈</span></td>
           <td class="c-date">2025-12-11</td>
           <td class="c-title">
             <a href="https://www.woorifcapital.com/intro/tndr/view.do?bdwrNo=1009&amp;menuNo=000000000000000000000000000763" target="_blank" rel="noopener">2026년 우리금융캐피탈 IT과제 통합추진 전담반 운영 사업 입찰 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 자금운용 성과평가 및 위험관리 용역 입찰공고">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-12-11</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33574" target="_blank" rel="noopener">서민금융진흥원 자금운용 성과평가 및 위험관리 용역 입찰공고</a>
             
           </td>
         </tr>
@@ -3021,11 +3512,27 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[재공고입찰]  ai 러닝 플랫폼 원격분석 시스템 인프라 고도화 사업">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-12-10</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1798" target="_blank" rel="noopener">[재공고입찰]  AI 러닝 플랫폼 원격분석 시스템 인프라 고도화 사업</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리캐피탈" data-title="(마감) (재공고) 감정평가법인 선정 입찰공고">
           <td class="c-bank"><span class="chip chip-우리캐피탈">우리캐피탈</span></td>
           <td class="c-date">2025-12-09</td>
           <td class="c-title">
             <a href="https://www.woorifcapital.com/intro/tndr/view.do?bdwrNo=1008&amp;menuNo=000000000000000000000000000763" target="_blank" rel="noopener">(마감) (재공고) 감정평가법인 선정 입찰공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 앱·웹 간편인증(전자서명)서비스 입찰공고">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-12-09</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33534" target="_blank" rel="noopener">서민금융진흥원 앱·웹 간편인증(전자서명)서비스 입찰공고</a>
             
           </td>
         </tr>
@@ -3037,11 +3544,51 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고] ai 러닝 플랫폼 원격분석 시스템 인프라 고도화 사업">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-12-02</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1796" target="_blank" rel="noopener">[입찰공고] AI 러닝 플랫폼 원격분석 시스템 인프라 고도화 사업</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리캐피탈" data-title="(마감) 감정평가법인 선정 입찰공고">
           <td class="c-bank"><span class="chip chip-우리캐피탈">우리캐피탈</span></td>
           <td class="c-date">2025-12-01</td>
           <td class="c-title">
             <a href="https://www.woorifcapital.com/intro/tndr/view.do?bdwrNo=1002&amp;menuNo=000000000000000000000000000763" target="_blank" rel="noopener">(마감) 감정평가법인 선정 입찰공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고] '26년도 마이데이터 과금 산정 협의회 운영 연구용역">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-12-01</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1795" target="_blank" rel="noopener">[입찰공고] '26년도 마이데이터 과금 산정 협의회 운영 연구용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 데이터소산을 위한 idc 상면 임차의 건">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-12-01</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33478" target="_blank" rel="noopener">서민금융진흥원 데이터소산을 위한 IDC 상면 임차의 건</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="리눅스 기반 eos os 패치 제품 도입[물품구매]">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-12-01</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33477" target="_blank" rel="noopener">리눅스 기반 EOS OS 패치 제품 도입[물품구매]</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="신용·자산관리 서비스 이용 계약 업체 선정">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-12-01</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33475" target="_blank" rel="noopener">신용·자산관리 서비스 이용 계약 업체 선정</a>
             
           </td>
         </tr>
@@ -3061,11 +3608,27 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[입찰공고] 2025년도 종합 it시스템 취약점 분석・평가">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2025-11-25</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161833" target="_blank" rel="noopener">[입찰공고] 2025년도 종합 IT시스템 취약점 분석・평가</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="iM증권" data-title="아이엠증권 입찰 공고(도곡wm센터)">
           <td class="c-bank"><span class="chip chip-iM증권">iM증권</span></td>
           <td class="c-date">2025-11-24</td>
           <td class="c-title">
             <a href="https://www.imfnsec.com/research/bussiness_indust/re0203.jsp?bid=C_A010" target="_blank" rel="noopener">아이엠증권 입찰 공고(도곡WM센터)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고] 금융권 로컬 컴퓨팅 언어모델 엔진(corelm) 개발 용역">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-11-21</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1789" target="_blank" rel="noopener">[입찰공고] 금융권 로컬 컴퓨팅 언어모델 엔진(CoreLM) 개발 용역</a>
             
           </td>
         </tr>
@@ -3085,11 +3648,35 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 데이터소산을 위한 idc 상면 임차">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-11-20</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33394" target="_blank" rel="noopener">서민금융진흥원 데이터소산을 위한 IDC 상면 임차</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 정보시스템 권한 관리체계 고도화 사업">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-11-18</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33375" target="_blank" rel="noopener">서민금융진흥원 정보시스템 권한 관리체계 고도화 사업</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리캐피탈" data-title="(재공고)신용정보조회ㆍ비금융휴대전화번호조회 및 개인채무자보호법 관련 전자문서ㆍ우편 발송 사업 입찰공고">
           <td class="c-bank"><span class="chip chip-우리캐피탈">우리캐피탈</span></td>
           <td class="c-date">2025-11-17</td>
           <td class="c-title">
             <a href="https://www.woorifcapital.com/intro/tndr/view.do?bdwrNo=997&amp;menuNo=000000000000000000000000000763" target="_blank" rel="noopener">(재공고)신용정보조회ㆍ비금융휴대전화번호조회 및 개인채무자보호법 관련 전자문서ㆍ우편 발송 사업 입찰공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 2025년 하반기 개인정보 영향평가">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-11-17</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33374" target="_blank" rel="noopener">서민금융진흥원 2025년 하반기 개인정보 영향평가</a>
             
           </td>
         </tr>
@@ -3101,11 +3688,35 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[재입찰공고] 대출성상품 판매대리・중개업자 사이버교육 콘텐츠 수정 개발">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2025-11-12</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161825" target="_blank" rel="noopener">[재입찰공고] 대출성상품 판매대리・중개업자 사이버교육 콘텐츠 수정 개발</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="카카오뱅크" data-title="전월세보증금대출 권리조사 업무 위탁">
           <td class="c-bank"><span class="chip chip-카카오뱅크">카카오뱅크</span></td>
           <td class="c-date">2025-11-10</td>
           <td class="c-title">
             <a href="https://www.kakaobank.com/Corp/News/Bidding" target="_blank" rel="noopener">전월세보증금대출 권리조사 업무 위탁</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[입찰공고] 백업 시스템 고도화">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2025-11-10</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161824" target="_blank" rel="noopener">[입찰공고] 백업 시스템 고도화</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 보유문서 종합관리용역">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-11-10</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33336" target="_blank" rel="noopener">서민금융진흥원 보유문서 종합관리용역</a>
             
           </td>
         </tr>
@@ -3146,6 +3757,54 @@ footer {
           <td class="c-date">2025-10-31</td>
           <td class="c-title">
             <a href="https://www.kakaobank.com/Corp/News/Bidding" target="_blank" rel="noopener">대출 안내 상담 및 추심 위탁</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[입찰공고] 대출성상품 판매대리・중개업자 사이버교육 콘텐츠 수정 개발">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2025-10-28</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161811" target="_blank" rel="noopener">[입찰공고] 대출성상품 판매대리・중개업자 사이버교육 콘텐츠 수정 개발</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융안정기금 설치 및 운영방안 컨설팅 용역">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-10-28</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33215" target="_blank" rel="noopener">서민금융안정기금 설치 및 운영방안 컨설팅 용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고]  마이데이터 종합지원 인프라 증설">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-10-27</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1777" target="_blank" rel="noopener">[입찰공고]  마이데이터 종합지원 인프라 증설</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="2025년 청년금융 실태조사 연구용역">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-10-24</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33194" target="_blank" rel="noopener">2025년 청년금융 실태조사 연구용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[재입찰공고] 신용카드・대출 모집인 평가 위탁운영 용역">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2025-10-23</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161810" target="_blank" rel="noopener">[재입찰공고] 신용카드・대출 모집인 평가 위탁운영 용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고]  2026년 it 인프라 통합유지보수 사업">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-10-23</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1775" target="_blank" rel="noopener">[입찰공고]  2026년 IT 인프라 통합유지보수 사업</a>
             
           </td>
         </tr>
@@ -3221,6 +3880,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[입찰공고] 자동차관리정보시스템 신규구축 및 유지보수">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2025-10-14</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161809" target="_blank" rel="noopener">[입찰공고] 자동차관리정보시스템 신규구축 및 유지보수</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고] 한국형 녹색분류체계 적합성 판단 시스템 개발 연구용역">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-10-14</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1773" target="_blank" rel="noopener">[입찰공고] 한국형 녹색분류체계 적합성 판단 시스템 개발 연구용역</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리은행" data-title="“노후화 스토리지 교체”(스토리지 부문)">
           <td class="c-bank"><span class="chip chip-우리은행">우리은행</span></td>
           <td class="c-date">2025-10-13</td>
@@ -3250,6 +3925,22 @@ footer {
           <td class="c-date">2025-10-13</td>
           <td class="c-title">
             <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=584" target="_blank" rel="noopener">입찰공고(통합 ITO)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 온라인 교육 위탁 운영 용역 입찰공고">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-10-13</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33135" target="_blank" rel="noopener">서민금융진흥원 온라인 교육 위탁 운영 용역 입찰공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 통합 알림톡 중개사업자 선정 입찰공고">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-10-13</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33134" target="_blank" rel="noopener">서민금융진흥원 통합 알림톡 중개사업자 선정 입찰공고</a>
             
           </td>
         </tr>
@@ -3309,6 +4000,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[입찰공고] 신용카드・대출 모집인 평가 위탁운영 용역">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2025-09-25</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161805" target="_blank" rel="noopener">[입찰공고] 신용카드・대출 모집인 평가 위탁운영 용역</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK캐피탈" data-title="[ibk캐피탈] 본사 6층 사무공간 공사업체 입찰 재공고">
           <td class="c-bank"><span class="chip chip-IBK캐피탈">IBK캐피탈</span></td>
           <td class="c-date">2025-09-24</td>
@@ -3330,6 +4029,14 @@ footer {
           <td class="c-date">2025-09-22</td>
           <td class="c-title">
             <a href="https://www.kakaobank.com/Corp/News/Bidding" target="_blank" rel="noopener">코리아 핀테크위크 2025 행사 운영 대행사 선정</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="정책서민금융상품 보증상품 시스템 구축 감리 용역">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-09-22</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33054" target="_blank" rel="noopener">정책서민금융상품 보증상품 시스템 구축 감리 용역</a>
             
           </td>
         </tr>
@@ -3445,6 +4152,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고] ai기반 소상공인 성장성 평가모형 개발용역">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-08-20</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1753" target="_blank" rel="noopener">[입찰공고] AI기반 소상공인 성장성 평가모형 개발용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 통합 알림톡 중계사업자 선정(재공고)">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-08-19</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32915" target="_blank" rel="noopener">서민금융진흥원 통합 알림톡 중계사업자 선정(재공고)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="카카오뱅크" data-title="카카오뱅크 자산운용시스템 고도화 감리">
           <td class="c-bank"><span class="chip chip-카카오뱅크">카카오뱅크</span></td>
           <td class="c-date">2025-08-18</td>
@@ -3458,6 +4181,38 @@ footer {
           <td class="c-date">2025-08-18</td>
           <td class="c-title">
             <a href="https://www.kakaobank.com/Corp/News/Bidding" target="_blank" rel="noopener">카카오뱅크 자산운용시스템 고도화</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 하이브리드 보안관제 운영">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-08-18</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32914" target="_blank" rel="noopener">서민금융진흥원 하이브리드 보안관제 운영</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[입찰공고] 자동차관리정보시스템 신규 구축">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2025-08-13</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161798" target="_blank" rel="noopener">[입찰공고] 자동차관리정보시스템 신규 구축</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="청년 금융 자산관리 시뮬레이션 플랫폼 구축">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-08-12</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32874" target="_blank" rel="noopener">청년 금융 자산관리 시뮬레이션 플랫폼 구축</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[재공고입찰] 기업금융분석 bi 고도화 사업">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-08-07</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1746" target="_blank" rel="noopener">[재공고입찰] 기업금융분석 BI 고도화 사업</a>
             
           </td>
         </tr>
@@ -3477,11 +4232,51 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 통합 알림톡 중계사업자 선정">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-08-04</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32774" target="_blank" rel="noopener">서민금융진흥원 통합 알림톡 중계사업자 선정</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="카카오뱅크" data-title="ai수어상담 3d 아바타 및 영상 제작">
           <td class="c-bank"><span class="chip chip-카카오뱅크">카카오뱅크</span></td>
           <td class="c-date">2025-08-01</td>
           <td class="c-title">
             <a href="https://www.kakaobank.com/Corp/News/Bidding" target="_blank" rel="noopener">AI수어상담 3D 아바타 및 영상 제작</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고] 기업금융분석 bi 고도화 사업">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-07-30</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1744" target="_blank" rel="noopener">[입찰공고] 기업금융분석 BI 고도화 사업</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원  청년자산형성 정보시스템 구축 isp 수립 용역">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-07-28</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32736" target="_blank" rel="noopener">서민금융진흥원  청년자산형성 정보시스템 구축 ISP 수립 용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 모바일 전자고지 서비스">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-07-23</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32715" target="_blank" rel="noopener">서민금융진흥원 모바일 전자고지 서비스</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 정책서민금융 보증 상품 시스템 구축">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-07-21</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32674" target="_blank" rel="noopener">서민금융진흥원 정책서민금융 보증 상품 시스템 구축</a>
             
           </td>
         </tr>
@@ -3533,11 +4328,43 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고] sas 관리도구 소프트웨어(connect) 라이선스 구매">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-06-27</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1729" target="_blank" rel="noopener">[입찰공고] SAS 관리도구 소프트웨어(Connect) 라이선스 구매</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[입찰공고]그린마스터 기념품 제작 업체 선정">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2025-06-23</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161780" target="_blank" rel="noopener">[입찰공고]그린마스터 기념품 제작 업체 선정</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 ifrs 대손충당금 전산시스템 고도화 용역">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-06-23</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32554" target="_blank" rel="noopener">서민금융진흥원 IFRS 대손충당금 전산시스템 고도화 용역</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="한국은행" data-title="가계부채 가구화 db 개인정보 영향평가 입찰공고 실시">
           <td class="c-bank"><span class="chip chip-한국은행">한국은행</span></td>
           <td class="c-date">2025-06-17</td>
           <td class="c-title">
             <a href="https://www.bok.or.kr/portal/bbs/P0000561/view.do?nttId=10091958" target="_blank" rel="noopener">가계부채 가구화 DB 개인정보 영향평가 입찰공고 실시</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 위탁운용사(ocio) 선정(긴급)">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-06-17</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32514" target="_blank" rel="noopener">서민금융진흥원 위탁운용사(OCIO) 선정(긴급)</a>
             
           </td>
         </tr>
@@ -3549,11 +4376,43 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 사무집기(책상, 의자 등) 매각 공고">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-06-05</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32455" target="_blank" rel="noopener">서민금융진흥원 사무집기(책상, 의자 등) 매각 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 사무비품(테이블, 소파 등) 매각 공고">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-06-05</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32454" target="_blank" rel="noopener">서민금융진흥원 사무비품(테이블, 소파 등) 매각 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK캐피탈" data-title="[ibk캐피탈] 책무구조도 도입 컨설팅 용역계약 입찰 공고">
           <td class="c-bank"><span class="chip chip-IBK캐피탈">IBK캐피탈</span></td>
           <td class="c-date">2025-06-04</td>
           <td class="c-title">
             <a href="https://www.ibkc.co.kr/ib20/mnu/MNUPCKCOMP117?SEQ=102&amp;NO=26406" target="_blank" rel="noopener">[IBK캐피탈] 책무구조도 도입 컨설팅 용역계약 입찰 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고] 2025년 (거점)중계기관 업무 위수탁 점검 표준보고서 작성 용역">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-06-04</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1721" target="_blank" rel="noopener">[입찰공고] 2025년 (거점)중계기관 업무 위수탁 점검 표준보고서 작성 용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="2025년 서민금융진흥원 유튜브채널 운영 및 영상콘텐츠 제작 용역">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-06-02</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32415" target="_blank" rel="noopener">2025년 서민금융진흥원 유튜브채널 운영 및 영상콘텐츠 제작 용역</a>
             
           </td>
         </tr>
@@ -3573,11 +4432,131 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고] ai 가명처리 가이던스 모형개발 용역">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-05-27</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1719" target="_blank" rel="noopener">[입찰공고] AI 가명처리 가이던스 모형개발 용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="신용조사 업무(현장조사 등) 위탁계약">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-05-26</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32375" target="_blank" rel="noopener">신용조사 업무(현장조사 등) 위탁계약</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="카카오뱅크" data-title="[재공고] 2025년 전자서명인증 업무 평가 및 웹트러스트 인증">
           <td class="c-bank"><span class="chip chip-카카오뱅크">카카오뱅크</span></td>
           <td class="c-date">2025-05-23</td>
           <td class="c-title">
             <a href="https://www.kakaobank.com/Corp/News/Bidding" target="_blank" rel="noopener">[재공고] 2025년 전자서명인증 업무 평가 및 웹트러스트 인증</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[재공고입찰] 업무 개발 및 정보계 등 구축 사업">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-05-23</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1717" target="_blank" rel="noopener">[재공고입찰] 업무 개발 및 정보계 등 구축 사업</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[재공고입찰] 한국신용정보원 ai 도서 출판">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-05-23</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1716" target="_blank" rel="noopener">[재공고입찰] 한국신용정보원 AI 도서 출판</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 퇴직연금 사업자 선정">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-05-23</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32374" target="_blank" rel="noopener">서민금융진흥원 퇴직연금 사업자 선정</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 사무비품 매각 재공고">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-05-22</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32355" target="_blank" rel="noopener">서민금융진흥원 사무비품 매각 재공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 사무집기(책상 등) 매각 재공고">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-05-22</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32354" target="_blank" rel="noopener">서민금융진흥원 사무집기(책상 등) 매각 재공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="내부통제체계 고도화 컨설팅 사업자 선정 입찰 공고">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-05-20</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32334" target="_blank" rel="noopener">내부통제체계 고도화 컨설팅 사업자 선정 입찰 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고] 업무 개발 및 정보계 등 구축 사업">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-05-16</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1712" target="_blank" rel="noopener">[입찰공고] 업무 개발 및 정보계 등 구축 사업</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고] ai 기반 인슈어테크 플랫폼 구축 사업">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-05-16</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1711" target="_blank" rel="noopener">[입찰공고] AI 기반 인슈어테크 플랫폼 구축 사업</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고] 한국신용정보원 ai 도서 출판">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-05-16</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1710" target="_blank" rel="noopener">[입찰공고] 한국신용정보원 AI 도서 출판</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="2025년 서민금융진흥원 단체보험 제안요청서">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-05-16</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32294" target="_blank" rel="noopener">2025년 서민금융진흥원 단체보험 제안요청서</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 사무비품 매각 공고">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-05-14</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32276" target="_blank" rel="noopener">서민금융진흥원 사무비품 매각 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 전산기기(pc본체) 매각 공고">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-05-14</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32275" target="_blank" rel="noopener">서민금융진흥원 전산기기(PC본체) 매각 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 사무집기(책상 등) 매각 공고">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-05-14</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32274" target="_blank" rel="noopener">서민금융진흥원 사무집기(책상 등) 매각 공고</a>
             
           </td>
         </tr>
@@ -3597,6 +4576,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="신용조사 업무(현장조사 등) 위탁계약">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-05-12</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32255" target="_blank" rel="noopener">신용조사 업무(현장조사 등) 위탁계약</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 청년도약계좌콜센터 22층 원상복구 공사">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-05-12</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32254" target="_blank" rel="noopener">서민금융진흥원 청년도약계좌콜센터 22층 원상복구 공사</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="카카오뱅크" data-title="카카오뱅크 인쇄물 제작 공급 단가 계약">
           <td class="c-bank"><span class="chip chip-카카오뱅크">카카오뱅크</span></td>
           <td class="c-date">2025-05-09</td>
@@ -3610,6 +4605,14 @@ footer {
           <td class="c-date">2025-05-02</td>
           <td class="c-title">
             <a href="https://www.kakaobank.com/Corp/News/Bidding" target="_blank" rel="noopener">카카오뱅크 기업 보험 사업자 선정</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 정보시스템 통합유지관리용역(중앙조달)">
+          <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
+          <td class="c-date">2025-05-02</td>
+          <td class="c-title">
+            <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32134" target="_blank" rel="noopener">서민금융진흥원 정보시스템 통합유지관리용역(중앙조달)</a>
             
           </td>
         </tr>
@@ -3653,6 +4656,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고] 산업 value chain 별 exposure 및 재무 리스크 정보서비스 구축 사업">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-04-18</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1699" target="_blank" rel="noopener">[입찰공고] 산업 Value Chain 별 Exposure 및 재무 리스크 정보서비스 구축 사업</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[입찰공고] 여신금융업권 표준 책무구조도 마련 등 개정 지배구조법 적용 용역">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2025-04-14</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161761" target="_blank" rel="noopener">[입찰공고] 여신금융업권 표준 책무구조도 마련 등 개정 지배구조법 적용 용역</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="카카오뱅크" data-title="카카오뱅크 신규 데이터센터 지능형 스위치(smart tap) 도입">
           <td class="c-bank"><span class="chip chip-카카오뱅크">카카오뱅크</span></td>
           <td class="c-date">2025-04-11</td>
@@ -3693,6 +4712,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[재입찰공고] 2025년 대학생・지역아동센터 금융교육사업 운영">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2025-04-03</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161756" target="_blank" rel="noopener">[재입찰공고] 2025년 대학생・지역아동센터 금융교육사업 운영</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고] 공공 마이데이터 금융분야 지원 플랫폼 고도화 사업">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-04-03</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1693" target="_blank" rel="noopener">[입찰공고] 공공 마이데이터 금융분야 지원 플랫폼 고도화 사업</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="카카오뱅크" data-title="브랜드쿠폰 서비스 모바일 상품권 공급자 선정">
           <td class="c-bank"><span class="chip chip-카카오뱅크">카카오뱅크</span></td>
           <td class="c-date">2025-04-01</td>
@@ -3709,6 +4744,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[재공고입찰] '25년도 기반시설 취약점 분석평가 용역">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-03-28</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1691" target="_blank" rel="noopener">[재공고입찰] '25년도 기반시설 취약점 분석평가 용역</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="iM캐피탈" data-title="25년 상각채권 매각 주간사 입찰 공고 (안)">
           <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
           <td class="c-date">2025-03-24</td>
@@ -3717,11 +4760,35 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[재입찰공고] 여신금융연구소 간행물 제작・인쇄・발송">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2025-03-24</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161753" target="_blank" rel="noopener">[재입찰공고] 여신금융연구소 간행물 제작・인쇄・발송</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="카카오뱅크" data-title="2025년 카카오뱅크 내부회계관리제도 평가지원">
           <td class="c-bank"><span class="chip chip-카카오뱅크">카카오뱅크</span></td>
           <td class="c-date">2025-03-21</td>
           <td class="c-title">
             <a href="https://www.kakaobank.com/Corp/News/Bidding" target="_blank" rel="noopener">2025년 카카오뱅크 내부회계관리제도 평가지원</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[입찰공고] 2025년 대학생・지역아동센터 금융교육사업 운영">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2025-03-21</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161752" target="_blank" rel="noopener">[입찰공고] 2025년 대학생・지역아동센터 금융교육사업 운영</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고] 금융분야 마이데이터 종합지원 시스템 고도화 사업">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-03-14</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1688" target="_blank" rel="noopener">[입찰공고] 금융분야 마이데이터 종합지원 시스템 고도화 사업</a>
             
           </td>
         </tr>
@@ -3741,11 +4808,35 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고] 25년도 기반시설 취약점 분석평가 용역">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-03-07</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1685" target="_blank" rel="noopener">[입찰공고] 25년도 기반시설 취약점 분석평가 용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[입찰공고] 여신금융연구소 간행물 제작・인쇄・발송">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2025-03-04</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161747" target="_blank" rel="noopener">[입찰공고] 여신금융연구소 간행물 제작・인쇄・발송</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="카카오뱅크" data-title="[재공고] 2025년 연간 상시 모의해킹 전문가 서비스">
           <td class="c-bank"><span class="chip chip-카카오뱅크">카카오뱅크</span></td>
           <td class="c-date">2025-02-26</td>
           <td class="c-title">
             <a href="https://www.kakaobank.com/Corp/News/Bidding" target="_blank" rel="noopener">[재공고] 2025년 연간 상시 모의해킹 전문가 서비스</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[재공고입찰] 기업금융분석시스템(efas) 산업 및 기업 보고서 서비스 개발 사업">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-02-26</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1678" target="_blank" rel="noopener">[재공고입찰] 기업금융분석시스템(EFAS) 산업 및 기업 보고서 서비스 개발 사업</a>
             
           </td>
         </tr>
@@ -3829,6 +4920,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고] 기업금융분석시스템(efas) 산업 및 기업 보고서 서비스 개발 사업">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-02-06</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1671" target="_blank" rel="noopener">[입찰공고] 기업금융분석시스템(EFAS) 산업 및 기업 보고서 서비스 개발 사업</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK캐피탈" data-title="[ibk캐피탈]  스마트워크 환경 구축 통신인프라 지원 사업자 입찰공고">
           <td class="c-bank"><span class="chip chip-IBK캐피탈">IBK캐피탈</span></td>
           <td class="c-date">2025-01-08</td>
@@ -3845,6 +4944,38 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[재입찰공고] 2025년 임직원 단체보험">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2025-01-06</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161721" target="_blank" rel="noopener">[재입찰공고] 2025년 임직원 단체보험</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[재공고입찰] 『차세대 it시스템』인프라 구축 사업">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-01-06</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1667" target="_blank" rel="noopener">[재공고입찰] 『차세대 IT시스템』인프라 구축 사업</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[재공고입찰] 『차세대 it시스템』업무 개발 사업">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2025-01-03</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1665" target="_blank" rel="noopener">[재공고입찰] 『차세대 IT시스템』업무 개발 사업</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[재공고입찰] 『차세대 it시스템』인프라 구축 사업">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2024-12-27</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1662" target="_blank" rel="noopener">[재공고입찰] 『차세대 IT시스템』인프라 구축 사업</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="iM증권" data-title="대외계 시스템외 h/w 도입 입찰공고">
           <td class="c-bank"><span class="chip chip-iM증권">iM증권</span></td>
           <td class="c-date">2024-12-26</td>
@@ -3853,11 +4984,123 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[입찰공고] 2025년 임직원 단체보험">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2024-12-19</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161713" target="_blank" rel="noopener">[입찰공고] 2025년 임직원 단체보험</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[재입찰공고] 전산 노후 장비 교체">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2024-12-18</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161710" target="_blank" rel="noopener">[재입찰공고] 전산 노후 장비 교체</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고] 한국신용정보원 차세대 프로젝트룸 실내 인테리어 공사">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2024-12-16</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1655" target="_blank" rel="noopener">[입찰공고] 한국신용정보원 차세대 프로젝트룸 실내 인테리어 공사</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고] 『차세대 it시스템』업무 개발 사업">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2024-12-13</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1654" target="_blank" rel="noopener">[입찰공고] 『차세대 IT시스템』업무 개발 사업</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고] 『차세대 it시스템』인프라 구축 사업">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2024-12-13</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1653" target="_blank" rel="noopener">[입찰공고] 『차세대 IT시스템』인프라 구축 사업</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[입찰공고] 전산 노후 장비 교체">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2024-11-29</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161705" target="_blank" rel="noopener">[입찰공고] 전산 노후 장비 교체</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[입찰공고] 2024년도 종합 it시스템 취약점 분석・평가">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2024-11-29</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161704" target="_blank" rel="noopener">[입찰공고] 2024년도 종합 IT시스템 취약점 분석・평가</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[재입찰공고] 자금세탁방지ⅱ(심화) 사이버교육 컨텐츠 개발">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2024-11-15</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161700" target="_blank" rel="noopener">[재입찰공고] 자금세탁방지Ⅱ(심화) 사이버교육 컨텐츠 개발</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[입찰공고] 금융권 ai 플랫폼 구축">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2024-11-15</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1642" target="_blank" rel="noopener">[입찰공고] 금융권 AI 플랫폼 구축</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[재입찰공고] 리스・할부금융업권 경쟁력 제고를 위한 연구용역">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2024-11-12</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161695" target="_blank" rel="noopener">[재입찰공고] 리스・할부금융업권 경쟁력 제고를 위한 연구용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[재입찰공고] 리스・할부금융업권 경쟁력 제고를 위한 연구용역">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2024-11-06</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161693" target="_blank" rel="noopener">[재입찰공고] 리스・할부금융업권 경쟁력 제고를 위한 연구용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[입찰공고] 홈페이지 통합 유지보수 용역 사업">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2024-11-06</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161692" target="_blank" rel="noopener">[입찰공고] 홈페이지 통합 유지보수 용역 사업</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK캐피탈" data-title="[ibk캐피탈] fy2025~2027(제40~42기) 외부감사인 선임 입찰공고문">
           <td class="c-bank"><span class="chip chip-IBK캐피탈">IBK캐피탈</span></td>
           <td class="c-date">2024-11-01</td>
           <td class="c-title">
             <a href="https://www.ibkc.co.kr/ib20/mnu/MNUPCKCOMP117?SEQ=98&amp;NO=25686" target="_blank" rel="noopener">[IBK캐피탈] FY2025~2027(제40~42기) 외부감사인 선임 입찰공고문</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[입찰공고] 자금세탁방지ⅱ(심화) 사이버교육 컨텐츠 개발">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2024-11-01</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161691" target="_blank" rel="noopener">[입찰공고] 자금세탁방지Ⅱ(심화) 사이버교육 컨텐츠 개발</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="여신금융협회" data-title="[입찰공고] 리스, 할부금융업권 경쟁력 제고를 위한 연구용역">
+          <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
+          <td class="c-date">2024-10-22</td>
+          <td class="c-title">
+            <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161685" target="_blank" rel="noopener">[입찰공고] 리스, 할부금융업권 경쟁력 제고를 위한 연구용역</a>
             
           </td>
         </tr>
@@ -3890,6 +5133,22 @@ footer {
           <td class="c-date">2024-08-21</td>
           <td class="c-title">
             <a href="https://www.ibkc.co.kr/ib20/mnu/MNUPCKCOMP117?SEQ=96&amp;NO=25486" target="_blank" rel="noopener">[IBK캐피탈] IT소산센터 원상복구공사 업체 선정을 위한 입찰 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[리스입찰] 차세대 it시스템 구축 1단계 사업 관련 리스 입찰">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2024-07-25</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1611" target="_blank" rel="noopener">[리스입찰] 차세대 IT시스템 구축 1단계 사업 관련 리스 입찰</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="신용정보원" data-title="[재공고입찰] 공격자(해커) 관점 보안점검 체계 구축">
+          <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
+          <td class="c-date">2024-07-11</td>
+          <td class="c-title">
+            <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1606" target="_blank" rel="noopener">[재공고입찰] 공격자(해커) 관점 보안점검 체계 구축</a>
             
           </td>
         </tr>
