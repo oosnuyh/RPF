@@ -30,6 +30,8 @@
   --bank-bok: #7a3f52;
   --bank-kpost: #3a9ca3;
   --bank-kdbcap: #7a6a9c;
+  --bank-imsec: #a0785a;
+  --bank-imcap: #4a8a8a;
   --shadow: 0 1px 2px rgba(27,36,48,0.04), 0 4px 16px rgba(27,36,48,0.04);
 }
 @media (prefers-color-scheme: dark) {
@@ -59,6 +61,8 @@
     --bank-bok: #d19bab;
     --bank-kpost: #7ecfd6;
     --bank-kdbcap: #b8a8d6;
+    --bank-imsec: #d1ab85;
+    --bank-imcap: #7ec4c4;
     --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 20px rgba(0,0,0,0.25);
   }
 }
@@ -70,6 +74,7 @@
   --bank-skax: #e08a89; --bank-lgcns: #7ec8e0; --bank-sdssds: #9aa8b5; --bank-imbank: #d1af6e;
   --bank-kdb: #7f9bc9; --bank-wfcap: #e0a08e; --bank-ibkcap: #a3c9a3;
   --bank-bok: #d19bab; --bank-kpost: #7ecfd6; --bank-kdbcap: #b8a8d6;
+  --bank-imsec: #d1ab85; --bank-imcap: #7ec4c4;
   --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 20px rgba(0,0,0,0.25);
 }
 :root[data-theme="light"] {
@@ -80,6 +85,7 @@
   --bank-skax: #b3403f; --bank-lgcns: #3f8fb0; --bank-sdssds: #5c6b7a; --bank-imbank: #8a6d3a;
   --bank-kdb: #35507a; --bank-wfcap: #b56a5a; --bank-ibkcap: #6b8f6b;
   --bank-bok: #7a3f52; --bank-kpost: #3a9ca3; --bank-kdbcap: #7a6a9c;
+  --bank-imsec: #a0785a; --bank-imcap: #4a8a8a;
   --shadow: 0 1px 2px rgba(27,36,48,0.04), 0 4px 16px rgba(27,36,48,0.04);
 }
 
@@ -243,6 +249,8 @@ td { padding: 10px 14px; vertical-align: top; }
 .chip-한국은행 { background: color-mix(in srgb, var(--bank-bok) 16%, transparent); color: var(--bank-bok); }
 .chip-우정사업본부 { background: color-mix(in srgb, var(--bank-kpost) 16%, transparent); color: var(--bank-kpost); }
 .chip-KDB캐피탈 { background: color-mix(in srgb, var(--bank-kdbcap) 16%, transparent); color: var(--bank-kdbcap); }
+.chip-iM증권 { background: color-mix(in srgb, var(--bank-imsec) 16%, transparent); color: var(--bank-imsec); }
+.chip-iM캐피탈 { background: color-mix(in srgb, var(--bank-imcap) 16%, transparent); color: var(--bank-imcap); }
 
 .pill {
   display: inline-block;
@@ -280,9 +288,9 @@ footer {
   <div class="masthead">
     <div>
       <h1>은행·카드사·SI사 입찰·구매 공고 모니터</h1>
-      <div class="sub">우리은행 · IBK기업은행 · 카카오뱅크 · 국민은행 · iM뱅크 · 산업은행 · 한국은행 · 우정사업본부 · 우리카드 · 신한카드 · 비씨카드 · 국민카드 · 우리캐피탈 · IBK캐피탈 · KDB캐피탈 · SK AX · LG CNS · 삼성SDS · 총 18개사 공고 통합 현황</div>
+      <div class="sub">우리은행 · IBK기업은행 · 카카오뱅크 · 국민은행 · iM뱅크 · 산업은행 · 한국은행 · 우정사업본부 · 우리카드 · 신한카드 · 비씨카드 · 국민카드 · 우리캐피탈 · IBK캐피탈 · KDB캐피탈 · iM증권 · iM캐피탈 · SK AX · LG CNS · 삼성SDS · 총 20개사 공고 통합 현황</div>
     </div>
-    <div class="sub">최근 갱신 2026-07-21 16:39</div>
+    <div class="sub">최근 갱신 2026-07-21 17:25</div>
   </div>
 
   <div class="stat-row">
@@ -291,18 +299,18 @@ footer {
       <div class="label">이번 실행 신규 공고</div>
     </div>
     <div class="stat-card">
-      <div class="num">545</div>
+      <div class="num">583</div>
       <div class="label">현재 추적 중인 공고 (회사별 최근분)</div>
     </div>
     <div class="stat-card">
-      <div class="num">18</div>
+      <div class="num">20</div>
       <div class="label">모니터링 회사 수</div>
     </div>
   </div>
 
   <div class="toolbar">
-    <button class="filter-chip active" data-filter="__all__">전체 <span class="fc-count">545</span></button>
-    <button class="filter-chip" data-filter="우리은행">우리은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK기업은행">IBK기업은행 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="카카오뱅크">카카오뱅크 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="국민은행">국민은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="iM뱅크">iM뱅크 <span class="fc-count">8</span></button><button class="filter-chip" data-filter="산업은행">산업은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="한국은행">한국은행 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="우정사업본부">우정사업본부 <span class="fc-count">0</span></button><button class="filter-chip" data-filter="우리카드">우리카드 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="신한카드">신한카드 <span class="fc-count">2</span></button><button class="filter-chip" data-filter="비씨카드">비씨카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="국민카드">국민카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="우리캐피탈">우리캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK캐피탈">IBK캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="KDB캐피탈">KDB캐피탈 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="SK AX">SK AX <span class="fc-count">0</span></button><button class="filter-chip" data-filter="LG CNS">LG CNS <span class="fc-count">1</span></button><button class="filter-chip" data-filter="삼성SDS">삼성SDS <span class="fc-count">1</span></button>
+    <button class="filter-chip active" data-filter="__all__">전체 <span class="fc-count">583</span></button>
+    <button class="filter-chip" data-filter="우리은행">우리은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK기업은행">IBK기업은행 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="카카오뱅크">카카오뱅크 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="국민은행">국민은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="iM뱅크">iM뱅크 <span class="fc-count">8</span></button><button class="filter-chip" data-filter="산업은행">산업은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="한국은행">한국은행 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="우정사업본부">우정사업본부 <span class="fc-count">0</span></button><button class="filter-chip" data-filter="우리카드">우리카드 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="신한카드">신한카드 <span class="fc-count">2</span></button><button class="filter-chip" data-filter="비씨카드">비씨카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="국민카드">국민카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="우리캐피탈">우리캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK캐피탈">IBK캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="KDB캐피탈">KDB캐피탈 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="iM증권">iM증권 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="iM캐피탈">iM캐피탈 <span class="fc-count">31</span></button><button class="filter-chip" data-filter="SK AX">SK AX <span class="fc-count">0</span></button><button class="filter-chip" data-filter="LG CNS">LG CNS <span class="fc-count">1</span></button><button class="filter-chip" data-filter="삼성SDS">삼성SDS <span class="fc-count">1</span></button>
     <input class="search-input" type="search" placeholder="제목 검색..." id="searchBox">
   </div>
 
@@ -1253,6 +1261,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="iM증권" data-title="사은품 구매업체 선청 입찰 공고">
+          <td class="c-bank"><span class="chip chip-iM증권">iM증권</span></td>
+          <td class="c-date">2026-06-26</td>
+          <td class="c-title">
+            <a href="https://www.imfnsec.com/research/bussiness_indust/re0203.jsp?bid=C_A010" target="_blank" rel="noopener">사은품 구매업체 선청 입찰 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK기업은행" data-title="[입찰공고]ibk투자증권 etf lp 고속주문관리시스템 물품 구매(서버) (긴급)">
           <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
           <td class="c-date">2026-06-25</td>
@@ -1442,6 +1458,14 @@ footer {
           <td class="c-date">2026-06-22</td>
           <td class="c-title">
             <a href="https://omoney.kbstar.com/quics?page=C018592&amp;boardId=648&amp;compId=b031439&amp;articleId=145083&amp;bbsMode=view&amp;viewPage=1&amp;articleClass=&amp;searchCondition=title&amp;searchStr=" target="_blank" rel="noopener">2026년「전행 영업력강화 프로그램」포상 운영을 위한 경품(순금휘장) 구매 관련 입찰 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="iM증권" data-title="업무용 소프트웨어 구매 입찰 공고">
+          <td class="c-bank"><span class="chip chip-iM증권">iM증권</span></td>
+          <td class="c-date">2026-06-22</td>
+          <td class="c-title">
+            <a href="https://www.imfnsec.com/research/bussiness_indust/re0203.jsp?bid=C_A010" target="_blank" rel="noopener">업무용 소프트웨어 구매 입찰 공고</a>
             
           </td>
         </tr>
@@ -2245,6 +2269,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="iM증권" data-title="업무 pc 구매 입찰 공고">
+          <td class="c-bank"><span class="chip chip-iM증권">iM증권</span></td>
+          <td class="c-date">2026-04-21</td>
+          <td class="c-title">
+            <a href="https://www.imfnsec.com/research/bussiness_indust/re0203.jsp?bid=C_A010" target="_blank" rel="noopener">업무 PC 구매 입찰 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="산업은행" data-title="[재공고] 오버레이 업무방법서 수립을 위한 용역 공고">
           <td class="c-bank"><span class="chip chip-산업은행">산업은행</span></td>
           <td class="c-date">2026-04-14</td>
@@ -2533,6 +2565,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="[입찰공고]  차량 공매(대행)업체 신규 선정">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2026-03-03</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">[입찰공고]  차량 공매(대행)업체 신규 선정</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리카드" data-title="[입찰공고] 인터페이스 시스템 vmware라이선스 갱신 및 업그레이드">
           <td class="c-bank"><span class="chip chip-우리카드">우리카드</span></td>
           <td class="c-date">2026-02-26</td>
@@ -2661,6 +2701,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="[입찰공고] 2026년 im캐피탈 장기렌터카 관리(정비)업체 선정">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2026-02-19</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">[입찰공고] 2026년 iM캐피탈 장기렌터카 관리(정비)업체 선정</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리캐피탈" data-title="마감 (재공고)2026년 우리금융캐피탈 렌터카 보험 위탁 제휴사 선정 공고">
           <td class="c-bank"><span class="chip chip-우리캐피탈">우리캐피탈</span></td>
           <td class="c-date">2026-02-11</td>
@@ -2722,6 +2770,14 @@ footer {
           <td class="c-date">2026-01-27</td>
           <td class="c-title">
             <a href="https://pc.wooricard.com/dcpc/yh1/cct/cct02/anc/H1CCT202S04.do" target="_blank" rel="noopener">[제안공고] 정보보안포탈시스템 구축(종합평가)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="[입찰공고] 2026년 im캐피탈 채권 매각 주간사 선정">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2026-01-23</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">[입찰공고] 2026년 iM캐피탈 채권 매각 주간사 선정</a>
             
           </td>
         </tr>
@@ -3002,6 +3058,14 @@ footer {
           <td class="c-date">2025-11-27</td>
           <td class="c-title">
             <a href="https://kakaobank.nicedocu.com/web/buyer/bid/pop_obid_view.jsp?main_member_no=00000000000&amp;bid_no=202511006&amp;bid_deg=0" target="_blank" rel="noopener">2026년 카카오뱅크 NPL 채권 매각 연간 자문사 선정</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="iM증권" data-title="아이엠증권 입찰 공고(도곡wm센터)">
+          <td class="c-bank"><span class="chip chip-iM증권">iM증권</span></td>
+          <td class="c-date">2025-11-24</td>
+          <td class="c-title">
+            <a href="https://www.imfnsec.com/research/bussiness_indust/re0203.jsp?bid=C_A010" target="_blank" rel="noopener">아이엠증권 입찰 공고(도곡WM센터)</a>
             
           </td>
         </tr>
@@ -3445,6 +3509,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="iM증권" data-title="아이엠증권 입찰 공고">
+          <td class="c-bank"><span class="chip chip-iM증권">iM증권</span></td>
+          <td class="c-date">2025-07-10</td>
+          <td class="c-title">
+            <a href="https://www.imfnsec.com/research/bussiness_indust/re0203.jsp?bid=C_A010" target="_blank" rel="noopener">아이엠증권 입찰 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK캐피탈" data-title="[ibk캐피탈] 운영리스크 관리체계 개선을 위한 용역 입찰공고">
           <td class="c-bank"><span class="chip chip-IBK캐피탈">IBK캐피탈</span></td>
           <td class="c-date">2025-07-08</td>
@@ -3506,6 +3578,14 @@ footer {
           <td class="c-date">2025-05-23</td>
           <td class="c-title">
             <a href="https://www.kakaobank.com/Corp/News/Bidding" target="_blank" rel="noopener">[재공고] 2025년 전자서명인증 업무 평가 및 웹트러스트 인증</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="[입찰공고] im캐피탈 개인금융 tm센터 구축 사업자 선정">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2025-05-13</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">[입찰공고] IM캐피탈 개인금융 TM센터 구축 사업자 선정</a>
             
           </td>
         </tr>
@@ -3629,6 +3709,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="25년 상각채권 매각 주간사 입찰 공고 (안)">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2025-03-24</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">25년 상각채권 매각 주간사 입찰 공고 (안)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="카카오뱅크" data-title="2025년 카카오뱅크 내부회계관리제도 평가지원">
           <td class="c-bank"><span class="chip chip-카카오뱅크">카카오뱅크</span></td>
           <td class="c-date">2025-03-21</td>
@@ -3746,6 +3834,22 @@ footer {
           <td class="c-date">2025-01-08</td>
           <td class="c-title">
             <a href="https://www.ibkc.co.kr/ib20/mnu/MNUPCKCOMP117?SEQ=99&amp;NO=25886" target="_blank" rel="noopener">[IBK캐피탈]  스마트워크 환경 구축 통신인프라 지원 사업자 입찰공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="iM증권" data-title="아이엠증권 통합지점 원상복구 공사 입찰공고">
+          <td class="c-bank"><span class="chip chip-iM증권">iM증권</span></td>
+          <td class="c-date">2025-01-06</td>
+          <td class="c-title">
+            <a href="https://www.imfnsec.com/research/bussiness_indust/re0203.jsp?bid=C_A010" target="_blank" rel="noopener">아이엠증권 통합지점 원상복구 공사 입찰공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="iM증권" data-title="대외계 시스템외 h/w 도입 입찰공고">
+          <td class="c-bank"><span class="chip chip-iM증권">iM증권</span></td>
+          <td class="c-date">2024-12-26</td>
+          <td class="c-title">
+            <a href="https://www.imfnsec.com/research/bussiness_indust/re0203.jsp?bid=C_A010" target="_blank" rel="noopener">대외계 시스템외 H/W 도입 입찰공고</a>
             
           </td>
         </tr>
@@ -3893,6 +3997,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="23년 3차 부실채권 매각 주간사 입찰 공고의 건">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2023-09-14</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">23년 3차 부실채권 매각 주간사 입찰 공고의 건</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="KDB캐피탈" data-title="입찰 공고(정보화전략계획(차세대) 수립 및 업무고도화 컨설팅">
           <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
           <td class="c-date">2023-09-12</td>
@@ -3914,6 +4026,14 @@ footer {
           <td class="c-date">2023-08-29</td>
           <td class="c-title">
             <a href="https://www.ibkc.co.kr/ib20/mnu/MNUPCKCOMP117?SEQ=85&amp;NO=24641" target="_blank" rel="noopener">[IBK캐피탈] 재무제표 작성지원업무 용역을 위한 입찰공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="23년 2차 dgb캐피탈 채권매각 주간사(회계법인) 입찰 공고">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2023-08-01</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">23년 2차 DGB캐피탈 채권매각 주간사(회계법인) 입찰 공고</a>
             
           </td>
         </tr>
@@ -4245,6 +4365,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="[입찰공고] 2019년 4분기 공개매각 실시">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2019-12-17</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">[입찰공고] 2019년 4분기 공개매각 실시</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(통합 ito(it outsourcing) 업체선정)">
           <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
           <td class="c-date">2019-12-11</td>
@@ -4266,6 +4394,14 @@ footer {
           <td class="c-date">2019-07-25</td>
           <td class="c-title">
             <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=533" target="_blank" rel="noopener">입찰공고(모바일 고객안내서비스 개발)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="[입찰공고] 2019년 2분기 공개매각 실시">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2019-06-17</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">[입찰공고] 2019년 2분기 공개매각 실시</a>
             
           </td>
         </tr>
@@ -4317,6 +4453,30 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="[입찰공고] 2019년 1분기 공개매각 실시">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2019-03-15</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">[입찰공고] 2019년 1분기 공개매각 실시</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="[입찰공고]본사 전산실 소방설비 구축사업">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2019-02-15</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">[입찰공고]본사 전산실 소방설비 구축사업</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="[입찰공고] 자금세탁방지 rba 시스템 구축 공개입찰">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2019-02-15</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">[입찰공고] 자금세탁방지 RBA 시스템 구축 공개입찰</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK캐피탈" data-title="여신전문금융회사 rba기반 자금세탁방지시스템 공동구축 입찰공고">
           <td class="c-bank"><span class="chip chip-IBK캐피탈">IBK캐피탈</span></td>
           <td class="c-date">2019-02-14</td>
@@ -4341,11 +4501,27 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="[입찰공고] 2018년 4분기 공개매각 실시">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2018-12-07</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">[입찰공고] 2018년 4분기 공개매각 실시</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(업무용 복합기 렌털)">
           <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
           <td class="c-date">2018-12-06</td>
           <td class="c-title">
             <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=466" target="_blank" rel="noopener">입찰공고(업무용 복합기 렌털)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="[입찰공고] 2018년 3분기 공개매각 실시">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2018-09-11</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">[입찰공고] 2018년 3분기 공개매각 실시</a>
             
           </td>
         </tr>
@@ -4362,6 +4538,14 @@ footer {
           <td class="c-date">2018-07-03</td>
           <td class="c-title">
             <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=462" target="_blank" rel="noopener">입찰공고(코어시스템 업그레이드)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="[입찰공고] 2018년 2분기 공개매각 실시">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2018-06-12</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">[입찰공고] 2018년 2분기 공개매각 실시</a>
             
           </td>
         </tr>
@@ -4405,11 +4589,27 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="[입찰공고] 2018년 1분기 공개매각 실시">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2018-03-09</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">[입찰공고] 2018년 1분기 공개매각 실시</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(리테일금융 고객센터 업무위탁)">
           <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
           <td class="c-date">2018-01-25</td>
           <td class="c-title">
             <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=455" target="_blank" rel="noopener">입찰공고(리테일금융 고객센터 업무위탁)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="[입찰공고] 2017년 4분기 공개매각 실시">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2017-12-08</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">[입찰공고] 2017년 4분기 공개매각 실시</a>
             
           </td>
         </tr>
@@ -4429,6 +4629,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="[입찰공고] 2017년 3분기 공개매각 실시">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2017-09-08</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">[입찰공고] 2017년 3분기 공개매각 실시</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="[입찰공고] 2017년 2분기 공개매각 실시">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2017-06-09</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">[입찰공고] 2017년 2분기 공개매각 실시</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="KDB캐피탈" data-title="단체상해보험 입찰공고">
           <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
           <td class="c-date">2017-04-14</td>
@@ -4445,11 +4661,27 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="[입찰공고] 2017년 1분기 공개매각 실시">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2017-03-09</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">[입찰공고] 2017년 1분기 공개매각 실시</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(pc자동종료 시스템 구축)">
           <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
           <td class="c-date">2017-02-17</td>
           <td class="c-title">
             <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=445" target="_blank" rel="noopener">입찰공고(PC자동종료 시스템 구축)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="[입찰공고] 2016년 4분기 공개매각 실시">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2016-12-09</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">[입찰공고] 2016년 4분기 공개매각 실시</a>
             
           </td>
         </tr>
@@ -4466,6 +4698,22 @@ footer {
           <td class="c-date">2016-10-28</td>
           <td class="c-title">
             <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=450" target="_blank" rel="noopener">입찰공고(네트워크 및 보안장비 이중화 도입)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="[입찰공고] 2016년 3분기 공매매각 실시">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2016-09-08</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">[입찰공고] 2016년 3분기 공매매각 실시</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="2016년도 2분기 공개매각 실시(공고)">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2016-06-10</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">2016년도 2분기 공개매각 실시(공고)</a>
             
           </td>
         </tr>
@@ -4493,6 +4741,30 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="입찰공고-2016.03.14">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2016-03-11</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">입찰공고-2016.03.14</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="입찰공고-2015.03.14">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2016-03-11</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">입찰공고-2015.03.14</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="입찰공고-2015.12.08">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2015-12-04</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">입찰공고-2015.12.08</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(통합로그관리시스템 구축)">
           <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
           <td class="c-date">2015-11-27</td>
@@ -4501,11 +4773,27 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="입찰공고-2015.09.08">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2015-09-04</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">입찰공고-2015.09.08</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(주전산기 교체 도입)">
           <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
           <td class="c-date">2015-06-19</td>
           <td class="c-title">
             <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=434" target="_blank" rel="noopener">입찰공고(주전산기 교체 도입)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="입찰공고-2015.06.08">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2015-06-08</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">입찰공고-2015.06.08</a>
             
           </td>
         </tr>
@@ -4525,11 +4813,27 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="입찰공고-2015.03.02">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2015-03-03</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">입찰공고-2015.03.02</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(자동차매각 위임계약)">
           <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
           <td class="c-date">2015-02-11</td>
           <td class="c-title">
             <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=428" target="_blank" rel="noopener">입찰공고(자동차매각 위임계약)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="입찰공고-2014.12.19">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2014-12-19</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">입찰공고-2014.12.19</a>
             
           </td>
         </tr>
@@ -4546,6 +4850,14 @@ footer {
           <td class="c-date">2014-08-13</td>
           <td class="c-title">
             <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=424" target="_blank" rel="noopener">입찰공고(전산업무시스템 운영을 위한 외주용역)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="iM캐피탈" data-title="입찰공고-2014.07.25">
+          <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
+          <td class="c-date">2014-07-25</td>
+          <td class="c-title">
+            <a href="https://www.imcap.co.kr/customer/notice.do" target="_blank" rel="noopener">입찰공고-2014.07.25</a>
             
           </td>
         </tr>
