@@ -29,6 +29,7 @@
   --bank-ibkcap: #6b8f6b;
   --bank-bok: #7a3f52;
   --bank-kpost: #3a9ca3;
+  --bank-kdbcap: #7a6a9c;
   --shadow: 0 1px 2px rgba(27,36,48,0.04), 0 4px 16px rgba(27,36,48,0.04);
 }
 @media (prefers-color-scheme: dark) {
@@ -57,6 +58,7 @@
     --bank-ibkcap: #a3c9a3;
     --bank-bok: #d19bab;
     --bank-kpost: #7ecfd6;
+    --bank-kdbcap: #b8a8d6;
     --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 20px rgba(0,0,0,0.25);
   }
 }
@@ -67,7 +69,7 @@
   --bank-wcard: #7ecab8; --bank-shcard: #ab9de0; --bank-bccard: #e0879f; --bank-kbcard: #9dc47c;
   --bank-skax: #e08a89; --bank-lgcns: #7ec8e0; --bank-sdssds: #9aa8b5; --bank-imbank: #d1af6e;
   --bank-kdb: #7f9bc9; --bank-wfcap: #e0a08e; --bank-ibkcap: #a3c9a3;
-  --bank-bok: #d19bab; --bank-kpost: #7ecfd6;
+  --bank-bok: #d19bab; --bank-kpost: #7ecfd6; --bank-kdbcap: #b8a8d6;
   --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 20px rgba(0,0,0,0.25);
 }
 :root[data-theme="light"] {
@@ -77,7 +79,7 @@
   --bank-wcard: #3f8f7f; --bank-shcard: #6f5fb0; --bank-bccard: #a34a6f; --bank-kbcard: #5c8a3a;
   --bank-skax: #b3403f; --bank-lgcns: #3f8fb0; --bank-sdssds: #5c6b7a; --bank-imbank: #8a6d3a;
   --bank-kdb: #35507a; --bank-wfcap: #b56a5a; --bank-ibkcap: #6b8f6b;
-  --bank-bok: #7a3f52; --bank-kpost: #3a9ca3;
+  --bank-bok: #7a3f52; --bank-kpost: #3a9ca3; --bank-kdbcap: #7a6a9c;
   --shadow: 0 1px 2px rgba(27,36,48,0.04), 0 4px 16px rgba(27,36,48,0.04);
 }
 
@@ -240,6 +242,7 @@ td { padding: 10px 14px; vertical-align: top; }
 .chip-IBK캐피탈 { background: color-mix(in srgb, var(--bank-ibkcap) 16%, transparent); color: var(--bank-ibkcap); }
 .chip-한국은행 { background: color-mix(in srgb, var(--bank-bok) 16%, transparent); color: var(--bank-bok); }
 .chip-우정사업본부 { background: color-mix(in srgb, var(--bank-kpost) 16%, transparent); color: var(--bank-kpost); }
+.chip-KDB캐피탈 { background: color-mix(in srgb, var(--bank-kdbcap) 16%, transparent); color: var(--bank-kdbcap); }
 
 .pill {
   display: inline-block;
@@ -277,9 +280,9 @@ footer {
   <div class="masthead">
     <div>
       <h1>은행·카드사·SI사 입찰·구매 공고 모니터</h1>
-      <div class="sub">우리은행 · IBK기업은행 · 카카오뱅크 · 국민은행 · iM뱅크 · 산업은행 · 한국은행 · 우정사업본부 · 우리카드 · 신한카드 · 비씨카드 · 국민카드 · 우리캐피탈 · IBK캐피탈 · SK AX · LG CNS · 삼성SDS · 총 17개사 공고 통합 현황</div>
+      <div class="sub">우리은행 · IBK기업은행 · 카카오뱅크 · 국민은행 · iM뱅크 · 산업은행 · 한국은행 · 우정사업본부 · 우리카드 · 신한카드 · 비씨카드 · 국민카드 · 우리캐피탈 · IBK캐피탈 · KDB캐피탈 · SK AX · LG CNS · 삼성SDS · 총 18개사 공고 통합 현황</div>
     </div>
-    <div class="sub">최근 갱신 2026-07-21 13:52</div>
+    <div class="sub">최근 갱신 2026-07-21 16:39</div>
   </div>
 
   <div class="stat-row">
@@ -288,18 +291,18 @@ footer {
       <div class="label">이번 실행 신규 공고</div>
     </div>
     <div class="stat-card">
-      <div class="num">469</div>
+      <div class="num">545</div>
       <div class="label">현재 추적 중인 공고 (회사별 최근분)</div>
     </div>
     <div class="stat-card">
-      <div class="num">17</div>
+      <div class="num">18</div>
       <div class="label">모니터링 회사 수</div>
     </div>
   </div>
 
   <div class="toolbar">
-    <button class="filter-chip active" data-filter="__all__">전체 <span class="fc-count">469</span></button>
-    <button class="filter-chip" data-filter="우리은행">우리은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK기업은행">IBK기업은행 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="카카오뱅크">카카오뱅크 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="국민은행">국민은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="iM뱅크">iM뱅크 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="산업은행">산업은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="한국은행">한국은행 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="우정사업본부">우정사업본부 <span class="fc-count">0</span></button><button class="filter-chip" data-filter="우리카드">우리카드 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="신한카드">신한카드 <span class="fc-count">2</span></button><button class="filter-chip" data-filter="비씨카드">비씨카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="국민카드">국민카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="우리캐피탈">우리캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK캐피탈">IBK캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="SK AX">SK AX <span class="fc-count">0</span></button><button class="filter-chip" data-filter="LG CNS">LG CNS <span class="fc-count">1</span></button><button class="filter-chip" data-filter="삼성SDS">삼성SDS <span class="fc-count">1</span></button>
+    <button class="filter-chip active" data-filter="__all__">전체 <span class="fc-count">545</span></button>
+    <button class="filter-chip" data-filter="우리은행">우리은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK기업은행">IBK기업은행 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="카카오뱅크">카카오뱅크 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="국민은행">국민은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="iM뱅크">iM뱅크 <span class="fc-count">8</span></button><button class="filter-chip" data-filter="산업은행">산업은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="한국은행">한국은행 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="우정사업본부">우정사업본부 <span class="fc-count">0</span></button><button class="filter-chip" data-filter="우리카드">우리카드 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="신한카드">신한카드 <span class="fc-count">2</span></button><button class="filter-chip" data-filter="비씨카드">비씨카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="국민카드">국민카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="우리캐피탈">우리캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK캐피탈">IBK캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="KDB캐피탈">KDB캐피탈 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="SK AX">SK AX <span class="fc-count">0</span></button><button class="filter-chip" data-filter="LG CNS">LG CNS <span class="fc-count">1</span></button><button class="filter-chip" data-filter="삼성SDS">삼성SDS <span class="fc-count">1</span></button>
     <input class="search-input" type="search" placeholder="제목 검색..." id="searchBox">
   </div>
 
@@ -319,6 +322,70 @@ footer {
           <td class="c-date">2026-07-21</td>
           <td class="c-title">
             <a href="https://spot.wooribank.com/pot/Dream?withyou=BPPBC0038" target="_blank" rel="noopener">웹트러스트 인증 및 전자서명인증사업자 평가기관 선정 재입찰 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="IBK기업은행" data-title="[입찰공고]ibk저축은행 안면인식 개선을 위한 gpu서버 구매(긴급)">
+          <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
+          <td class="c-date">2026-07-21</td>
+          <td class="c-title">
+            <a href="https://www.ibksystem.co.kr/board/read?brdId=BRD002&amp;atclNo=664992e0-d12a-42a2-8d04-9412a1cc96bb" target="_blank" rel="noopener">[입찰공고]IBK저축은행 안면인식 개선을 위한 GPU서버 구매(긴급)</a>
+            <span class="pill pill-new">신규</span>
+          </td>
+        </tr>
+        <tr class="row" data-bank="IBK기업은행" data-title="[입찰 재공고] 2021년 통합 백업 라이선스 증설분 유지관리 2026 연장">
+          <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
+          <td class="c-date">2026-07-21</td>
+          <td class="c-title">
+            <a href="https://www.ibksystem.co.kr/board/read?brdId=BRD002&amp;atclNo=29c22cbd-8c87-41c4-803e-1d9f56f9cc58" target="_blank" rel="noopener">[입찰 재공고] 2021년 통합 백업 라이선스 증설분 유지관리 2026 연장</a>
+            <span class="pill pill-new">신규</span>
+          </td>
+        </tr>
+        <tr class="row" data-bank="IBK기업은행" data-title="[입찰 재공고] 전자금융 로그관리 솔루션 유지관리 2026 연장">
+          <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
+          <td class="c-date">2026-07-21</td>
+          <td class="c-title">
+            <a href="https://www.ibksystem.co.kr/board/read?brdId=BRD002&amp;atclNo=3be849e6-f33a-4154-b657-c93d2c24f8cc" target="_blank" rel="noopener">[입찰 재공고] 전자금융 로그관리 솔루션 유지관리 2026 연장</a>
+            <span class="pill pill-new">신규</span>
+          </td>
+        </tr>
+        <tr class="row" data-bank="IBK기업은행" data-title="[입찰 재공고] 업무용pc 바이오인증시스템 구축 유지관리 2026 연장">
+          <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
+          <td class="c-date">2026-07-21</td>
+          <td class="c-title">
+            <a href="https://www.ibksystem.co.kr/board/read?brdId=BRD002&amp;atclNo=03df4f40-3f07-4b03-b441-6137bb9ee450" target="_blank" rel="noopener">[입찰 재공고] 업무용PC 바이오인증시스템 구축 유지관리 2026 연장</a>
+            <span class="pill pill-new">신규</span>
+          </td>
+        </tr>
+        <tr class="row" data-bank="IBK기업은행" data-title="[입찰 재공고] 문서보안시스템 업그레이드 유지관리 (디스크)">
+          <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
+          <td class="c-date">2026-07-21</td>
+          <td class="c-title">
+            <a href="https://www.ibksystem.co.kr/board/read?brdId=BRD002&amp;atclNo=96390eaf-49d5-480e-b652-70592b845f73" target="_blank" rel="noopener">[입찰 재공고] 문서보안시스템 업그레이드 유지관리 (디스크)</a>
+            <span class="pill pill-new">신규</span>
+          </td>
+        </tr>
+        <tr class="row" data-bank="IBK기업은행" data-title="[입찰 재공고] 중소기업중앙회 주거래은행 통합자금관리시스템 고도화(l4스위치)">
+          <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
+          <td class="c-date">2026-07-21</td>
+          <td class="c-title">
+            <a href="https://www.ibksystem.co.kr/board/read?brdId=BRD002&amp;atclNo=9360e7c6-52e7-40b1-aad9-d090e8d76784" target="_blank" rel="noopener">[입찰 재공고] 중소기업중앙회 주거래은행 통합자금관리시스템 고도화(L4스위치)</a>
+            <span class="pill pill-new">신규</span>
+          </td>
+        </tr>
+        <tr class="row" data-bank="IBK기업은행" data-title="[제안요청 공고] 보안 취약점 통합관리시스템 고도화">
+          <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
+          <td class="c-date">2026-07-21</td>
+          <td class="c-title">
+            <a href="https://www.ibksystem.co.kr/board/read?brdId=BRD002&amp;atclNo=1ce5d3d8-7892-4fe7-b29d-9efbec3abd39" target="_blank" rel="noopener">[제안요청 공고] 보안 취약점 통합관리시스템 고도화</a>
+            <span class="pill pill-new">신규</span>
+          </td>
+        </tr>
+        <tr class="row" data-bank="국민은행" data-title="[kb국민은행] 음성상담 agent 도입 및 콜봇 서비스 고도화 구축 제안요청 공고">
+          <td class="c-bank"><span class="chip chip-국민은행">국민은행</span></td>
+          <td class="c-date">2026-07-21</td>
+          <td class="c-title">
+            <a href="https://omoney.kbstar.com/quics?page=C018592&amp;boardId=648&amp;compId=b031439&amp;articleId=145664&amp;bbsMode=view&amp;viewPage=1&amp;articleClass=&amp;searchCondition=title&amp;searchStr=" target="_blank" rel="noopener">[KB국민은행] 음성상담 Agent 도입 및 콜봇 서비스 고도화 구축 제안요청 공고</a>
             <span class="pill pill-new">신규</span>
           </td>
         </tr>
@@ -335,7 +402,7 @@ footer {
           <td class="c-date">2026-07-20</td>
           <td class="c-title">
             <a href="https://www.ibksystem.co.kr/board/read?brdId=BRD002&amp;atclNo=aae9cc38-b855-4cf3-8476-dad16772bbdf" target="_blank" rel="noopener">[입찰 재공고] EDW시스템 인프라 재구축 유지관리 (SAP DBMS, DBMS모니터링) (긴급)</a>
-            <span class="pill pill-new">신규</span>
+            
           </td>
         </tr>
         <tr class="row" data-bank="IBK기업은행" data-title="[입찰공고] ibk하남데이터센터(websphere) 유지관리 (긴급)">
@@ -343,7 +410,7 @@ footer {
           <td class="c-date">2026-07-20</td>
           <td class="c-title">
             <a href="https://www.ibksystem.co.kr/board/read?brdId=BRD002&amp;atclNo=44beb6ae-23c2-4216-adfd-1f15d01973b7" target="_blank" rel="noopener">[입찰공고] IBK하남데이터센터(WebSphere) 유지관리 (긴급)</a>
-            <span class="pill pill-new">신규</span>
+            
           </td>
         </tr>
         <tr class="row" data-bank="IBK기업은행" data-title="[입찰공고] 2026년 상반기 개발용 스마트기기 구매">
@@ -359,7 +426,7 @@ footer {
           <td class="c-date">2026-07-20</td>
           <td class="c-title">
             <a href="https://omoney.kbstar.com/quics?page=C018592&amp;boardId=648&amp;compId=b031439&amp;articleId=145656&amp;bbsMode=view&amp;viewPage=1&amp;articleClass=&amp;searchCondition=title&amp;searchStr=" target="_blank" rel="noopener">[KB국민은행]지방자치단체 금고시스템 노후기기 서버 교체 구매 입찰 공고</a>
-            <span class="pill pill-new">신규</span>
+            
           </td>
         </tr>
         <tr class="row" data-bank="국민은행" data-title="연금저축펀드 업무 프로세스 및 외납세 정산 프로그램 개선 구매 입찰 재공고">
@@ -1298,62 +1365,6 @@ footer {
             
           </td>
         </tr>
-        <tr class="row" data-bank="IBK기업은행" data-title="[입찰공고] 중소기업중앙회 주거래은행 통합자금관리시스템 고도화(서버)">
-          <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
-          <td class="c-date">2026-06-24</td>
-          <td class="c-title">
-            <a href="https://www.ibksystem.co.kr/board/read?brdId=BRD002&amp;atclNo=3223754c-aa27-44bb-b7a5-2f1b8a8e8cd7" target="_blank" rel="noopener">[입찰공고] 중소기업중앙회 주거래은행 통합자금관리시스템 고도화(서버)</a>
-            
-          </td>
-        </tr>
-        <tr class="row" data-bank="IBK기업은행" data-title="[제안요청공고] 공시통제관리시스템 재구축">
-          <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
-          <td class="c-date">2026-06-24</td>
-          <td class="c-title">
-            <a href="https://www.ibksystem.co.kr/board/read?brdId=BRD002&amp;atclNo=d8586d32-5c20-47ba-888a-06ba8dd8a8f0" target="_blank" rel="noopener">[제안요청공고] 공시통제관리시스템 재구축</a>
-            
-          </td>
-        </tr>
-        <tr class="row" data-bank="IBK기업은행" data-title="[입찰 재공고] 2020년 x86통합서버 교체 유지관리 2026 연장">
-          <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
-          <td class="c-date">2026-06-24</td>
-          <td class="c-title">
-            <a href="https://www.ibksystem.co.kr/board/read?brdId=BRD002&amp;atclNo=1902233b-8d3c-4f2a-921e-2111ee79d55b" target="_blank" rel="noopener">[입찰 재공고] 2020년 x86통합서버 교체 유지관리 2026 연장</a>
-            
-          </td>
-        </tr>
-        <tr class="row" data-bank="IBK기업은행" data-title="[입찰 재공고] emc 스토리지 및 부속장비 유지관리 2026 연장">
-          <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
-          <td class="c-date">2026-06-24</td>
-          <td class="c-title">
-            <a href="https://www.ibksystem.co.kr/board/read?brdId=BRD002&amp;atclNo=d12fdc91-d91b-4512-afaf-15d2e6d6ee5c" target="_blank" rel="noopener">[입찰 재공고] EMC 스토리지 및 부속장비 유지관리 2026 연장</a>
-            
-          </td>
-        </tr>
-        <tr class="row" data-bank="IBK기업은행" data-title="[입찰 재공고] 이자율 파생상품 운용시스템 업그레이드(hw) 유지관리 2026 연장">
-          <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
-          <td class="c-date">2026-06-24</td>
-          <td class="c-title">
-            <a href="https://www.ibksystem.co.kr/board/read?brdId=BRD002&amp;atclNo=0ba9b89a-d15a-47b5-a4a3-77cc59b1b24f" target="_blank" rel="noopener">[입찰 재공고] 이자율 파생상품 운용시스템 업그레이드(HW) 유지관리 2026 연장</a>
-            
-          </td>
-        </tr>
-        <tr class="row" data-bank="IBK기업은행" data-title="[입찰 재공고] 자점감사, 준법감시시스템 유지관리 2026 연장 (db라이센스)">
-          <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
-          <td class="c-date">2026-06-24</td>
-          <td class="c-title">
-            <a href="https://www.ibksystem.co.kr/board/read?brdId=BRD002&amp;atclNo=e94c49f8-a0f1-45e4-9370-b15a29ace86b" target="_blank" rel="noopener">[입찰 재공고] 자점감사, 준법감시시스템 유지관리 2026 연장 (DB라이센스)</a>
-            
-          </td>
-        </tr>
-        <tr class="row" data-bank="IBK기업은행" data-title="[입찰 재공고] 감사정보시스템 고도화 유지관리 2026 연장">
-          <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
-          <td class="c-date">2026-06-24</td>
-          <td class="c-title">
-            <a href="https://www.ibksystem.co.kr/board/read?brdId=BRD002&amp;atclNo=32de29f9-5570-4901-b207-f7f9022d08ee" target="_blank" rel="noopener">[입찰 재공고] 감사정보시스템 고도화 유지관리 2026 연장</a>
-            
-          </td>
-        </tr>
         <tr class="row" data-bank="국민은행" data-title="2026년 문서세단기(3종) 연간단가 구매 입찰공고">
           <td class="c-bank"><span class="chip chip-국민은행">국민은행</span></td>
           <td class="c-date">2026-06-24</td>
@@ -1650,14 +1661,6 @@ footer {
             
           </td>
         </tr>
-        <tr class="row" data-bank="국민은행" data-title="[kb국민은행]terraform enterprise 라이선스 사용 입찰 공고">
-          <td class="c-bank"><span class="chip chip-국민은행">국민은행</span></td>
-          <td class="c-date">2026-06-11</td>
-          <td class="c-title">
-            <a href="https://omoney.kbstar.com/quics?page=C018592&amp;boardId=648&amp;compId=b031439&amp;articleId=144981&amp;bbsMode=view&amp;viewPage=1&amp;articleClass=&amp;searchCondition=title&amp;searchStr=" target="_blank" rel="noopener">[KB국민은행]Terraform Enterprise 라이선스 사용 입찰 공고</a>
-            
-          </td>
-        </tr>
         <tr class="row" data-bank="우리카드" data-title="[입찰공고] 로그 보관기간 확대를 위한 신규 스토리지 도입">
           <td class="c-bank"><span class="chip chip-우리카드">우리카드</span></td>
           <td class="c-date">2026-06-11</td>
@@ -1874,6 +1877,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="iM뱅크" data-title="「전자금융 거래(jex)로그 관리 시스템 구축」 사업자 모집 공고">
+          <td class="c-bank"><span class="chip chip-iM뱅크">iM뱅크</span></td>
+          <td class="c-date">2026-05-22</td>
+          <td class="c-title">
+            <a href="https://www.imbank.co.kr/bbs_ebz_10010_bord.act?bbsId=NEW001&amp;siteCd=03&amp;menuCd=A" target="_blank" rel="noopener">「전자금융 거래(JEX)로그 관리 시스템 구축」 사업자 모집 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK캐피탈" data-title="[ibk캐피탈]  대체투자 스트레스 테스트 구축을  위한  용역  입찰공고">
           <td class="c-bank"><span class="chip chip-IBK캐피탈">IBK캐피탈</span></td>
           <td class="c-date">2026-05-22</td>
@@ -1927,7 +1938,7 @@ footer {
           <td class="c-date">2026-05-19</td>
           <td class="c-title">
             <a href="https://spot.wooribank.com/pot/Dream?withyou=BPPBC0038" target="_blank" rel="noopener">외환 AI Smart Compliance 시스템 구축(GPU 서버군 부문)</a>
-            <span class="pill pill-new">신규</span>
+            
           </td>
         </tr>
         <tr class="row" data-bank="우리은행" data-title="우리은행 영업점 중요열쇠 디지털화 사업 입찰공고">
@@ -2367,7 +2378,7 @@ footer {
           <td class="c-date">2026-03-20</td>
           <td class="c-title">
             <a href="https://spot.wooribank.com/pot/Dream?withyou=BPPBC0038" target="_blank" rel="noopener">중장기 IT인프라 최적화 (x86(HPE)서버 부문) 사업 입찰 공고</a>
-            <span class="pill pill-new">신규</span>
+            
           </td>
         </tr>
         <tr class="row" data-bank="우리은행" data-title="[재공고]국민연금공단 기금정보시스템 인프라 개선 입찰 공고">
@@ -2490,6 +2501,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="재입찰공고 (업무용 태블릿 pc 구매)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2026-03-09</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=587" target="_blank" rel="noopener">재입찰공고 (업무용 태블릿 PC 구매)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리카드" data-title="[제안 재공고] pc권한관리 시스템 재구축(종합평가)">
           <td class="c-bank"><span class="chip chip-우리카드">우리카드</span></td>
           <td class="c-date">2026-03-05</td>
@@ -2543,6 +2562,14 @@ footer {
           <td class="c-date">2026-02-25</td>
           <td class="c-title">
             <a href="https://www.woorifcapital.com/intro/tndr/view.do?bdwrNo=1042&amp;menuNo=000000000000000000000000000763" target="_blank" rel="noopener">(마감) 2026년 우리금융캐피탈 RPA 솔루션 라이선스 계약 사업 입찰 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(업무용 태블릿pc 구매)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2026-02-25</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=586" target="_blank" rel="noopener">입찰공고(업무용 태블릿PC 구매)</a>
             
           </td>
         </tr>
@@ -2730,6 +2757,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(현업망분리 노트북 교체 및 pc 등 구매)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2026-01-16</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=585" target="_blank" rel="noopener">입찰공고(현업망분리 노트북 교체 및 PC 등 구매)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리캐피탈" data-title="(마감) 2026년 우리금융캐피탈 재해복구시스템 감리 사업">
           <td class="c-bank"><span class="chip chip-우리캐피탈">우리캐피탈</span></td>
           <td class="c-date">2026-01-15</td>
@@ -2767,7 +2802,7 @@ footer {
           <td class="c-date">2025-12-29</td>
           <td class="c-title">
             <a href="https://spot.wooribank.com/pot/Dream?withyou=BPPBC0038" target="_blank" rel="noopener">[재공고]“CVE취약점 점검 솔루션 구축”(x86서버 부문) 사업 입찰 공고</a>
-            <span class="pill pill-new">신규</span>
+            
           </td>
         </tr>
         <tr class="row" data-bank="우리은행" data-title="공항환전시스템 재구축 제안요청 공고">
@@ -3103,7 +3138,7 @@ footer {
           <td class="c-date">2025-10-15</td>
           <td class="c-title">
             <a href="https://spot.wooribank.com/pot/Dream?withyou=BPPBC0038" target="_blank" rel="noopener">[긴급] 우리은행 구월동지점 보일러 제작 및 설치</a>
-            <span class="pill pill-new">신규</span>
+            
           </td>
         </tr>
         <tr class="row" data-bank="우리은행" data-title="한국교직원공제회 &quot;외화거래은행 통합유지보수&quot; 사업 공고">
@@ -3143,6 +3178,14 @@ footer {
           <td class="c-date">2025-10-13</td>
           <td class="c-title">
             <a href="https://spot.wooribank.com/pot/Dream?withyou=BPPBC0038" target="_blank" rel="noopener">사외보 「TWO CHAIRS」 제작 및 구매 입찰 재공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(통합 ito)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2025-10-13</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=584" target="_blank" rel="noopener">입찰공고(통합 ITO)</a>
             
           </td>
         </tr>
@@ -3658,6 +3701,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰 공고(차세대 정보시스템 구축 감리 및 보안성심의)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2025-02-11</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=583" target="_blank" rel="noopener">입찰 공고(차세대 정보시스템 구축 감리 및 보안성심의)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="카카오뱅크" data-title="카카오뱅크 태국 가상은행 시스템 구축 pre-pmo(isp)">
           <td class="c-bank"><span class="chip chip-카카오뱅크">카카오뱅크</span></td>
           <td class="c-date">2025-02-10</td>
@@ -3706,11 +3757,27 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(산은캐피탈(주) 외부감사인 선임)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2024-10-14</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=581" target="_blank" rel="noopener">입찰공고(산은캐피탈(주) 외부감사인 선임)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK캐피탈" data-title="[ibk캐피탈]  대손충당금 산정체계 개선 및 고도화를 위한 용역 입찰공고">
           <td class="c-bank"><span class="chip chip-IBK캐피탈">IBK캐피탈</span></td>
           <td class="c-date">2024-09-30</td>
           <td class="c-title">
             <a href="https://www.ibkc.co.kr/ib20/mnu/MNUPCKCOMP117?SEQ=97&amp;NO=25586" target="_blank" rel="noopener">[IBK캐피탈]  대손충당금 산정체계 개선 및 고도화를 위한 용역 입찰공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰 공고(차세대 정보시스템 구축)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2024-09-10</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=578" target="_blank" rel="noopener">입찰 공고(차세대 정보시스템 구축)</a>
             
           </td>
         </tr>
@@ -3722,11 +3789,27 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰 공고(차세대 정보시스템 구축 pmo 컨설팅) 재입찰">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2024-06-17</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=575" target="_blank" rel="noopener">입찰 공고(차세대 정보시스템 구축 PMO 컨설팅) 재입찰</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK캐피탈" data-title="[ibk캐피탈]  법인세 경정청구 용역 입찰공고">
           <td class="c-bank"><span class="chip chip-IBK캐피탈">IBK캐피탈</span></td>
           <td class="c-date">2024-06-05</td>
           <td class="c-title">
             <a href="https://www.ibkc.co.kr/ib20/mnu/MNUPCKCOMP117?SEQ=95&amp;NO=25306" target="_blank" rel="noopener">[IBK캐피탈]  법인세 경정청구 용역 입찰공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰 공고(차세대 정보시스템 구축 pmo 컨설팅)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2024-05-30</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=574" target="_blank" rel="noopener">입찰 공고(차세대 정보시스템 구축 PMO 컨설팅)</a>
             
           </td>
         </tr>
@@ -3794,6 +3877,30 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰 공고(주전산기 스토리지 용량 증설)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2023-12-15</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=573" target="_blank" rel="noopener">입찰 공고(주전산기 스토리지 용량 증설)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(재해복구(dr)센터 고도화)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2023-11-27</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=572" target="_blank" rel="noopener">입찰공고(재해복구(DR)센터 고도화)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰 공고(정보화전략계획(차세대) 수립 및 업무고도화 컨설팅">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2023-09-12</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=569" target="_blank" rel="noopener">입찰 공고(정보화전략계획(차세대) 수립 및 업무고도화 컨설팅</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK캐피탈" data-title="[ibk캐피탈] 2023년도 창의혁신연수 진행 용역업체 선정">
           <td class="c-bank"><span class="chip chip-IBK캐피탈">IBK캐피탈</span></td>
           <td class="c-date">2023-08-30</td>
@@ -3810,6 +3917,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰 공고(리테일 온라인서비스 고도화)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2023-06-12</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=567" target="_blank" rel="noopener">입찰 공고(리테일 온라인서비스 고도화)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰 공고(업무용 pc 및 모니터 등 교체)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2023-05-15</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=566" target="_blank" rel="noopener">입찰 공고(업무용 PC 및 모니터 등 교체)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK캐피탈" data-title="[ibk캐피탈] 금융상품 공정가치 평가용역을 위한 입찰공고">
           <td class="c-bank"><span class="chip chip-IBK캐피탈">IBK캐피탈</span></td>
           <td class="c-date">2023-05-09</td>
@@ -3818,11 +3941,43 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="재입찰 공고(통합 ito(it outsourcing) 고도화)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2022-12-12</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=564" target="_blank" rel="noopener">재입찰 공고(통합 ITO(IT Outsourcing) 고도화)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰 공고(통합 ito(it outsourcing) 고도화)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2022-11-30</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=563" target="_blank" rel="noopener">입찰 공고(통합 ITO(IT Outsourcing) 고도화)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(데이터 백업체계 고도화)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2022-11-08</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=562" target="_blank" rel="noopener">입찰공고(데이터 백업체계 고도화)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="신한카드" data-title="신한카드 『2023년 공카드 공급계약』 입찰 참가 신청 안내">
           <td class="c-bank"><span class="chip chip-신한카드">신한카드</span></td>
           <td class="c-date">2022-11-01</td>
           <td class="c-title">
             <a href="https://www.shinhancard.com/pconts/html/helpdesk/dataRoom/MOBFM164/1219407_1118.html" target="_blank" rel="noopener">신한카드 『2023년 공카드 공급계약』 입찰 참가 신청 안내</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(서버가상화 인프라 고도화)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2022-08-26</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=561" target="_blank" rel="noopener">입찰공고(서버가상화 인프라 고도화)</a>
             
           </td>
         </tr>
@@ -3847,6 +4002,22 @@ footer {
           <td class="c-date">2021-12-13</td>
           <td class="c-title">
             <a href="https://www.ibkc.co.kr/ib20/mnu/MNUPCKCOMP117?SEQ=81&amp;NO=23100" target="_blank" rel="noopener">디지털혁신인재 통신인프라 구축 입찰공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(외부감사인 선임)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2021-11-18</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=559" target="_blank" rel="noopener">입찰공고(외부감사인 선임)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(대량메일 솔루션 재구축)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2021-11-11</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=558" target="_blank" rel="noopener">입찰공고(대량메일 솔루션 재구축)</a>
             
           </td>
         </tr>
@@ -3914,11 +4085,35 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(업무용 노트북 도입)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2021-07-29</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=556" target="_blank" rel="noopener">입찰공고(업무용 노트북 도입)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="국민카드" data-title="카드발송관련 소모품 납품요청(솔버스 흑백프린터기)7월">
           <td class="c-bank"><span class="chip chip-국민카드">국민카드</span></td>
           <td class="c-date">2021-07-15</td>
           <td class="c-title">
             <a href="https://egume.kbcard.com/spLogin.do" target="_blank" rel="noopener">카드발송관련 소모품 납품요청(솔버스 흑백프린터기)7월</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="재입찰 공고(리테일 디지털금융 시스템 개발)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2021-06-08</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=555" target="_blank" rel="noopener">재입찰 공고(리테일 디지털금융 시스템 개발)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(리테일 디지털 금융시스템 개발)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2021-05-28</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=554" target="_blank" rel="noopener">입찰공고(리테일 디지털 금융시스템 개발)</a>
             
           </td>
         </tr>
@@ -3938,6 +4133,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(기업신용평가 시스템 개발)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2021-02-10</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=552" target="_blank" rel="noopener">입찰공고(기업신용평가 시스템 개발)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK캐피탈" data-title="전자금융기반시설 취약점 점검 입찰 공고">
           <td class="c-bank"><span class="chip chip-IBK캐피탈">IBK캐피탈</span></td>
           <td class="c-date">2021-01-28</td>
@@ -3954,11 +4157,67 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(산은캐피탈(주) 원상복구공사)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2020-11-20</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=551" target="_blank" rel="noopener">입찰공고(산은캐피탈(주) 원상복구공사)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="재입찰 공고(문서중앙화솔루션 업그레이드)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2020-10-14</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=550" target="_blank" rel="noopener">재입찰 공고(문서중앙화솔루션 업그레이드)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(문서중앙화솔루션 업그레이드)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2020-09-28</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=549" target="_blank" rel="noopener">입찰공고(문서중앙화솔루션 업그레이드)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK캐피탈" data-title="ibk캐피탈 포워드루킹 모형 산출 용역 관련 입찰공고">
           <td class="c-bank"><span class="chip chip-IBK캐피탈">IBK캐피탈</span></td>
           <td class="c-date">2020-09-23</td>
           <td class="c-title">
             <a href="https://www.ibkc.co.kr/ib20/mnu/MNUPCKCOMP117?SEQ=70&amp;NO=21700" target="_blank" rel="noopener">IBK캐피탈 포워드루킹 모형 산출 용역 관련 입찰공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(it인프라 이전 및 재구축)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2020-09-14</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=548" target="_blank" rel="noopener">입찰공고(IT인프라 이전 및 재구축)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(본점 사무실 인테리어 설계 및 공사)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2020-07-24</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=546" target="_blank" rel="noopener">입찰공고(본점 사무실 인테리어 설계 및 공사)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰 공고(주전산기 교체 도입)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2020-06-19</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=545" target="_blank" rel="noopener">입찰 공고(주전산기 교체 도입)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰 공고(it전략 컨설팅 업체선정)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2020-02-07</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=541" target="_blank" rel="noopener">입찰 공고(IT전략 컨설팅 업체선정)</a>
             
           </td>
         </tr>
@@ -3978,11 +4237,83 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="재입찰공고(통합 ito(it outsourcing) 업체선정)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2019-12-26</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=538" target="_blank" rel="noopener">재입찰공고(통합 ITO(IT Outsourcing) 업체선정)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(통합 ito(it outsourcing) 업체선정)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2019-12-11</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=537" target="_blank" rel="noopener">입찰공고(통합 ITO(IT Outsourcing) 업체선정)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(인터넷망 현업 망분리 고도화)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2019-11-26</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=535" target="_blank" rel="noopener">입찰공고(인터넷망 현업 망분리 고도화)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(모바일 고객안내서비스 개발)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2019-07-25</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=533" target="_blank" rel="noopener">입찰공고(모바일 고객안내서비스 개발)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(개인신용평가시스템(css) 재개발)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2019-06-07</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=532" target="_blank" rel="noopener">입찰공고(개인신용평가시스템(CSS) 재개발)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰 공고(위험기반접근방식(rba) 기반 자금세탁방지시스템 구축)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2019-05-23</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=472" target="_blank" rel="noopener">입찰 공고(위험기반접근방식(RBA) 기반 자금세탁방지시스템 구축)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK캐피탈" data-title="ibk캐피탈 금융상품 공정가치 평가용역을 위한 입찰 공고">
           <td class="c-bank"><span class="chip chip-IBK캐피탈">IBK캐피탈</span></td>
           <td class="c-date">2019-05-09</td>
           <td class="c-title">
             <a href="https://www.ibkc.co.kr/ib20/mnu/MNUPCKCOMP117?SEQ=67&amp;NO=20800" target="_blank" rel="noopener">IBK캐피탈 금융상품 공정가치 평가용역을 위한 입찰 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="단체상해보험 재입찰공고">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2019-04-12</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=471" target="_blank" rel="noopener">단체상해보험 재입찰공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="단체상해보험 입찰공고">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2019-04-02</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=470" target="_blank" rel="noopener">단체상해보험 입찰공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(산은캐피탈 금융상품 공정가치 평가용역)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2019-03-19</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=469" target="_blank" rel="noopener">입찰공고(산은캐피탈 금융상품 공정가치 평가용역)</a>
             
           </td>
         </tr>
@@ -3999,6 +4330,286 @@ footer {
           <td class="c-date">2019-01-30</td>
           <td class="c-title">
             <a href="https://www.ibkc.co.kr/ib20/mnu/MNUPCKCOMP117?SEQ=65&amp;NO=20380" target="_blank" rel="noopener">전자금융기반시설 취약점 점검 입찰 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(외부감사인 선임)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2019-01-11</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=467" target="_blank" rel="noopener">입찰공고(외부감사인 선임)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(업무용 복합기 렌털)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2018-12-06</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=466" target="_blank" rel="noopener">입찰공고(업무용 복합기 렌털)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="재입찰공고(코어시스템 업그레이드)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2018-07-20</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=464" target="_blank" rel="noopener">재입찰공고(코어시스템 업그레이드)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(코어시스템 업그레이드)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2018-07-03</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=462" target="_blank" rel="noopener">입찰공고(코어시스템 업그레이드)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="단체상해보험 입찰공고">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2018-04-13</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=461" target="_blank" rel="noopener">단체상해보험 입찰공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고_수정(업무용 pc 도입)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2018-04-11</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=460" target="_blank" rel="noopener">입찰공고_수정(업무용 PC 도입)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(업무용 pc 도입)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2018-04-06</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=459" target="_blank" rel="noopener">입찰공고(업무용 PC 도입)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="단체상해보험 입찰공고">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2018-04-03</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=458" target="_blank" rel="noopener">단체상해보험 입찰공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(통합관제 시스템 재구축)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2018-03-09</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=456" target="_blank" rel="noopener">입찰공고(통합관제 시스템 재구축)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(리테일금융 고객센터 업무위탁)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2018-01-25</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=455" target="_blank" rel="noopener">입찰공고(리테일금융 고객센터 업무위탁)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(주전산기 교체 도입)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2017-11-17</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=454" target="_blank" rel="noopener">입찰공고(주전산기 교체 도입)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(그룹웨어 시스템 구축)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2017-09-21</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=443" target="_blank" rel="noopener">입찰공고(그룹웨어 시스템 구축)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="단체상해보험 입찰공고">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2017-04-14</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=442" target="_blank" rel="noopener">단체상해보험 입찰공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="단체상해보험 입찰공고">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2017-04-04</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=447" target="_blank" rel="noopener">단체상해보험 입찰공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(pc자동종료 시스템 구축)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2017-02-17</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=445" target="_blank" rel="noopener">입찰공고(PC자동종료 시스템 구축)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(k-ifrs 제1109호(금융상품)도입 시스템구축을 위한 개발인력지원)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2016-11-18</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=451" target="_blank" rel="noopener">입찰공고(K-IFRS 제1109호(금융상품)도입 시스템구축을 위한 개발인력지원)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(네트워크 및 보안장비 이중화 도입)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2016-10-28</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=450" target="_blank" rel="noopener">입찰공고(네트워크 및 보안장비 이중화 도입)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(망분리(현업) 구축)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2016-05-20</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=441" target="_blank" rel="noopener">입찰공고(망분리(현업) 구축)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="단체상해보험 입찰공고">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2016-04-18</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=439" target="_blank" rel="noopener">단체상해보험 입찰공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="단체상해보험 입찰공고">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2016-04-08</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=438" target="_blank" rel="noopener">단체상해보험 입찰공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(통합로그관리시스템 구축)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2015-11-27</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=444" target="_blank" rel="noopener">입찰공고(통합로그관리시스템 구축)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(주전산기 교체 도입)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2015-06-19</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=434" target="_blank" rel="noopener">입찰공고(주전산기 교체 도입)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(업무용서버 이중화/가상화 및 백업솔루션 도입)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2015-04-27</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=433" target="_blank" rel="noopener">입찰공고(업무용서버 이중화/가상화 및 백업솔루션 도입)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="단체상해보험 입찰공고">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2015-04-13</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=431" target="_blank" rel="noopener">단체상해보험 입찰공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(자동차매각 위임계약)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2015-02-11</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=428" target="_blank" rel="noopener">입찰공고(자동차매각 위임계약)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(리테일금융 시스템 구축(고도화))">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2014-09-26</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=429" target="_blank" rel="noopener">입찰공고(리테일금융 시스템 구축(고도화))</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(전산업무시스템 운영을 위한 외주용역)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2014-08-13</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=424" target="_blank" rel="noopener">입찰공고(전산업무시스템 운영을 위한 외주용역)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(오토론 전산업무시스템 운영을 위한 외주용역 )">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2014-07-14</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=422" target="_blank" rel="noopener">입찰공고(오토론 전산업무시스템 운영을 위한 외주용역 )</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(전자문서(edms) 및 대량e-mail 시스템 구축)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2014-04-23</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=420" target="_blank" rel="noopener">입찰공고(전자문서(EDMS) 및 대량E-Mail 시스템 구축)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="단체상해보험 입찰공고">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2014-04-23</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=419" target="_blank" rel="noopener">단체상해보험 입찰공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(컨텐츠통제솔루션 도입)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2014-04-16</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=418" target="_blank" rel="noopener">입찰공고(컨텐츠통제솔루션 도입)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="단체상해보험 입찰공고">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2014-04-07</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=417" target="_blank" rel="noopener">단체상해보험 입찰공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(은행연합회 신용정보집중 자동화시스템 구축)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2014-03-14</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=414" target="_blank" rel="noopener">입찰공고(은행연합회 신용정보집중 자동화시스템 구축)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(업무용복합기 토탈렌털서비스 계약업체 선정)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2013-12-11</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=413" target="_blank" rel="noopener">입찰공고(업무용복합기 토탈렌털서비스 계약업체 선정)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KDB캐피탈" data-title="입찰공고(전산업무시스템 운영을 위한 외주인력 지원)">
+          <td class="c-bank"><span class="chip chip-KDB캐피탈">KDB캐피탈</span></td>
+          <td class="c-date">2013-12-02</td>
+          <td class="c-title">
+            <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=412" target="_blank" rel="noopener">입찰공고(전산업무시스템 운영을 위한 외주인력 지원)</a>
             
           </td>
         </tr>
