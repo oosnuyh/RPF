@@ -38,6 +38,8 @@
   --bank-kftc: #4a5a9c;
   --bank-kbank: #2e8a9c;
   --bank-ksd: #9c5a3a;
+  --bank-kyobo: #a08030;
+  --bank-wooriib: #6a8ac9;
   --shadow: 0 1px 2px rgba(27,36,48,0.04), 0 4px 16px rgba(27,36,48,0.04);
 }
 @media (prefers-color-scheme: dark) {
@@ -75,6 +77,8 @@
     --bank-kftc: #9aabd6;
     --bank-kbank: #6ec4d6;
     --bank-ksd: #d19a7e;
+    --bank-kyobo: #d1b06e;
+    --bank-wooriib: #a3c0e8;
     --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 20px rgba(0,0,0,0.25);
   }
 }
@@ -88,7 +92,7 @@
   --bank-bok: #d19bab; --bank-kpost: #7ecfd6; --bank-kdbcap: #b8a8d6;
   --bank-imsec: #d1ab85; --bank-imcap: #7ec4c4;
   --bank-crefia: #a3b38a; --bank-kcis: #8aa8c9; --bank-kinfa: #e0955a; --bank-kftc: #9aabd6;
-  --bank-kbank: #6ec4d6; --bank-ksd: #d19a7e;
+  --bank-kbank: #6ec4d6; --bank-ksd: #d19a7e; --bank-kyobo: #d1b06e; --bank-wooriib: #a3c0e8;
   --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 20px rgba(0,0,0,0.25);
 }
 :root[data-theme="light"] {
@@ -101,7 +105,7 @@
   --bank-bok: #7a3f52; --bank-kpost: #3a9ca3; --bank-kdbcap: #7a6a9c;
   --bank-imsec: #a0785a; --bank-imcap: #4a8a8a;
   --bank-crefia: #6a7a5a; --bank-kcis: #4a6a8a; --bank-kinfa: #b8622a; --bank-kftc: #4a5a9c;
-  --bank-kbank: #2e8a9c; --bank-ksd: #9c5a3a;
+  --bank-kbank: #2e8a9c; --bank-ksd: #9c5a3a; --bank-kyobo: #a08030; --bank-wooriib: #6a8ac9;
   --shadow: 0 1px 2px rgba(27,36,48,0.04), 0 4px 16px rgba(27,36,48,0.04);
 }
 
@@ -273,6 +277,8 @@ td { padding: 10px 14px; vertical-align: top; }
 .chip-금융결제원 { background: color-mix(in srgb, var(--bank-kftc) 16%, transparent); color: var(--bank-kftc); }
 .chip-케이뱅크 { background: color-mix(in srgb, var(--bank-kbank) 16%, transparent); color: var(--bank-kbank); }
 .chip-예탁결제원 { background: color-mix(in srgb, var(--bank-ksd) 16%, transparent); color: var(--bank-ksd); }
+.chip-교보증권 { background: color-mix(in srgb, var(--bank-kyobo) 16%, transparent); color: var(--bank-kyobo); }
+.chip-우리투자증권 { background: color-mix(in srgb, var(--bank-wooriib) 16%, transparent); color: var(--bank-wooriib); }
 
 .pill {
   display: inline-block;
@@ -310,29 +316,29 @@ footer {
   <div class="masthead">
     <div>
       <h1>은행·카드사·SI사 입찰·구매 공고 모니터</h1>
-      <div class="sub">우리은행 · IBK기업은행 · 카카오뱅크 · 국민은행 · iM뱅크 · 산업은행 · 한국은행 · 우정사업본부 · 우리카드 · 신한카드 · 비씨카드 · 국민카드 · 우리캐피탈 · IBK캐피탈 · KDB캐피탈 · iM증권 · iM캐피탈 · SK AX · LG CNS · 삼성SDS · 여신금융협회 · 신용정보원 · 서민금융진흥원 · 금융결제원 · 케이뱅크 · 예탁결제원 · 총 26개사 공고 통합 현황</div>
+      <div class="sub">우리은행 · IBK기업은행 · 카카오뱅크 · 국민은행 · iM뱅크 · 산업은행 · 한국은행 · 우정사업본부 · 우리카드 · 신한카드 · 비씨카드 · 국민카드 · 우리캐피탈 · IBK캐피탈 · KDB캐피탈 · iM증권 · iM캐피탈 · SK AX · LG CNS · 삼성SDS · 여신금융협회 · 신용정보원 · 서민금융진흥원 · 금융결제원 · 케이뱅크 · 예탁결제원 · 교보증권 · 우리투자증권 · 총 28개사 공고 통합 현황</div>
     </div>
-    <div class="sub">최근 갱신 2026-07-22 11:35</div>
+    <div class="sub">최근 갱신 2026-07-22 13:26</div>
   </div>
 
   <div class="stat-row">
     <div class="stat-card stat-new">
-      <div class="num">2</div>
+      <div class="num">3</div>
       <div class="label">이번 실행 신규 공고</div>
     </div>
     <div class="stat-card">
-      <div class="num">916</div>
+      <div class="num">1017</div>
       <div class="label">현재 추적 중인 공고 (회사별 최근분)</div>
     </div>
     <div class="stat-card">
-      <div class="num">26</div>
+      <div class="num">28</div>
       <div class="label">모니터링 회사 수</div>
     </div>
   </div>
 
   <div class="toolbar">
-    <button class="filter-chip active" data-filter="__all__">전체 <span class="fc-count">916</span></button>
-    <button class="filter-chip" data-filter="우리은행">우리은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK기업은행">IBK기업은행 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="카카오뱅크">카카오뱅크 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="국민은행">국민은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="iM뱅크">iM뱅크 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="산업은행">산업은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="한국은행">한국은행 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="우정사업본부">우정사업본부 <span class="fc-count">0</span></button><button class="filter-chip" data-filter="우리카드">우리카드 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="신한카드">신한카드 <span class="fc-count">2</span></button><button class="filter-chip" data-filter="비씨카드">비씨카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="국민카드">국민카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="우리캐피탈">우리캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK캐피탈">IBK캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="KDB캐피탈">KDB캐피탈 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="iM증권">iM증권 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="iM캐피탈">iM캐피탈 <span class="fc-count">31</span></button><button class="filter-chip" data-filter="SK AX">SK AX <span class="fc-count">0</span></button><button class="filter-chip" data-filter="LG CNS">LG CNS <span class="fc-count">1</span></button><button class="filter-chip" data-filter="삼성SDS">삼성SDS <span class="fc-count">1</span></button><button class="filter-chip" data-filter="여신금융협회">여신금융협회 <span class="fc-count">34</span></button><button class="filter-chip" data-filter="신용정보원">신용정보원 <span class="fc-count">47</span></button><button class="filter-chip" data-filter="서민금융진흥원">서민금융진흥원 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="금융결제원">금융결제원 <span class="fc-count">53</span></button><button class="filter-chip" data-filter="케이뱅크">케이뱅크 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="예탁결제원">예탁결제원 <span class="fc-count">50</span></button>
+    <button class="filter-chip active" data-filter="__all__">전체 <span class="fc-count">1017</span></button>
+    <button class="filter-chip" data-filter="우리은행">우리은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK기업은행">IBK기업은행 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="카카오뱅크">카카오뱅크 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="국민은행">국민은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="iM뱅크">iM뱅크 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="산업은행">산업은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="한국은행">한국은행 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="우정사업본부">우정사업본부 <span class="fc-count">0</span></button><button class="filter-chip" data-filter="우리카드">우리카드 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="신한카드">신한카드 <span class="fc-count">2</span></button><button class="filter-chip" data-filter="비씨카드">비씨카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="국민카드">국민카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="우리캐피탈">우리캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK캐피탈">IBK캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="KDB캐피탈">KDB캐피탈 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="iM증권">iM증권 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="iM캐피탈">iM캐피탈 <span class="fc-count">31</span></button><button class="filter-chip" data-filter="SK AX">SK AX <span class="fc-count">0</span></button><button class="filter-chip" data-filter="LG CNS">LG CNS <span class="fc-count">1</span></button><button class="filter-chip" data-filter="삼성SDS">삼성SDS <span class="fc-count">1</span></button><button class="filter-chip" data-filter="여신금융협회">여신금융협회 <span class="fc-count">34</span></button><button class="filter-chip" data-filter="신용정보원">신용정보원 <span class="fc-count">47</span></button><button class="filter-chip" data-filter="서민금융진흥원">서민금융진흥원 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="금융결제원">금융결제원 <span class="fc-count">54</span></button><button class="filter-chip" data-filter="케이뱅크">케이뱅크 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="예탁결제원">예탁결제원 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="교보증권">교보증권 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="우리투자증권">우리투자증권 <span class="fc-count">50</span></button>
     <input class="search-input" type="search" placeholder="제목 검색..." id="searchBox">
   </div>
 
@@ -347,6 +353,14 @@ footer {
           </tr>
         </thead>
         <tbody id="tbody">
+        <tr class="row" data-bank="금융결제원" data-title="(재공고) 정보보호시스템 운영체계 개선 추진 관련 it자원 도입">
+          <td class="c-bank"><span class="chip chip-금융결제원">금융결제원</span></td>
+          <td class="c-date">2026-07-22</td>
+          <td class="c-title">
+            <a href="https://kftc.or.kr/notice/bidAll?seq=1391" target="_blank" rel="noopener">(재공고) 정보보호시스템 운영체계 개선 추진 관련 IT자원 도입</a>
+            <span class="pill pill-new">신규</span>
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK기업은행" data-title="[poc 공고] 자금운용부 노후 업무용pc 교체 추진(pc)">
           <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
           <td class="c-date">2026-07-21</td>
@@ -563,6 +577,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="개인(신용)정보 수탁사 관리 솔루션 도입">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2026-07-16</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=150" target="_blank" rel="noopener">개인(신용)정보 수탁사 관리 솔루션 도입</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리은행" data-title="우리은행 업무용동산(냉장고3종, 세탁기) 연간 단가계약 입찰">
           <td class="c-bank"><span class="chip chip-우리은행">우리은행</span></td>
           <td class="c-date">2026-07-15</td>
@@ -659,6 +681,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="wts 및 홈페이지 구축">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2026-07-15</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=149" target="_blank" rel="noopener">WTS 및 홈페이지 구축</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK기업은행" data-title="[입찰공고] ibk글로벌시스템 dbms 재설치 기술지원">
           <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
           <td class="c-date">2026-07-14</td>
@@ -704,6 +734,14 @@ footer {
           <td class="c-date">2026-07-14</td>
           <td class="c-title">
             <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">(재공고) 케이뱅크 FATCA/CRS 상시실사 업무 대행 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="소스코드 진단(분석) 솔루션 구축(재공고)">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2026-07-14</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=148" target="_blank" rel="noopener">소스코드 진단(분석) 솔루션 구축(재공고)</a>
             
           </td>
         </tr>
@@ -1459,6 +1497,30 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="교보증권" data-title="백업 아키텍처 고도화 구축 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2026-06-30</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20260630&amp;seqno=9016&amp;gubun=14&amp;pageNum=1&amp;searchGubun=0" target="_blank" rel="noopener">백업 아키텍처 고도화 구축 입찰</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="lda방화벽 구매 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2026-06-30</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20260630&amp;seqno=9015&amp;gubun=14&amp;pageNum=1&amp;searchGubun=0" target="_blank" rel="noopener">LDA방화벽 구매 입찰</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="소스코드 진단(분석) 솔루션 구축">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2026-06-30</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=147" target="_blank" rel="noopener">소스코드 진단(분석) 솔루션 구축</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK기업은행" data-title="[제안요청 재공고]ibk신용정보 채권 회수 가능성 분석모델 구축 및 운영 시스템 구축">
           <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
           <td class="c-date">2026-06-29</td>
@@ -1504,6 +1566,14 @@ footer {
           <td class="c-date">2026-06-29</td>
           <td class="c-title">
             <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37223" target="_blank" rel="noopener">[한예 제2026-24호] 2026년 한국예탁결제원 뉴스 모니터링 용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] wts 및 홈페이지 기획/디자인">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2026-06-29</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=146" target="_blank" rel="noopener">[긴급] WTS 및 홈페이지 기획/디자인</a>
             
           </td>
         </tr>
@@ -1744,6 +1814,14 @@ footer {
           <td class="c-date">2026-06-23</td>
           <td class="c-title">
             <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37215" target="_blank" rel="noopener">[한예 제2026-19호] BIFC2 사무공간 2개 층 실내건축 공사(전기, 통신) (취소공고)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="고사양 pc 구매 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2026-06-23</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20260623&amp;seqno=9014&amp;gubun=14&amp;pageNum=1&amp;searchGubun=0" target="_blank" rel="noopener">고사양 PC 구매 입찰</a>
             
           </td>
         </tr>
@@ -2067,11 +2145,27 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] 네트워크 l2, l3 스위치 구매">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2026-06-16</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=145" target="_blank" rel="noopener">[긴급] 네트워크 L2, L3 스위치 구매</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-17호] 국채통합계좌 통합정보 플랫폼 구축 사업">
           <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
           <td class="c-date">2026-06-15</td>
           <td class="c-title">
             <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37211" target="_blank" rel="noopener">[한예 제2026-17호] 국채통합계좌 통합정보 플랫폼 구축 사업</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="os이미지 백업(dr)구축 서버 구매 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2026-06-15</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20260615&amp;seqno=9013&amp;gubun=14&amp;pageNum=1&amp;searchGubun=0" target="_blank" rel="noopener">OS이미지 백업(DR)구축 서버 구매 입찰</a>
             
           </td>
         </tr>
@@ -2096,6 +2190,30 @@ footer {
           <td class="c-date">2026-06-12</td>
           <td class="c-title">
             <a href="https://kftc.or.kr/notice/bidAll?seq=1374" target="_blank" rel="noopener">금융결제원 데이터 활용체계 고도화 및 가치평가 컨설팅</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="ai biz assistant 서버 구매 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2026-06-12</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20260612&amp;seqno=9012&amp;gubun=14&amp;pageNum=1&amp;searchGubun=0" target="_blank" rel="noopener">AI Biz Assistant 서버 구매 입찰</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="ai biz assistant 구축 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2026-06-12</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20260612&amp;seqno=9011&amp;gubun=14&amp;pageNum=1&amp;searchGubun=0" target="_blank" rel="noopener">AI Biz Assistant 구축 입찰</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="개인정보 접속기록 관리 솔루션 구축">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2026-06-12</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=144" target="_blank" rel="noopener">개인정보 접속기록 관리 솔루션 구축</a>
             
           </td>
         </tr>
@@ -2347,6 +2465,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] 新시스템 mts 채널 대응 기획/디자인">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2026-05-29</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=143" target="_blank" rel="noopener">[긴급] 新시스템 MTS 채널 대응 기획/디자인</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="iM뱅크" data-title="『fds(이상금융탐지시스템) 업그레이드』 업체 선정을 위한 사업자 모집 공고">
           <td class="c-bank"><span class="chip chip-iM뱅크">iM뱅크</span></td>
           <td class="c-date">2026-05-28</td>
@@ -2376,6 +2502,14 @@ footer {
           <td class="c-date">2026-05-28</td>
           <td class="c-title">
             <a href="https://pc.wooricard.com/dcpc/yh1/cct/cct02/anc/H1CCT202S04.do" target="_blank" rel="noopener">[입찰공고] 디지털채널 용량 증설[SW_WAS 라이선스 증설]</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="태블릿pc 도입 관련 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2026-05-28</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20260528&amp;seqno=9005&amp;gubun=14&amp;pageNum=1&amp;searchGubun=0" target="_blank" rel="noopener">태블릿PC 도입 관련 입찰</a>
             
           </td>
         </tr>
@@ -2419,6 +2553,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="교보증권" data-title="dbms(oracle) 라이선스 증설 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2026-05-27</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20260527&amp;seqno=9004&amp;gubun=14&amp;pageNum=1&amp;searchGubun=0" target="_blank" rel="noopener">DBMS(ORACLE) 라이선스 증설 입찰</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK캐피탈" data-title="[ibk캐피탈]  대체투자 스트레스 테스트 구축을  위한  용역  입찰공고">
           <td class="c-bank"><span class="chip chip-IBK캐피탈">IBK캐피탈</span></td>
           <td class="c-date">2026-05-22</td>
@@ -2432,6 +2574,22 @@ footer {
           <td class="c-date">2026-05-22</td>
           <td class="c-title">
             <a href="https://kftc.or.kr/notice/bidAll?seq=1369" target="_blank" rel="noopener">(재공고) 지로장표 테스트용 인식기 교체 관련 IT자원 도입</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="ficc 프론트 통합시스템 신규 개발을 위한 네트워크 스위치 구매 관련 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2026-05-22</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20260522&amp;seqno=9003&amp;gubun=14&amp;pageNum=1&amp;searchGubun=0" target="_blank" rel="noopener">FICC 프론트 통합시스템 신규 개발을 위한 네트워크 스위치 구매 관련 입찰</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="국제표준 정보보호(iso27001/27701) 관리체계 구축(재공고)">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2026-05-22</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=142" target="_blank" rel="noopener">국제표준 정보보호(ISO27001/27701) 관리체계 구축(재공고)</a>
             
           </td>
         </tr>
@@ -2456,6 +2614,14 @@ footer {
           <td class="c-date">2026-05-21</td>
           <td class="c-title">
             <a href="https://kftc.or.kr/notice/bidAll?seq=1368" target="_blank" rel="noopener">금융결제원 공개용 서비스 보안성 강화 관련 수행업체 선정</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="etf lp 서버 구매 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2026-05-21</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20260521&amp;seqno=9002&amp;gubun=14&amp;pageNum=1&amp;searchGubun=0" target="_blank" rel="noopener">ETF LP 서버 구매 입찰</a>
             
           </td>
         </tr>
@@ -2576,6 +2742,14 @@ footer {
           <td class="c-date">2026-05-18</td>
           <td class="c-title">
             <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37202" target="_blank" rel="noopener">[한예 제2026-16호] 2026년 업무용 차량 임차</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="차세대 구축을 위한 정보화전략계획 수립 컨설팅 입찰(3차)">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2026-05-18</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20260518&amp;seqno=8992&amp;gubun=14&amp;pageNum=2&amp;searchGubun=0" target="_blank" rel="noopener">차세대 구축을 위한 정보화전략계획 수립 컨설팅 입찰(3차)</a>
             
           </td>
         </tr>
@@ -2747,6 +2921,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="교보증권" data-title="차세대 구축을 위한 정보화전략계획 수립 컨설팅 입찰(2차)">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2026-05-11</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20260511&amp;seqno=8991&amp;gubun=14&amp;pageNum=2&amp;searchGubun=0" target="_blank" rel="noopener">차세대 구축을 위한 정보화전략계획 수립 컨설팅 입찰(2차)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리카드" data-title="[입찰재공고] 노후 백업장비 교체 및 증설">
           <td class="c-bank"><span class="chip chip-우리카드">우리카드</span></td>
           <td class="c-date">2026-05-08</td>
@@ -2784,6 +2966,22 @@ footer {
           <td class="c-date">2026-05-08</td>
           <td class="c-title">
             <a href="https://kftc.or.kr/notice/bidAll?seq=1362" target="_blank" rel="noopener">금융결제원 사용자 네트워크 통합 관련 전산기기 도입</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="노트북 임대 및 기업용 wifi 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2026-05-08</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20260508&amp;seqno=8990&amp;gubun=14&amp;pageNum=2&amp;searchGubun=0" target="_blank" rel="noopener">노트북 임대 및 기업용 WIFI 입찰</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="데이터 암호화(정형·비정형) 솔루션 구축">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2026-05-08</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=141" target="_blank" rel="noopener">데이터 암호화(정형·비정형) 솔루션 구축</a>
             
           </td>
         </tr>
@@ -2987,6 +3185,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="국제표준 정보보호(iso27001/27701) 관리체계 구축">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2026-04-28</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=140" target="_blank" rel="noopener">국제표준 정보보호(ISO27001/27701) 관리체계 구축</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="케이뱅크" data-title="(재공고) 케이뱅크 sme(중소법인) 여신시스템 구축 사업자 선정 공고">
           <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
           <td class="c-date">2026-04-27</td>
@@ -3099,6 +3305,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="우리투자증권 보안관제 및 보안운영 전문 외주인력 활용">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2026-04-14</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=139" target="_blank" rel="noopener">우리투자증권 보안관제 및 보안운영 전문 외주인력 활용</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="우리투자증권 보안성 심의 및 전자금융기반시설 취약점 분석·평가 전문 외주인력 활용">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2026-04-14</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=138" target="_blank" rel="noopener">우리투자증권 보안성 심의 및 전자금융기반시설 취약점 분석·평가 전문 외주인력 활용</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="산업은행" data-title="(긴급) 자금세탁방지 시스템 고도화 위탁감리">
           <td class="c-bank"><span class="chip chip-산업은행">산업은행</span></td>
           <td class="c-date">2026-04-13</td>
@@ -3112,6 +3334,14 @@ footer {
           <td class="c-date">2026-04-13</td>
           <td class="c-title">
             <a href="https://www.ibkc.co.kr/ib20/mnu/MNUPCKCOMP117?SEQ=112&amp;NO=27148" target="_blank" rel="noopener">[IBK캐피탈] 기업 신용등급 평가 체계 고도화 컨설팅 입찰 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="차세대 구축을 위한 정보화전략계획 수립 컨설팅 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2026-04-13</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20260413&amp;seqno=8904&amp;gubun=14&amp;pageNum=2&amp;searchGubun=0" target="_blank" rel="noopener">차세대 구축을 위한 정보화전략계획 수립 컨설팅 입찰</a>
             
           </td>
         </tr>
@@ -3160,6 +3390,14 @@ footer {
           <td class="c-date">2026-04-09</td>
           <td class="c-title">
             <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 SSL인증서 자동화 솔루션 공급 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="네트워크 스위치 인터페이스 모듈 및 네트워크 gbic 구매 관련 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2026-04-09</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20260409&amp;seqno=8903&amp;gubun=14&amp;pageNum=2&amp;searchGubun=0" target="_blank" rel="noopener">네트워크 스위치 인터페이스 모듈 및 네트워크 GBIC 구매 관련 입찰</a>
             
           </td>
         </tr>
@@ -3240,6 +3478,30 @@ footer {
           <td class="c-date">2026-04-02</td>
           <td class="c-title">
             <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37179" target="_blank" rel="noopener">[한예 제2026-11호] 장외 채권거래 등 경쟁력 강화를 위한 이행방안 수립 연구용역(재공고)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="네트워크 모니터링 tap 장비 구매 관련 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2026-04-02</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20260402&amp;seqno=8901&amp;gubun=14&amp;pageNum=2&amp;searchGubun=0" target="_blank" rel="noopener">네트워크 모니터링 TAP 장비 구매 관련 입찰</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="dr센터 대외기관 연결 vpn 구매 관련 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2026-04-02</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20260402&amp;seqno=8900&amp;gubun=14&amp;pageNum=2&amp;searchGubun=0" target="_blank" rel="noopener">DR센터 대외기관 연결 VPN 구매 관련 입찰</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="망분리 qos 장비 라이센스 업그레이드 관련 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2026-04-02</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20260402&amp;seqno=8899&amp;gubun=14&amp;pageNum=2&amp;searchGubun=0" target="_blank" rel="noopener">망분리 QOS 장비 라이센스 업그레이드 관련 입찰</a>
             
           </td>
         </tr>
@@ -3328,6 +3590,14 @@ footer {
           <td class="c-date">2026-03-25</td>
           <td class="c-title">
             <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34254" target="_blank" rel="noopener">서민금융진흥원 데이터베이스 인프라 고도화</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] 네트워크 노후 장비 교체 및 증설(스위치, 모듈)">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2026-03-25</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=137" target="_blank" rel="noopener">[긴급] 네트워크 노후 장비 교체 및 증설(스위치, 모듈)</a>
             
           </td>
         </tr>
@@ -3483,6 +3753,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] it운영시스템 안정화 서버 구매">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2026-03-16</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=136" target="_blank" rel="noopener">[긴급] IT운영시스템 안정화 서버 구매</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리은행" data-title="모바일웹시스템 노후화(eos) 대응 인프라 구축 (팀스톤 os모니터링 부문) 사업 입찰 공고">
           <td class="c-bank"><span class="chip chip-우리은행">우리은행</span></td>
           <td class="c-date">2026-03-13</td>
@@ -3496,6 +3774,14 @@ footer {
           <td class="c-date">2026-03-13</td>
           <td class="c-title">
             <a href="https://pc.wooricard.com/dcpc/yh1/cct/cct02/anc/H1CCT202S04.do" target="_blank" rel="noopener">[제안공고] 2026년 전자금융기반시설 점검 및 정보보호 인증(종합평가)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] oracle 통합 유지보수">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2026-03-13</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=135" target="_blank" rel="noopener">[긴급] Oracle 통합 유지보수</a>
             
           </td>
         </tr>
@@ -3779,6 +4065,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] 영상통화솔루션 서버 구매(재공고)">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2026-02-23</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=134" target="_blank" rel="noopener">[긴급] 영상통화솔루션 서버 구매(재공고)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리카드" data-title="[입찰공고] 정보보안포탈시스템 구축[이중화솔루션]">
           <td class="c-bank"><span class="chip chip-우리카드">우리카드</span></td>
           <td class="c-date">2026-02-20</td>
@@ -3808,6 +4102,22 @@ footer {
           <td class="c-date">2026-02-20</td>
           <td class="c-title">
             <a href="https://pc.wooricard.com/dcpc/yh1/cct/cct02/anc/H1CCT202S04.do" target="_blank" rel="noopener">[입찰공고] 정보보안포탈시스템 구축[x86서버(Linux OS 포함)]</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="개인정보 접속기록 관리시스템 재구축 프로젝트 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2026-02-20</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20260220&amp;seqno=8885&amp;gubun=14&amp;pageNum=2&amp;searchGubun=0" target="_blank" rel="noopener">개인정보 접속기록 관리시스템 재구축 프로젝트 입찰</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] 전산기기(데스크탑pc, 모니터) 구매">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2026-02-20</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=133" target="_blank" rel="noopener">[긴급] 전산기기(데스크탑PC, 모니터) 구매</a>
             
           </td>
         </tr>
@@ -3907,6 +4217,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="교보증권" data-title="lp 테스트 서버 구매 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2026-02-12</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20260212&amp;seqno=8883&amp;gubun=14&amp;pageNum=2&amp;searchGubun=0" target="_blank" rel="noopener">LP 테스트 서버 구매 입찰</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리캐피탈" data-title="마감 (재공고)2026년 우리금융캐피탈 렌터카 보험 위탁 제휴사 선정 공고">
           <td class="c-bank"><span class="chip chip-우리캐피탈">우리캐피탈</span></td>
           <td class="c-date">2026-02-11</td>
@@ -3915,11 +4233,27 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="교보증권" data-title="네트워크 트래픽 탐지 및 대응시스템 구축 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2026-02-11</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20260211&amp;seqno=8882&amp;gubun=14&amp;pageNum=3&amp;searchGubun=0" target="_blank" rel="noopener">네트워크 트래픽 탐지 및 대응시스템 구축 입찰</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="서민금융진흥원" data-title="2026년 근로자지원프로그램(kinfa통통) 운영 용역(재공고)">
           <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
           <td class="c-date">2026-02-10</td>
           <td class="c-title">
             <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33934" target="_blank" rel="noopener">2026년 근로자지원프로그램(KINFA통통) 운영 용역(재공고)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] 영상통화솔루션 서버 구매">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2026-02-10</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=132" target="_blank" rel="noopener">[긴급] 영상통화솔루션 서버 구매</a>
             
           </td>
         </tr>
@@ -3971,6 +4305,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] 영상통화솔루션 스토리지 구매">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2026-02-09</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=131" target="_blank" rel="noopener">[긴급] 영상통화솔루션 스토리지 구매</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] 우리투자증권 영상통화솔루션 도입">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2026-02-09</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=129" target="_blank" rel="noopener">[긴급] 우리투자증권 영상통화솔루션 도입</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리카드" data-title="[제안 재공고] 정보보안포탈시스템 구축(종합평가)">
           <td class="c-bank"><span class="chip chip-우리카드">우리카드</span></td>
           <td class="c-date">2026-02-06</td>
@@ -3992,6 +4342,14 @@ footer {
           <td class="c-date">2026-02-06</td>
           <td class="c-title">
             <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">사무용 PC 납품 프로젝트 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="2026년도 마케팅 광고 대행사 선정 입찰 공고">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2026-02-06</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=128" target="_blank" rel="noopener">2026년도 마케팅 광고 대행사 선정 입찰 공고</a>
             
           </td>
         </tr>
@@ -4179,6 +4537,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="교보증권" data-title="앱모니터링 서버 구매 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2026-01-15</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20260115&amp;seqno=8862&amp;gubun=14&amp;pageNum=3&amp;searchGubun=0" target="_blank" rel="noopener">앱모니터링 서버 구매 입찰</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="금융결제원" data-title="금융분산id 블록체인 시스템 효율화 추진 관련 전산기기 도입">
           <td class="c-bank"><span class="chip chip-금융결제원">금융결제원</span></td>
           <td class="c-date">2026-01-14</td>
@@ -4243,6 +4609,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="교보증권" data-title="네트워크 gbic 구매 관련 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2026-01-05</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20260105&amp;seqno=8859&amp;gubun=14&amp;pageNum=3&amp;searchGubun=0" target="_blank" rel="noopener">네트워크 GBIC 구매 관련 입찰</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="여신금융협회" data-title="[재입찰공고] 2026년 임직원 단체보험">
           <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
           <td class="c-date">2026-01-02</td>
@@ -4267,11 +4641,35 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] k-front 플러스 도입 서버구매">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-12-31</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=127" target="_blank" rel="noopener">[긴급] K-Front 플러스 도입 서버구매</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] 채권관리시스템 서버 구매">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-12-31</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=126" target="_blank" rel="noopener">[긴급] 채권관리시스템 서버 구매</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리캐피탈" data-title="(마감)2026년 우리금융캐피탈 렌트/리스 반납 탁송 업무대행 위탁사 선정">
           <td class="c-bank"><span class="chip chip-우리캐피탈">우리캐피탈</span></td>
           <td class="c-date">2025-12-30</td>
           <td class="c-title">
             <a href="https://www.woorifcapital.com/intro/tndr/view.do?bdwrNo=1023&amp;menuNo=000000000000000000000000000763" target="_blank" rel="noopener">(마감)2026년 우리금융캐피탈 렌트/리스 반납 탁송 업무대행 위탁사 선정</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="fy2026 정보보호컨설팅 연간서비스 재입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-12-30</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20251230&amp;seqno=8858&amp;gubun=14&amp;pageNum=3&amp;searchGubun=0" target="_blank" rel="noopener">FY2026 정보보호컨설팅 연간서비스 재입찰</a>
             
           </td>
         </tr>
@@ -4459,6 +4857,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] dr센터 및 회선 구축">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-12-17</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=125" target="_blank" rel="noopener">[긴급] DR센터 및 회선 구축</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="카카오뱅크" data-title="전산단말기 정리 및 매각">
           <td class="c-bank"><span class="chip chip-카카오뱅크">카카오뱅크</span></td>
           <td class="c-date">2025-12-16</td>
@@ -4491,6 +4897,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] 우리투자증권 etf lp 시스템 구축(재공고)">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-12-16</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=124" target="_blank" rel="noopener">[긴급] 우리투자증권 ETF LP 시스템 구축(재공고)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="서민금융진흥원" data-title="2026년 서민금융진흥원 청년미래적금 종합홍보대행 용역">
           <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
           <td class="c-date">2025-12-15</td>
@@ -4504,6 +4918,14 @@ footer {
           <td class="c-date">2025-12-15</td>
           <td class="c-title">
             <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33614" target="_blank" rel="noopener">2026년 서민금융진흥원 본인확인 서비스</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="fy2026 정보보호컨설팅 연간서비스 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-12-15</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20251215&amp;seqno=8853&amp;gubun=14&amp;pageNum=3&amp;searchGubun=0" target="_blank" rel="noopener">FY2026 정보보호컨설팅 연간서비스 입찰</a>
             
           </td>
         </tr>
@@ -4560,6 +4982,22 @@ footer {
           <td class="c-date">2025-12-10</td>
           <td class="c-title">
             <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1798" target="_blank" rel="noopener">[재공고입찰]  AI 러닝 플랫폼 원격분석 시스템 인프라 고도화 사업</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="영업직원 pc 교체 관련 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-12-10</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20251210&amp;seqno=8852&amp;gubun=14&amp;pageNum=3&amp;searchGubun=0" target="_blank" rel="noopener">영업직원 PC 교체 관련 입찰</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] 우리투자증권 etf lp 시스템 구축">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-12-10</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=123" target="_blank" rel="noopener">[긴급] 우리투자증권 ETF LP 시스템 구축</a>
             
           </td>
         </tr>
@@ -4707,6 +5145,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="교보증권" data-title="테스트자동화솔루션 구축 프로젝트 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-11-27</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20251127&amp;seqno=8851&amp;gubun=14&amp;pageNum=3&amp;searchGubun=0" target="_blank" rel="noopener">테스트자동화솔루션 구축 프로젝트 입찰</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] 통합메시지(ums) 서버 구매(재공고)">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-11-26</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=122" target="_blank" rel="noopener">[긴급] 통합메시지(UMS) 서버 구매(재공고)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="여신금융협회" data-title="[입찰공고] 2025년도 종합 it시스템 취약점 분석・평가">
           <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
           <td class="c-date">2025-11-25</td>
@@ -4744,6 +5198,14 @@ footer {
           <td class="c-date">2025-11-24</td>
           <td class="c-title">
             <a href="https://www.imfnsec.com/research/bussiness_indust/re0203.jsp?bid=C_A010" target="_blank" rel="noopener">아이엠증권 입찰 공고(도곡WM센터)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] 보안 인프라 분리 구축 사업 네트워크 장비 구매(재공고)">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-11-24</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=121" target="_blank" rel="noopener">[긴급] 보안 인프라 분리 구축 사업 네트워크 장비 구매(재공고)</a>
             
           </td>
         </tr>
@@ -4795,6 +5257,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] 노후 배치관리시스템 서버장비 구매">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-11-19</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=120" target="_blank" rel="noopener">[긴급] 노후 배치관리시스템 서버장비 구매</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 정보시스템 권한 관리체계 고도화 사업">
           <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
           <td class="c-date">2025-11-18</td>
@@ -4819,6 +5289,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] 통합메시지(ums) 서버 구매">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-11-17</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=119" target="_blank" rel="noopener">[긴급] 통합메시지(UMS) 서버 구매</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리캐피탈" data-title="(마감)(재공고)2025년 우리금융캐피탈 대고객 ai상담 에이전트(음성봇) 시스템 감리 사업">
           <td class="c-bank"><span class="chip chip-우리캐피탈">우리캐피탈</span></td>
           <td class="c-date">2025-11-14</td>
@@ -4840,6 +5318,14 @@ footer {
           <td class="c-date">2025-11-12</td>
           <td class="c-title">
             <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161825" target="_blank" rel="noopener">[재입찰공고] 대출성상품 판매대리・중개업자 사이버교육 콘텐츠 수정 개발</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="보안 인프라 분리 구축 사업 네트워크 장비 구매">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-11-11</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=118" target="_blank" rel="noopener">보안 인프라 분리 구축 사업 네트워크 장비 구매</a>
             
           </td>
         </tr>
@@ -4872,6 +5358,14 @@ footer {
           <td class="c-date">2025-11-10</td>
           <td class="c-title">
             <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37100" target="_blank" rel="noopener">[한예 제2025-30호] 2026~2027년 부산국제금융센터(BIFC) 공동식당 위탁운영업체 선정</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="mts 앱 모니터링 시스텝 도입 프로젝트 입찰(3차)">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-11-10</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20251110&amp;seqno=8837&amp;gubun=14&amp;pageNum=3&amp;searchGubun=0" target="_blank" rel="noopener">MTS 앱 모니터링 시스텝 도입 프로젝트 입찰(3차)</a>
             
           </td>
         </tr>
@@ -4923,6 +5417,30 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="우리투자증권 보안 인프라 분리 구축 사업">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-11-04</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=117" target="_blank" rel="noopener">우리투자증권 보안 인프라 분리 구축 사업</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="mts 앱 모니터링 시스텝 도입 프로젝트 재입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-11-03</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20251103&amp;seqno=8836&amp;gubun=14&amp;pageNum=3&amp;searchGubun=0" target="_blank" rel="noopener">MTS 앱 모니터링 시스텝 도입 프로젝트 재입찰</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] rpa 서버 구매(재공고)">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-11-03</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=116" target="_blank" rel="noopener">[긴급] RPA 서버 구매(재공고)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="카카오뱅크" data-title="2025년 esg 지속가능경영보고서 발간 및 컨설팅">
           <td class="c-bank"><span class="chip chip-카카오뱅크">카카오뱅크</span></td>
           <td class="c-date">2025-10-31</td>
@@ -4947,6 +5465,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] 우리투자증권 신시스템 구축 감리">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-10-30</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=115" target="_blank" rel="noopener">[긴급] 우리투자증권 신시스템 구축 감리</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="여신금융협회" data-title="[입찰공고] 대출성상품 판매대리・중개업자 사이버교육 콘텐츠 수정 개발">
           <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
           <td class="c-date">2025-10-28</td>
@@ -4960,6 +5486,14 @@ footer {
           <td class="c-date">2025-10-28</td>
           <td class="c-title">
             <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33215" target="_blank" rel="noopener">서민금융안정기금 설치 및 운영방안 컨설팅 용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] rpa 고도화 및 ai 연계(재공고)">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-10-28</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=114" target="_blank" rel="noopener">[긴급] RPA 고도화 및 AI 연계(재공고)</a>
             
           </td>
         </tr>
@@ -4984,6 +5518,30 @@ footer {
           <td class="c-date">2025-10-24</td>
           <td class="c-title">
             <a href="https://kftc.or.kr/notice/bidAll?seq=1342" target="_blank" rel="noopener">CMS 업무 DX 플랫폼 이미지분석 AI 구축 추진 관련 IT자원 도입</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="우리투자증권 ai 솔루션 구축 사업 입찰공고">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-10-24</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=113" target="_blank" rel="noopener">우리투자증권 AI 솔루션 구축 사업 입찰공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] 네트워크 l2, l3 스위치 구매">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-10-24</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=112" target="_blank" rel="noopener">[긴급] 네트워크 L2, L3 스위치 구매</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] 네트워크 l4 스위치 구매">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-10-24</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=111" target="_blank" rel="noopener">[긴급] 네트워크 L4 스위치 구매</a>
             
           </td>
         </tr>
@@ -5016,6 +5574,14 @@ footer {
           <td class="c-date">2025-10-22</td>
           <td class="c-title">
             <a href="https://www.woorifcapital.com/intro/tndr/view.do?bdwrNo=986&amp;menuNo=000000000000000000000000000763" target="_blank" rel="noopener">(마감)2025년 우리금융캐피탈 대고객 AI상담 에이전트(음성봇) 시스템 감리 사업</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] rpa 서버 구매">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-10-22</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=110" target="_blank" rel="noopener">[긴급] RPA 서버 구매</a>
             
           </td>
         </tr>
@@ -5056,6 +5622,14 @@ footer {
           <td class="c-date">2025-10-20</td>
           <td class="c-title">
             <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">(재공고)케이뱅크 서비스 관리자포털 구축 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="전산소모품 단가계약 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-10-20</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20251020&amp;seqno=8834&amp;gubun=14&amp;pageNum=3&amp;searchGubun=0" target="_blank" rel="noopener">전산소모품 단가계약 입찰</a>
             
           </td>
         </tr>
@@ -5107,6 +5681,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="교보증권" data-title="mts 앱 모니터링 시스텝 도입 프로젝트 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-10-15</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20251015&amp;seqno=8833&amp;gubun=14&amp;pageNum=4&amp;searchGubun=0" target="_blank" rel="noopener">MTS 앱 모니터링 시스텝 도입 프로젝트 입찰</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="여신금융협회" data-title="[입찰공고] 자동차관리정보시스템 신규구축 및 유지보수">
           <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
           <td class="c-date">2025-10-14</td>
@@ -5120,6 +5702,14 @@ footer {
           <td class="c-date">2025-10-14</td>
           <td class="c-title">
             <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1773" target="_blank" rel="noopener">[입찰공고] 한국형 녹색분류체계 적합성 판단 시스템 개발 연구용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="우리투자증권 rpa 고도화 및 ai 연계 제안요청 공고">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-10-14</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=109" target="_blank" rel="noopener">우리투자증권 RPA 고도화 및 AI 연계 제안요청 공고</a>
             
           </td>
         </tr>
@@ -5235,6 +5825,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="교보증권" data-title="인터넷k 고도화 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-09-30</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20250930&amp;seqno=8832&amp;gubun=14&amp;pageNum=4&amp;searchGubun=0" target="_blank" rel="noopener">인터넷K 고도화 입찰</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="apt솔루션 고도화 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-09-29</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20250929&amp;seqno=8828&amp;gubun=14&amp;pageNum=4&amp;searchGubun=0" target="_blank" rel="noopener">APT솔루션 고도화 입찰</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리캐피탈" data-title="(마감)26년 우리won카 광고대행사 선정 입찰공고">
           <td class="c-bank"><span class="chip chip-우리캐피탈">우리캐피탈</span></td>
           <td class="c-date">2025-09-25</td>
@@ -5248,6 +5854,14 @@ footer {
           <td class="c-date">2025-09-25</td>
           <td class="c-title">
             <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161805" target="_blank" rel="noopener">[입찰공고] 신용카드・대출 모집인 평가 위탁운영 용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="2026년도 h/w 및 s/w 유지보수계약 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-09-25</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20250925&amp;seqno=8827&amp;gubun=14&amp;pageNum=4&amp;searchGubun=0" target="_blank" rel="noopener">2026년도 H/W 및 S/W 유지보수계약 입찰</a>
             
           </td>
         </tr>
@@ -5288,6 +5902,14 @@ footer {
           <td class="c-date">2025-09-19</td>
           <td class="c-title">
             <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 RPA 시스템 프레임워크 고도화 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="ai기반 해외주식 서비스 플랫폼 도입 해외주식 ai db 구축 공급업체 선정">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-09-19</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20250919&amp;seqno=8826&amp;gubun=14&amp;pageNum=4&amp;searchGubun=0" target="_blank" rel="noopener">AI기반 해외주식 서비스 플랫폼 도입 해외주식 AI DB 구축 공급업체 선정</a>
             
           </td>
         </tr>
@@ -5387,11 +6009,51 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="양도예정통지 안내">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-09-09</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=108" target="_blank" rel="noopener">양도예정통지 안내</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="양도예정통지 안내">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-09-09</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=107" target="_blank" rel="noopener">양도예정통지 안내</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK캐피탈" data-title="[ibk캐피탈] 2025년도 창의혁신연수 진행 용역업체 입찰 재공고">
           <td class="c-bank"><span class="chip chip-IBK캐피탈">IBK캐피탈</span></td>
           <td class="c-date">2025-09-08</td>
           <td class="c-title">
             <a href="https://www.ibkc.co.kr/ib20/mnu/MNUPCKCOMP117?SEQ=107&amp;NO=26646" target="_blank" rel="noopener">[IBK캐피탈] 2025년도 창의혁신연수 진행 용역업체 입찰 재공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] 자산관리시스템 서버 구매(재공고)">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-09-05</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=106" target="_blank" rel="noopener">[긴급] 자산관리시스템 서버 구매(재공고)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] 우리투자증권 통합 자산관리시스템 도입 입찰공고(재공고)">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-09-05</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=105" target="_blank" rel="noopener">[긴급] 우리투자증권 통합 자산관리시스템 도입 입찰공고(재공고)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="dr센터 운영, 개발/테스트 시스템 네트워크 분리 방화벽 구축 관련 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-09-04</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20250904&amp;seqno=8825&amp;gubun=14&amp;pageNum=4&amp;searchGubun=0" target="_blank" rel="noopener">DR센터 운영, 개발/테스트 시스템 네트워크 분리 방화벽 구축 관련 입찰</a>
             
           </td>
         </tr>
@@ -5419,6 +6081,30 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="교보증권" data-title="교보증권 ai 기반 세일즈 assistance 서비스 개발">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-08-29</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20250829&amp;seqno=8824&amp;gubun=14&amp;pageNum=4&amp;searchGubun=0" target="_blank" rel="noopener">교보증권 AI 기반 세일즈 Assistance 서비스 개발</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] 우리투자증권 operator 운영">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-08-29</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=104" target="_blank" rel="noopener">[긴급] 우리투자증권 Operator 운영</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] 우리투자증권 배치관리시스템 도입 제안요청 공고">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-08-29</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=103" target="_blank" rel="noopener">[긴급] 우리투자증권 배치관리시스템 도입 제안요청 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리캐피탈" data-title="2025년 우리금융캐피탈 pc렌탈 업체 선정">
           <td class="c-bank"><span class="chip chip-우리캐피탈">우리캐피탈</span></td>
           <td class="c-date">2025-08-28</td>
@@ -5440,6 +6126,22 @@ footer {
           <td class="c-date">2025-08-28</td>
           <td class="c-title">
             <a href="https://www.ibkc.co.kr/ib20/mnu/MNUPCKCOMP117?SEQ=105&amp;NO=26606" target="_blank" rel="noopener">[IBK캐피탈] 2025년도 창의혁신연수 진행 용역업체 입찰 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] 자산관리시스템 서버 구매">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-08-28</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=102" target="_blank" rel="noopener">[긴급] 자산관리시스템 서버 구매</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="[긴급] 우리투자증권 통합 자산관리시스템 도입 입찰공고">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-08-28</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=101" target="_blank" rel="noopener">[긴급] 우리투자증권 통합 자산관리시스템 도입 입찰공고</a>
             
           </td>
         </tr>
@@ -5472,6 +6174,14 @@ footer {
           <td class="c-date">2025-08-19</td>
           <td class="c-title">
             <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32915" target="_blank" rel="noopener">서민금융진흥원 통합 알림톡 중계사업자 선정(재공고)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="ai기반 해외주식 서비스 플랫폼 도입 해외주식 ai db 구축 공급업체 선정 재입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-08-19</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20250819&amp;seqno=8817&amp;gubun=14&amp;pageNum=4&amp;searchGubun=0" target="_blank" rel="noopener">AI기반 해외주식 서비스 플랫폼 도입 해외주식 AI DB 구축 공급업체 선정 재입찰</a>
             
           </td>
         </tr>
@@ -5523,6 +6233,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="교보증권" data-title="ai기반 해외주식 서비스 플랫폼 도입 해외주식 ai db 구축 공급업체 선정 재입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-08-11</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20250811&amp;seqno=8816&amp;gubun=14&amp;pageNum=4&amp;searchGubun=0" target="_blank" rel="noopener">AI기반 해외주식 서비스 플랫폼 도입 해외주식 AI DB 구축 공급업체 선정 재입찰</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="신용정보원" data-title="[재공고입찰] 기업금융분석 bi 고도화 사업">
           <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
           <td class="c-date">2025-08-07</td>
@@ -5536,6 +6254,22 @@ footer {
           <td class="c-date">2025-08-06</td>
           <td class="c-title">
             <a href="https://www.kakaobank.com/Corp/News/Bidding" target="_blank" rel="noopener">2025년 생활가전 렌탈</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="교보증권 생성형ai 보안 시스템 도입">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-08-06</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20250806&amp;seqno=8815&amp;gubun=14&amp;pageNum=4&amp;searchGubun=0" target="_blank" rel="noopener">교보증권 생성형AI 보안 시스템 도입</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="우리투자증권" data-title="우리투자증권 형상관리 재구축 제안요청 공고">
+          <td class="c-bank"><span class="chip chip-우리투자증권">우리투자증권</span></td>
+          <td class="c-date">2025-08-06</td>
+          <td class="c-title">
+            <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=100" target="_blank" rel="noopener">우리투자증권 형상관리 재구축 제안요청 공고</a>
             
           </td>
         </tr>
@@ -5595,11 +6329,35 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="교보증권" data-title="ai기반 해외주식 서비스 플랫폼 도입 반응형 웹 구축 공급업체 선정 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-07-28</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20250728&amp;seqno=8814&amp;gubun=14&amp;pageNum=5&amp;searchGubun=0" target="_blank" rel="noopener">AI기반 해외주식 서비스 플랫폼 도입 반응형 웹 구축 공급업체 선정 입찰</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="ai기반 해외주식 서비스 플랫폼 도입 해외주식 ai db 구축 공급업체 선정 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-07-28</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20250728&amp;seqno=8813&amp;gubun=14&amp;pageNum=5&amp;searchGubun=0" target="_blank" rel="noopener">AI기반 해외주식 서비스 플랫폼 도입 해외주식 AI DB 구축 공급업체 선정 입찰</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 document parser 및 한글 embedding 모델 구축 사업자 선정 공고">
           <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
           <td class="c-date">2025-07-25</td>
           <td class="c-title">
             <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 Document Parser 및 한글 Embedding 모델 구축 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="국내 및 해외주식 통합 계좌 도입을 위한 외주인력 공급업체 재입찰(3차)">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-07-24</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20250724&amp;seqno=8812&amp;gubun=14&amp;pageNum=5&amp;searchGubun=0" target="_blank" rel="noopener">국내 및 해외주식 통합 계좌 도입을 위한 외주인력 공급업체 재입찰(3차)</a>
             
           </td>
         </tr>
@@ -5611,11 +6369,27 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="교보증권" data-title="여의도idc 대체거래소 주문 스위치 구매 관련 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-07-23</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20250723&amp;seqno=8811&amp;gubun=14&amp;pageNum=5&amp;searchGubun=0" target="_blank" rel="noopener">여의도IDC 대체거래소 주문 스위치 구매 관련 입찰</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 정책서민금융 보증 상품 시스템 구축">
           <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
           <td class="c-date">2025-07-21</td>
           <td class="c-title">
             <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32674" target="_blank" rel="noopener">서민금융진흥원 정책서민금융 보증 상품 시스템 구축</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="데이타존 연결 vpn 교체 관련 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-07-21</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20250721&amp;seqno=8810&amp;gubun=14&amp;pageNum=5&amp;searchGubun=0" target="_blank" rel="noopener">데이타존 연결 VPN 교체 관련 입찰</a>
             
           </td>
         </tr>
@@ -5643,11 +6417,27 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="교보증권" data-title="국내 및 해외주식 통합 계좌 도입을 위한 외주인력 공급업체 재입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-07-17</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20250717&amp;seqno=8809&amp;gubun=14&amp;pageNum=5&amp;searchGubun=0" target="_blank" rel="noopener">국내 및 해외주식 통합 계좌 도입을 위한 외주인력 공급업체 재입찰</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="iM증권" data-title="아이엠증권 입찰 공고">
           <td class="c-bank"><span class="chip chip-iM증권">iM증권</span></td>
           <td class="c-date">2025-07-10</td>
           <td class="c-title">
             <a href="https://www.imfnsec.com/research/bussiness_indust/re0203.jsp?bid=C_A010" target="_blank" rel="noopener">아이엠증권 입찰 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="국내 및 해외주식 통합 계좌 도입을 위한 외주인력 공급업체 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-07-10</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20250710&amp;seqno=8808&amp;gubun=14&amp;pageNum=5&amp;searchGubun=0" target="_blank" rel="noopener">국내 및 해외주식 통합 계좌 도입을 위한 외주인력 공급업체 입찰</a>
             
           </td>
         </tr>
@@ -5723,6 +6513,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="교보증권" data-title="pc 구매 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-06-24</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20250624&amp;seqno=8803&amp;gubun=14&amp;pageNum=5&amp;searchGubun=0" target="_blank" rel="noopener">PC 구매 입찰</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="여신금융협회" data-title="[입찰공고]그린마스터 기념품 제작 업체 선정">
           <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
           <td class="c-date">2025-06-23</td>
@@ -5771,6 +6569,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="교보증권" data-title="리서치 서버 구매 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-06-16</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20250616&amp;seqno=8802&amp;gubun=14&amp;pageNum=5&amp;searchGubun=0" target="_blank" rel="noopener">리서치 서버 구매 입찰</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="카카오뱅크" data-title="[재공고] 고객 정보보호 강화 서비스 도입">
           <td class="c-bank"><span class="chip chip-카카오뱅크">카카오뱅크</span></td>
           <td class="c-date">2025-06-12</td>
@@ -5808,6 +6614,14 @@ footer {
           <td class="c-date">2025-06-04</td>
           <td class="c-title">
             <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1721" target="_blank" rel="noopener">[입찰공고] 2025년 (거점)중계기관 업무 위수탁 점검 표준보고서 작성 용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="교보증권" data-title="lowcode플랫폼 구축 입찰">
+          <td class="c-bank"><span class="chip chip-교보증권">교보증권</span></td>
+          <td class="c-date">2025-06-04</td>
+          <td class="c-title">
+            <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20250604&amp;seqno=8796&amp;gubun=14&amp;pageNum=5&amp;searchGubun=0" target="_blank" rel="noopener">LowCode플랫폼 구축 입찰</a>
             
           </td>
         </tr>
