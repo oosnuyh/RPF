@@ -36,6 +36,8 @@
   --bank-kcis: #4a6a8a;
   --bank-kinfa: #b8622a;
   --bank-kftc: #4a5a9c;
+  --bank-kbank: #2e8a9c;
+  --bank-ksd: #9c5a3a;
   --shadow: 0 1px 2px rgba(27,36,48,0.04), 0 4px 16px rgba(27,36,48,0.04);
 }
 @media (prefers-color-scheme: dark) {
@@ -71,6 +73,8 @@
     --bank-kcis: #8aa8c9;
     --bank-kinfa: #e0955a;
     --bank-kftc: #9aabd6;
+    --bank-kbank: #6ec4d6;
+    --bank-ksd: #d19a7e;
     --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 20px rgba(0,0,0,0.25);
   }
 }
@@ -84,6 +88,7 @@
   --bank-bok: #d19bab; --bank-kpost: #7ecfd6; --bank-kdbcap: #b8a8d6;
   --bank-imsec: #d1ab85; --bank-imcap: #7ec4c4;
   --bank-crefia: #a3b38a; --bank-kcis: #8aa8c9; --bank-kinfa: #e0955a; --bank-kftc: #9aabd6;
+  --bank-kbank: #6ec4d6; --bank-ksd: #d19a7e;
   --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 20px rgba(0,0,0,0.25);
 }
 :root[data-theme="light"] {
@@ -96,6 +101,7 @@
   --bank-bok: #7a3f52; --bank-kpost: #3a9ca3; --bank-kdbcap: #7a6a9c;
   --bank-imsec: #a0785a; --bank-imcap: #4a8a8a;
   --bank-crefia: #6a7a5a; --bank-kcis: #4a6a8a; --bank-kinfa: #b8622a; --bank-kftc: #4a5a9c;
+  --bank-kbank: #2e8a9c; --bank-ksd: #9c5a3a;
   --shadow: 0 1px 2px rgba(27,36,48,0.04), 0 4px 16px rgba(27,36,48,0.04);
 }
 
@@ -265,6 +271,8 @@ td { padding: 10px 14px; vertical-align: top; }
 .chip-신용정보원 { background: color-mix(in srgb, var(--bank-kcis) 16%, transparent); color: var(--bank-kcis); }
 .chip-서민금융진흥원 { background: color-mix(in srgb, var(--bank-kinfa) 16%, transparent); color: var(--bank-kinfa); }
 .chip-금융결제원 { background: color-mix(in srgb, var(--bank-kftc) 16%, transparent); color: var(--bank-kftc); }
+.chip-케이뱅크 { background: color-mix(in srgb, var(--bank-kbank) 16%, transparent); color: var(--bank-kbank); }
+.chip-예탁결제원 { background: color-mix(in srgb, var(--bank-ksd) 16%, transparent); color: var(--bank-ksd); }
 
 .pill {
   display: inline-block;
@@ -302,9 +310,9 @@ footer {
   <div class="masthead">
     <div>
       <h1>은행·카드사·SI사 입찰·구매 공고 모니터</h1>
-      <div class="sub">우리은행 · IBK기업은행 · 카카오뱅크 · 국민은행 · iM뱅크 · 산업은행 · 한국은행 · 우정사업본부 · 우리카드 · 신한카드 · 비씨카드 · 국민카드 · 우리캐피탈 · IBK캐피탈 · KDB캐피탈 · iM증권 · iM캐피탈 · SK AX · LG CNS · 삼성SDS · 여신금융협회 · 신용정보원 · 서민금융진흥원 · 금융결제원 · 총 24개사 공고 통합 현황</div>
+      <div class="sub">우리은행 · IBK기업은행 · 카카오뱅크 · 국민은행 · iM뱅크 · 산업은행 · 한국은행 · 우정사업본부 · 우리카드 · 신한카드 · 비씨카드 · 국민카드 · 우리캐피탈 · IBK캐피탈 · KDB캐피탈 · iM증권 · iM캐피탈 · SK AX · LG CNS · 삼성SDS · 여신금융협회 · 신용정보원 · 서민금융진흥원 · 금융결제원 · 케이뱅크 · 예탁결제원 · 총 26개사 공고 통합 현황</div>
     </div>
-    <div class="sub">최근 갱신 2026-07-22 10:40</div>
+    <div class="sub">최근 갱신 2026-07-22 11:35</div>
   </div>
 
   <div class="stat-row">
@@ -313,18 +321,18 @@ footer {
       <div class="label">이번 실행 신규 공고</div>
     </div>
     <div class="stat-card">
-      <div class="num">792</div>
+      <div class="num">916</div>
       <div class="label">현재 추적 중인 공고 (회사별 최근분)</div>
     </div>
     <div class="stat-card">
-      <div class="num">24</div>
+      <div class="num">26</div>
       <div class="label">모니터링 회사 수</div>
     </div>
   </div>
 
   <div class="toolbar">
-    <button class="filter-chip active" data-filter="__all__">전체 <span class="fc-count">792</span></button>
-    <button class="filter-chip" data-filter="우리은행">우리은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK기업은행">IBK기업은행 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="카카오뱅크">카카오뱅크 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="국민은행">국민은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="iM뱅크">iM뱅크 <span class="fc-count">8</span></button><button class="filter-chip" data-filter="산업은행">산업은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="한국은행">한국은행 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="우정사업본부">우정사업본부 <span class="fc-count">0</span></button><button class="filter-chip" data-filter="우리카드">우리카드 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="신한카드">신한카드 <span class="fc-count">2</span></button><button class="filter-chip" data-filter="비씨카드">비씨카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="국민카드">국민카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="우리캐피탈">우리캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK캐피탈">IBK캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="KDB캐피탈">KDB캐피탈 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="iM증권">iM증권 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="iM캐피탈">iM캐피탈 <span class="fc-count">31</span></button><button class="filter-chip" data-filter="SK AX">SK AX <span class="fc-count">0</span></button><button class="filter-chip" data-filter="LG CNS">LG CNS <span class="fc-count">1</span></button><button class="filter-chip" data-filter="삼성SDS">삼성SDS <span class="fc-count">1</span></button><button class="filter-chip" data-filter="여신금융협회">여신금융협회 <span class="fc-count">34</span></button><button class="filter-chip" data-filter="신용정보원">신용정보원 <span class="fc-count">47</span></button><button class="filter-chip" data-filter="서민금융진흥원">서민금융진흥원 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="금융결제원">금융결제원 <span class="fc-count">53</span></button>
+    <button class="filter-chip active" data-filter="__all__">전체 <span class="fc-count">916</span></button>
+    <button class="filter-chip" data-filter="우리은행">우리은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK기업은행">IBK기업은행 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="카카오뱅크">카카오뱅크 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="국민은행">국민은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="iM뱅크">iM뱅크 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="산업은행">산업은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="한국은행">한국은행 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="우정사업본부">우정사업본부 <span class="fc-count">0</span></button><button class="filter-chip" data-filter="우리카드">우리카드 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="신한카드">신한카드 <span class="fc-count">2</span></button><button class="filter-chip" data-filter="비씨카드">비씨카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="국민카드">국민카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="우리캐피탈">우리캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK캐피탈">IBK캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="KDB캐피탈">KDB캐피탈 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="iM증권">iM증권 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="iM캐피탈">iM캐피탈 <span class="fc-count">31</span></button><button class="filter-chip" data-filter="SK AX">SK AX <span class="fc-count">0</span></button><button class="filter-chip" data-filter="LG CNS">LG CNS <span class="fc-count">1</span></button><button class="filter-chip" data-filter="삼성SDS">삼성SDS <span class="fc-count">1</span></button><button class="filter-chip" data-filter="여신금융협회">여신금융협회 <span class="fc-count">34</span></button><button class="filter-chip" data-filter="신용정보원">신용정보원 <span class="fc-count">47</span></button><button class="filter-chip" data-filter="서민금융진흥원">서민금융진흥원 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="금융결제원">금융결제원 <span class="fc-count">53</span></button><button class="filter-chip" data-filter="케이뱅크">케이뱅크 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="예탁결제원">예탁결제원 <span class="fc-count">50</span></button>
     <input class="search-input" type="search" placeholder="제목 검색..." id="searchBox">
   </div>
 
@@ -547,6 +555,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-28호] 2026년 한국예탁결제원 뉴스 모니터링 용역(재공고)">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-07-16</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37241" target="_blank" rel="noopener">[한예 제2026-28호] 2026년 한국예탁결제원 뉴스 모니터링 용역(재공고)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리은행" data-title="우리은행 업무용동산(냉장고3종, 세탁기) 연간 단가계약 입찰">
           <td class="c-bank"><span class="chip chip-우리은행">우리은행</span></td>
           <td class="c-date">2026-07-15</td>
@@ -683,6 +699,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="(재공고) 케이뱅크 fatca/crs 상시실사 업무 대행 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-07-14</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">(재공고) 케이뱅크 FATCA/CRS 상시실사 업무 대행 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리은행" data-title="단국대학교 스마트캠퍼스 고도화 구축 제안요청 공고">
           <td class="c-bank"><span class="chip chip-우리은행">우리은행</span></td>
           <td class="c-date">2026-07-13</td>
@@ -787,6 +811,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 생성형ai 보안 솔루션 공급 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-07-13</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 생성형AI 보안 솔루션 공급 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK기업은행" data-title="[입찰공고] 중소기업중앙회 주거래은행 통합자금관리시스템 고도화(l4스위치)">
           <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
           <td class="c-date">2026-07-10</td>
@@ -816,6 +848,14 @@ footer {
           <td class="c-date">2026-07-10</td>
           <td class="c-title">
             <a href="https://www.kdb.co.kr/CHBIPR23N00.act?_mnuId=IHIHIR0087" target="_blank" rel="noopener">한국산업은행 심사지원시스템 관계사 분석 기능 도입을 위한 컨설팅 용역 평가결과 공개</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="정보보호 인프라 고도화 사업">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-07-10</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37234" target="_blank" rel="noopener">정보보호 인프라 고도화 사업</a>
             
           </td>
         </tr>
@@ -1019,6 +1059,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-27호] bifc2 사무공간 2개 층 실내건축 공사(전기)">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-07-08</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37233" target="_blank" rel="noopener">[한예 제2026-27호] BIFC2 사무공간 2개 층 실내건축 공사(전기)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK기업은행" data-title="[제안요청 재공고] 전자문서 업무범위 확대(방카슈랑스)">
           <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
           <td class="c-date">2026-07-07</td>
@@ -1064,6 +1112,22 @@ footer {
           <td class="c-date">2026-07-07</td>
           <td class="c-title">
             <a href="https://kftc.or.kr/notice/bidAll?seq=1387" target="_blank" rel="noopener">Agentic AI 기반 개발환경 구축 관련 업체 선정 추진</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="(재공고) 케이뱅크 it인프라(오픈소스web,was) 유지보수(ma) 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-07-07</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">(재공고) 케이뱅크 IT인프라(오픈소스WEB,WAS) 유지보수(MA) 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 fatca/crs 상시실사 업무 대행 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-07-07</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 FATCA/CRS 상시실사 업무 대행 사업자 선정 공고</a>
             
           </td>
         </tr>
@@ -1216,6 +1280,14 @@ footer {
           <td class="c-date">2026-07-02</td>
           <td class="c-title">
             <a href="https://kftc.or.kr/notice/bidAll?seq=1385" target="_blank" rel="noopener">신용카드 VAN 안정성 강화를 위한 개선 관련 전산기기 도입</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-26호] bifc2 사무공간 2개 층 실내건축 공사(전기)(재공고)">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-07-02</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37229" target="_blank" rel="noopener">[한예 제2026-26호] BIFC2 사무공간 2개 층 실내건축 공사(전기)(재공고)</a>
             
           </td>
         </tr>
@@ -1379,6 +1451,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 it인프라(오픈소스web,was) 유지보수(ma) 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-06-30</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 IT인프라(오픈소스WEB,WAS) 유지보수(MA) 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK기업은행" data-title="[제안요청 재공고]ibk신용정보 채권 회수 가능성 분석모델 구축 및 운영 시스템 구축">
           <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
           <td class="c-date">2026-06-29</td>
@@ -1408,6 +1488,22 @@ footer {
           <td class="c-date">2026-06-29</td>
           <td class="c-title">
             <a href="https://omoney.kbstar.com/quics?page=C018592&amp;boardId=648&amp;compId=b031439&amp;articleId=145128&amp;bbsMode=view&amp;viewPage=1&amp;articleClass=&amp;searchCondition=title&amp;searchStr=" target="_blank" rel="noopener">DB접근제어 모니터링 시스템 고도화 IT자원 구매 입찰 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-25호] 2026년 한국예탁결제원 직원 채용대행 용역">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-06-29</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37224" target="_blank" rel="noopener">[한예 제2026-25호] 2026년 한국예탁결제원 직원 채용대행 용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-24호] 2026년 한국예탁결제원 뉴스 모니터링 용역">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-06-29</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37223" target="_blank" rel="noopener">[한예 제2026-24호] 2026년 한국예탁결제원 뉴스 모니터링 용역</a>
             
           </td>
         </tr>
@@ -1531,6 +1627,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-23호] bifc2 사무공간 2개 층 실내건축 공사(정보통신)">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-06-25</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37219" target="_blank" rel="noopener">[한예 제2026-23호] BIFC2 사무공간 2개 층 실내건축 공사(정보통신)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-22호] bifc2 사무공간 2개 층 실내건축 공사(전기)">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-06-25</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37218" target="_blank" rel="noopener">[한예 제2026-22호] BIFC2 사무공간 2개 층 실내건축 공사(전기)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK기업은행" data-title="[입찰공고] 서버모니터링 시스템 고도화용 스토리지 증설">
           <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
           <td class="c-date">2026-06-24</td>
@@ -1603,6 +1715,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-21호] bifc2 사무공간 2개 층 실내건축 공사(건축, 기계) (재공고)">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-06-24</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37216" target="_blank" rel="noopener">[한예 제2026-21호] BIFC2 사무공간 2개 층 실내건축 공사(건축, 기계) (재공고)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="국민은행" data-title="채권양도에 따른 개인(신용)정보 이전 안내">
           <td class="c-bank"><span class="chip chip-국민은행">국민은행</span></td>
           <td class="c-date">2026-06-23</td>
@@ -1616,6 +1736,14 @@ footer {
           <td class="c-date">2026-06-23</td>
           <td class="c-title">
             <a href="https://omoney.kbstar.com/quics?page=C018592&amp;boardId=648&amp;compId=b031439&amp;articleId=145169&amp;bbsMode=view&amp;viewPage=1&amp;articleClass=&amp;searchCondition=title&amp;searchStr=" target="_blank" rel="noopener">신용 위험가중자산 주단위 산출예측 시스템용 SAS SW 입찰 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-19호] bifc2 사무공간 2개 층 실내건축 공사(전기, 통신) (취소공고)">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-06-23</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37215" target="_blank" rel="noopener">[한예 제2026-19호] BIFC2 사무공간 2개 층 실내건축 공사(전기, 통신) (취소공고)</a>
             
           </td>
         </tr>
@@ -1731,6 +1859,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-20호] bifc2 사무공간 2개 층 실내건축 공사(소방)">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-06-18</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37214" target="_blank" rel="noopener">[한예 제2026-20호] BIFC2 사무공간 2개 층 실내건축 공사(소방)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-19호] bifc2 사무공간 2개 층 실내건축 공사(전기, 통신)">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-06-18</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37213" target="_blank" rel="noopener">[한예 제2026-19호] BIFC2 사무공간 2개 층 실내건축 공사(전기, 통신)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="국민은행" data-title="2026년 비품(가전류) 연간단가 구매 입찰 공고">
           <td class="c-bank"><span class="chip chip-국민은행">국민은행</span></td>
           <td class="c-date">2026-06-17</td>
@@ -1784,6 +1928,14 @@ footer {
           <td class="c-date">2026-06-17</td>
           <td class="c-title">
             <a href="https://kftc.or.kr/notice/bidAll?seq=1375" target="_blank" rel="noopener">금융결제원 AI 통합 인프라 고도화 추진 관련 전산기기 도입</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-18호] bifc2 사무공간 2개 층 실내건축 공사(건축, 기계)">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-06-17</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37212" target="_blank" rel="noopener">[한예 제2026-18호] BIFC2 사무공간 2개 층 실내건축 공사(건축, 기계)</a>
             
           </td>
         </tr>
@@ -1915,6 +2067,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-17호] 국채통합계좌 통합정보 플랫폼 구축 사업">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-06-15</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37211" target="_blank" rel="noopener">[한예 제2026-17호] 국채통합계좌 통합정보 플랫폼 구축 사업</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="국민은행" data-title="2026년 주화계수포장기 연간단가 구매 입찰 공고">
           <td class="c-bank"><span class="chip chip-국민은행">국민은행</span></td>
           <td class="c-date">2026-06-12</td>
@@ -1944,6 +2104,14 @@ footer {
           <td class="c-date">2026-06-11</td>
           <td class="c-title">
             <a href="https://pc.wooricard.com/dcpc/yh1/cct/cct02/anc/H1CCT202S04.do" target="_blank" rel="noopener">[입찰공고] 로그 보관기간 확대를 위한 신규 스토리지 도입</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="(재공고) 케이뱅크 기업뱅킹 pmo 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-06-11</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">(재공고) 케이뱅크 기업뱅킹 PMO 사업자 선정 공고</a>
             
           </td>
         </tr>
@@ -2027,6 +2195,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 ai 데이터센터 구축 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-06-08</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 AI 데이터센터 구축 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="bifc2 신축 사무공간 등 네트워크 인프라 구축">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-06-08</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37207" target="_blank" rel="noopener">BIFC2 신축 사무공간 등 네트워크 인프라 구축</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="산업은행" data-title="kdb paperless 업무환경 구축 개발">
           <td class="c-bank"><span class="chip chip-산업은행">산업은행</span></td>
           <td class="c-date">2026-06-05</td>
@@ -2048,6 +2232,14 @@ footer {
           <td class="c-date">2026-06-05</td>
           <td class="c-title">
             <a href="https://kftc.or.kr/notice/bidAll?seq=1371" target="_blank" rel="noopener">금융결제원 오픈소스 SW 취약점 대응체계 구축 관련 IT자원 도입</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="2026년 케이뱅크 사장님뱅킹 브랜드 캠페인 대행사 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-06-05</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">2026년 케이뱅크 사장님뱅킹 브랜드 캠페인 대행사 선정 공고</a>
             
           </td>
         </tr>
@@ -2147,6 +2339,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 알뜰폰 요금제 비교가입 서비스 공급사 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-05-29</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 알뜰폰 요금제 비교가입 서비스 공급사 선정 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="iM뱅크" data-title="『fds(이상금융탐지시스템) 업그레이드』 업체 선정을 위한 사업자 모집 공고">
           <td class="c-bank"><span class="chip chip-iM뱅크">iM뱅크</span></td>
           <td class="c-date">2026-05-28</td>
@@ -2216,14 +2416,6 @@ footer {
           <td class="c-date">2026-05-27</td>
           <td class="c-title">
             <a href="https://www.woorifcapital.com/intro/tndr/view.do?bdwrNo=1069&amp;menuNo=000000000000000000000000000763" target="_blank" rel="noopener">(마감)인터넷망 개인정보검출시스템 구축 사업</a>
-            
-          </td>
-        </tr>
-        <tr class="row" data-bank="iM뱅크" data-title="종합검사정보시스템 jdk eos 대응 사업 모집공고">
-          <td class="c-bank"><span class="chip chip-iM뱅크">iM뱅크</span></td>
-          <td class="c-date">2026-05-26</td>
-          <td class="c-title">
-            <a href="https://www.imbank.co.kr/bbs_ebz_10010_bord.act?bbsId=NEW001&amp;siteCd=03&amp;menuCd=A" target="_blank" rel="noopener">종합검사정보시스템 JDK EOS 대응 사업 모집공고</a>
             
           </td>
         </tr>
@@ -2368,6 +2560,22 @@ footer {
           <td class="c-date">2026-05-18</td>
           <td class="c-title">
             <a href="https://kftc.or.kr/notice/bidAll?seq=1367" target="_blank" rel="noopener">(재공고) 금융결제원 사용자 네트워크 통합 관련 전산기기 도입</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 회계결산 자문 용역 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-05-18</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 회계결산 자문 용역 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-16호] 2026년 업무용 차량 임차">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-05-18</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37202" target="_blank" rel="noopener">[한예 제2026-16호] 2026년 업무용 차량 임차</a>
             
           </td>
         </tr>
@@ -2531,6 +2739,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-15호] 2026년 한국예탁결제원 북러닝 교육 용역(재공고)">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-05-11</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37200" target="_blank" rel="noopener">[한예 제2026-15호] 2026년 한국예탁결제원 북러닝 교육 용역(재공고)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리카드" data-title="[입찰재공고] 노후 백업장비 교체 및 증설">
           <td class="c-bank"><span class="chip chip-우리카드">우리카드</span></td>
           <td class="c-date">2026-05-08</td>
@@ -2595,6 +2811,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 기업뱅킹 pmo 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-05-07</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 기업뱅킹 PMO 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 근복기금 제2026-2호] 2026년 단체보험 가입보험사 선정">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-05-06</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37198" target="_blank" rel="noopener">[한예 근복기금 제2026-2호] 2026년 단체보험 가입보험사 선정</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="신한카드" data-title="신한카드 「오라클 소프트웨어 ula 계약」 입찰 참가 신청 안내">
           <td class="c-bank"><span class="chip chip-신한카드">신한카드</span></td>
           <td class="c-date">2026-05-04</td>
@@ -2616,6 +2848,14 @@ footer {
           <td class="c-date">2026-05-04</td>
           <td class="c-title">
             <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34575" target="_blank" rel="noopener">재해복구시스템 고도화 정보전략계획(ISP) 수립 용역(변경공고)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-14호] 2026~2028 회계연도 회계감사 및 세무대리 용역">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-05-04</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37197" target="_blank" rel="noopener">[한예 제2026-14호] 2026~2028 회계연도 회계감사 및 세무대리 용역</a>
             
           </td>
         </tr>
@@ -2667,6 +2907,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 업무자동화(pa) 플랫폼 고도화 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-04-30</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 업무자동화(PA) 플랫폼 고도화 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리카드" data-title="ai ocr기반 심사 자동화 도입을 위한 poc 실시 공고">
           <td class="c-bank"><span class="chip chip-우리카드">우리카드</span></td>
           <td class="c-date">2026-04-29</td>
@@ -2680,6 +2928,14 @@ footer {
           <td class="c-date">2026-04-29</td>
           <td class="c-title">
             <a href="https://pc.wooricard.com/dcpc/yh1/cct/cct02/anc/H1CCT202S04.do" target="_blank" rel="noopener">AI 기반 코드어시스턴트 도입을 위한 PoC 실시 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 부동산 경공매 조회 서비스 공급사 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-04-29</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 부동산 경공매 조회 서비스 공급사 선정 공고</a>
             
           </td>
         </tr>
@@ -2720,6 +2976,30 @@ footer {
           <td class="c-date">2026-04-28</td>
           <td class="c-title">
             <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=34534" target="_blank" rel="noopener">보증상품 시스템 고도화 사업(재공고)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="(재공고) 케이뱅크 개인사업자 부동산담보대출 권리보험 제공사업자 추가 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-04-28</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">(재공고) 케이뱅크 개인사업자 부동산담보대출 권리보험 제공사업자 추가 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="(재공고) 케이뱅크 sme(중소법인) 여신시스템 구축 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-04-27</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">(재공고) 케이뱅크 SME(중소법인) 여신시스템 구축 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 근복기금 제2026-1호] 2026년 단체보험 가입보험사 선정">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-04-27</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37193" target="_blank" rel="noopener">[한예 근복기금 제2026-1호] 2026년 단체보험 가입보험사 선정</a>
             
           </td>
         </tr>
@@ -2771,6 +3051,30 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 추가 오퍼월 서비스 구축 및 운영 업체 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-04-21</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 추가 오퍼월 서비스 구축 및 운영 업체 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-13호] 2026년 한국예탁결제원 북러닝 교육 용역">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-04-20</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37190" target="_blank" rel="noopener">[한예 제2026-13호] 2026년 한국예탁결제원 북러닝 교육 용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 개인사업자 부동산담보대출 권리보험 제공사업자 추가 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-04-16</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 개인사업자 부동산담보대출 권리보험 제공사업자 추가 선정 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="금융결제원" data-title="(재공고) 내부 개발자 플랫폼(idp) 구축 추진 관련 it자원 도입">
           <td class="c-bank"><span class="chip chip-금융결제원">금융결제원</span></td>
           <td class="c-date">2026-04-15</td>
@@ -2784,6 +3088,14 @@ footer {
           <td class="c-date">2026-04-14</td>
           <td class="c-title">
             <a href="https://www.kdb.co.kr/CHBIPR23N00.act?_mnuId=IHIHIR0087" target="_blank" rel="noopener">[재공고] 오버레이 업무방법서 수립을 위한 용역 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-12호] 하절기 사무실 에너지 절감을 위한 근무복 구입">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-04-14</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37187" target="_blank" rel="noopener">[한예 제2026-12호] 하절기 사무실 에너지 절감을 위한 근무복 구입</a>
             
           </td>
         </tr>
@@ -2835,6 +3147,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 sme(중소법인) 여신시스템 구축 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-04-09</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 SME(중소법인) 여신시스템 구축 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 ssl인증서 자동화 솔루션 공급 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-04-09</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 SSL인증서 자동화 솔루션 공급 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="산업은행" data-title="리스크관리 고도화를 위한 자체 bis비율 산출 시스템 개발 요건정의 컨설팅 용역 공고">
           <td class="c-bank"><span class="chip chip-산업은행">산업은행</span></td>
           <td class="c-date">2026-04-08</td>
@@ -2848,6 +3176,14 @@ footer {
           <td class="c-date">2026-04-07</td>
           <td class="c-title">
             <a href="https://kftc.or.kr/notice/bidAll?seq=1358" target="_blank" rel="noopener">내부 개발자 플랫폼(IDP) 구축 추진 관련 IT자원 도입</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 게임 리워드 서비스 구축 및 운영 업체 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-04-06</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 게임 리워드 서비스 구축 및 운영 업체 선정 공고</a>
             
           </td>
         </tr>
@@ -2899,6 +3235,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-11호] 장외 채권거래 등 경쟁력 강화를 위한 이행방안 수립 연구용역(재공고)">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-04-02</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37179" target="_blank" rel="noopener">[한예 제2026-11호] 장외 채권거래 등 경쟁력 강화를 위한 이행방안 수립 연구용역(재공고)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="산업은행" data-title="「국민성장펀드 재정관리 수탁은행 선정」 제안서 평가결과 공개">
           <td class="c-bank"><span class="chip chip-산업은행">산업은행</span></td>
           <td class="c-date">2026-04-01</td>
@@ -2939,6 +3283,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 기업뱅킹 고도화 사업 추진을 위한 구축 개발 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-03-31</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 기업뱅킹 고도화 사업 추진을 위한 구축 개발 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="삼성SDS" data-title="공사/외주 부문 협력회사 pool 선정평가 기준 변경 안내">
           <td class="c-bank"><span class="chip chip-삼성SDS">삼성SDS</span></td>
           <td class="c-date">2026-03-30</td>
@@ -2963,6 +3315,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 협력사 사무공간 인테리어 공사 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-03-26</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 협력사 사무공간 인테리어 공사 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 데이터베이스 인프라 고도화">
           <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
           <td class="c-date">2026-03-25</td>
@@ -2984,6 +3344,14 @@ footer {
           <td class="c-date">2026-03-24</td>
           <td class="c-title">
             <a href="https://kftc.or.kr/notice/bidAll?seq=1353" target="_blank" rel="noopener">마이데이터 중계시스템 용량 증설 관련 IT자원 도입</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 26년도 ai 거버넌스 체계 구축 컨설팅 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-03-24</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 26년도 AI 거버넌스 체계 구축 컨설팅 사업자 선정 공고</a>
             
           </td>
         </tr>
@@ -3051,6 +3419,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="토큰증권 플랫폼 운영 구축 사업 전산감리 용역">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-03-18</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37171" target="_blank" rel="noopener">토큰증권 플랫폼 운영 구축 사업 전산감리 용역</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리은행" data-title="[재공고] 여신 프로세스 ax 제안요청 공고">
           <td class="c-bank"><span class="chip chip-우리은행">우리은행</span></td>
           <td class="c-date">2026-03-17</td>
@@ -3091,6 +3467,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="(재공고) 케이뱅크 인증 중개 플랫폼 이용계약 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-03-16</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">(재공고) 케이뱅크 인증 중개 플랫폼 이용계약 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-10호] 장외 채권거래 등 경쟁력 강화를 위한 이행방안 수립 연구용역">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-03-16</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37170" target="_blank" rel="noopener">[한예 제2026-10호] 장외 채권거래 등 경쟁력 강화를 위한 이행방안 수립 연구용역</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리은행" data-title="모바일웹시스템 노후화(eos) 대응 인프라 구축 (팀스톤 os모니터링 부문) 사업 입찰 공고">
           <td class="c-bank"><span class="chip chip-우리은행">우리은행</span></td>
           <td class="c-date">2026-03-13</td>
@@ -3123,11 +3515,51 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="(재공고) 케이뱅크 26년도 it인프라 운영 유지보수(sm) 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-03-12</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">(재공고) 케이뱅크 26년도 IT인프라 운영 유지보수(SM) 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="(재공고) 케이뱅크 26년도 계정계 시스템 운영 유지보수(sm) 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-03-12</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">(재공고) 케이뱅크 26년도 계정계 시스템 운영 유지보수(SM) 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="(재공고) 케이뱅크 26년도 통합보안관제 및 운영 위탁 유지보수(sm) 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-03-12</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">(재공고) 케이뱅크 26년도 통합보안관제 및 운영 위탁 유지보수(SM) 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="(재공고) 케이뱅크 26년도 업무플랫폼 운영 유지보수(sm) 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-03-12</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">(재공고) 케이뱅크 26년도 업무플랫폼 운영 유지보수(SM) 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리카드" data-title="[입찰공고] 보안usb 시스템 구축[이중화솔루션]">
           <td class="c-bank"><span class="chip chip-우리카드">우리카드</span></td>
           <td class="c-date">2026-03-11</td>
           <td class="c-title">
             <a href="https://pc.wooricard.com/dcpc/yh1/cct/cct02/anc/H1CCT202S04.do" target="_blank" rel="noopener">[입찰공고] 보안USB 시스템 구축[이중화솔루션]</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 인증 중개 플랫폼 이용계약 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-03-11</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 인증 중개 플랫폼 이용계약 사업자 선정 공고</a>
             
           </td>
         </tr>
@@ -3163,6 +3595,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 26년도 계정계 시스템 운영 유지보수(sm) 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-03-10</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 26년도 계정계 시스템 운영 유지보수(SM) 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리캐피탈" data-title="(마감) (재공고) 2026년 정보보호 및 개인정보보호 관리체계(isms-p) 갱신 심사 대비 컨설팅 사업 입찰 공고">
           <td class="c-bank"><span class="chip chip-우리캐피탈">우리캐피탈</span></td>
           <td class="c-date">2026-03-09</td>
@@ -3184,6 +3624,46 @@ footer {
           <td class="c-date">2026-03-09</td>
           <td class="c-title">
             <a href="https://www.kdbc.co.kr/announce/view?pageNum=1&amp;keyField=title&amp;keyword=%EC%9E%85%EC%B0%B0&amp;seq=587" target="_blank" rel="noopener">재입찰공고 (업무용 태블릿 PC 구매)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 26년도 업무플랫폼 운영 유지보수(sm) 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-03-09</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 26년도 업무플랫폼 운영 유지보수(SM) 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 26년도 it인프라 운영 유지보수(sm) 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-03-09</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 26년도 IT인프라 운영 유지보수(SM) 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 26년도 채널계 시스템 운영 유지보수(sm) 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-03-09</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 26년도 채널계 시스템 운영 유지보수(SM) 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 26년도 통합보안관제 및 운영 위탁 유지보수(sm) 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-03-09</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 26년도 통합보안관제 및 운영 위탁 유지보수(SM) 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="토큰증권 플랫폼 운영 구축 사업 si 용역(재공고)">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-03-06</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37168" target="_blank" rel="noopener">토큰증권 플랫폼 운영 구축 사업 SI 용역(재공고)</a>
             
           </td>
         </tr>
@@ -3227,6 +3707,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-9호] k-camp 광주 7기 액셀러레이팅 프로그램 실시용역(재공고)">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-02-27</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37167" target="_blank" rel="noopener">[한예 제2026-9호] K-Camp 광주 7기 액셀러레이팅 프로그램 실시용역(재공고)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리카드" data-title="[입찰공고] 인터페이스 시스템 vmware라이선스 갱신 및 업그레이드">
           <td class="c-bank"><span class="chip chip-우리카드">우리카드</span></td>
           <td class="c-date">2026-02-26</td>
@@ -3240,6 +3728,14 @@ footer {
           <td class="c-date">2026-02-26</td>
           <td class="c-title">
             <a href="https://pc.wooricard.com/dcpc/yh1/cct/cct02/anc/H1CCT202S04.do" target="_blank" rel="noopener">[입찰재공고] 디자이너용 Mac PC 도입</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="2026년 시나리오 기반 모의해킹 용역사업">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-02-26</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37165" target="_blank" rel="noopener">2026년 시나리오 기반 모의해킹 용역사업</a>
             
           </td>
         </tr>
@@ -3272,6 +3768,14 @@ footer {
           <td class="c-date">2026-02-25</td>
           <td class="c-title">
             <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1830" target="_blank" rel="noopener">[입찰공고] 2026년 금융분야 마이데이터 종합지원 시스템 고도화 사업</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-8호] 2026년 창문봉투 연간 단가계약">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-02-24</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37162" target="_blank" rel="noopener">[한예 제2026-8호] 2026년 창문봉투 연간 단가계약</a>
             
           </td>
         </tr>
@@ -3395,6 +3899,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 게임 공급 및 운영 업체 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-02-12</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 게임 공급 및 운영 업체 선정 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리캐피탈" data-title="마감 (재공고)2026년 우리금융캐피탈 렌터카 보험 위탁 제휴사 선정 공고">
           <td class="c-bank"><span class="chip chip-우리캐피탈">우리캐피탈</span></td>
           <td class="c-date">2026-02-11</td>
@@ -3427,6 +3939,38 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="(재공고) 사무용 pc 납품 프로젝트 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-02-09</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">(재공고) 사무용 PC 납품 프로젝트 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="토큰증권 플랫폼 운영 구축 사업 si 용역">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-02-09</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37159" target="_blank" rel="noopener">토큰증권 플랫폼 운영 구축 사업 SI 용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-7호] bifcⅱ 사무공간 2개 층 실내건축 설계 용역(건축, 기계)">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-02-09</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37158" target="_blank" rel="noopener">[한예 제2026-7호] BIFCⅡ 사무공간 2개 층 실내건축 설계 용역(건축, 기계)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-6호] 2026년 금융기관전문인 배상책임보험(fipi) 가입보험사 선정">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-02-09</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37157" target="_blank" rel="noopener">[한예 제2026-6호] 2026년 금융기관전문인 배상책임보험(FIPI) 가입보험사 선정</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리카드" data-title="[제안 재공고] 정보보안포탈시스템 구축(종합평가)">
           <td class="c-bank"><span class="chip chip-우리카드">우리카드</span></td>
           <td class="c-date">2026-02-06</td>
@@ -3440,6 +3984,14 @@ footer {
           <td class="c-date">2026-02-06</td>
           <td class="c-title">
             <a href="https://pc.wooricard.com/dcpc/yh1/cct/cct02/anc/H1CCT202S04.do" target="_blank" rel="noopener">[제안공고] 악성메일훈련 시스템 재구축(종합평가)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="사무용 pc 납품 프로젝트 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-02-06</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">사무용 PC 납품 프로젝트 사업자 선정 공고</a>
             
           </td>
         </tr>
@@ -3459,6 +4011,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-5호] k-camp 제주 5기 액셀러레이팅 프로그램 실시용역">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-02-03</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37154" target="_blank" rel="noopener">[한예 제2026-5호] K-Camp 제주 5기 액셀러레이팅 프로그램 실시용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-4호] k-camp 대구 7기 액셀러레이팅 프로그램 실시용역">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-02-03</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37153" target="_blank" rel="noopener">[한예 제2026-4호] K-Camp 대구 7기 액셀러레이팅 프로그램 실시용역</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="금융결제원" data-title="2026년도 전산기기 리스 도입분 담당 리스사 선정">
           <td class="c-bank"><span class="chip chip-금융결제원">금융결제원</span></td>
           <td class="c-date">2026-02-02</td>
@@ -3467,11 +4035,43 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-3호] k-camp 강원 6기 액셀러레이팅 프로그램 실시용역">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-02-02</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37152" target="_blank" rel="noopener">[한예 제2026-3호] K-Camp 강원 6기 액셀러레이팅 프로그램 실시용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-2호] k-camp 광주 7기 액셀러레이팅 프로그램 실시용역">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-02-02</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37151" target="_blank" rel="noopener">[한예 제2026-2호] K-Camp 광주 7기 액셀러레이팅 프로그램 실시용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-1호] k-camp 대전 7기 액셀러레이팅 프로그램 실시용역">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2026-02-02</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37150" target="_blank" rel="noopener">[한예 제2026-1호] K-Camp 대전 7기 액셀러레이팅 프로그램 실시용역</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리카드" data-title="[제안공고] 2026년 모의침투테스트 연간 서비스(종합평가)">
           <td class="c-bank"><span class="chip chip-우리카드">우리카드</span></td>
           <td class="c-date">2026-01-30</td>
           <td class="c-title">
             <a href="https://pc.wooricard.com/dcpc/yh1/cct/cct02/anc/H1CCT202S04.do" target="_blank" rel="noopener">[제안공고] 2026년 모의침투테스트 연간 서비스(종합평가)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 기업신용평가모형 개발 및 구축 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-01-30</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 기업신용평가모형 개발 및 구축 사업자 선정 공고</a>
             
           </td>
         </tr>
@@ -3555,6 +4155,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="2026년도 건강검진 위탁운영 업체 입찰 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-01-16</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">2026년도 건강검진 위탁운영 업체 입찰 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리캐피탈" data-title="(마감) 2026년 우리금융캐피탈 재해복구시스템 감리 사업">
           <td class="c-bank"><span class="chip chip-우리캐피탈">우리캐피탈</span></td>
           <td class="c-date">2026-01-15</td>
@@ -3592,6 +4200,14 @@ footer {
           <td class="c-date">2026-01-13</td>
           <td class="c-title">
             <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33760" target="_blank" rel="noopener">2026년 서민금융진흥원 업무용 차량 임차</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="(재공고) 케이뱅크 it인프라(network-juniper) 유지보수(ma) 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2026-01-13</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">(재공고) 케이뱅크 IT인프라(Network-Juniper) 유지보수(MA) 사업자 선정 공고</a>
             
           </td>
         </tr>
@@ -3683,6 +4299,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제 2025-35호] 2026년도 해외 정기 간행물 구독 대행 사업자 선정">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2025-12-29</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37125" target="_blank" rel="noopener">[한예 제 2025-35호] 2026년도 해외 정기 간행물 구독 대행 사업자 선정</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제 2025-34호] 2026년도 국내 정기간행물 구독 대행 사업자 선정">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2025-12-29</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37124" target="_blank" rel="noopener">[한예 제 2025-34호] 2026년도 국내 정기간행물 구독 대행 사업자 선정</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리은행" data-title="「개발검증 테스트 업무 위탁운영」 제안요청 공고">
           <td class="c-bank"><span class="chip chip-우리은행">우리은행</span></td>
           <td class="c-date">2025-12-26</td>
@@ -3747,11 +4379,27 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2025-33호] bifcⅱ 사무공간 2개 층 실내건축 pm 용역">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2025-12-23</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37120" target="_blank" rel="noopener">[한예 제2025-33호] BIFCⅡ 사무공간 2개 층 실내건축 PM 용역</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리캐피탈" data-title="(마감)(재공고)2026년 우리금융캐피탈 보안관제 서비스 사업 입찰 공고">
           <td class="c-bank"><span class="chip chip-우리캐피탈">우리캐피탈</span></td>
           <td class="c-date">2025-12-22</td>
           <td class="c-title">
             <a href="https://www.woorifcapital.com/intro/tndr/view.do?bdwrNo=1016&amp;menuNo=000000000000000000000000000763" target="_blank" rel="noopener">(마감)(재공고)2026년 우리금융캐피탈 보안관제 서비스 사업 입찰 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제 2025-32호] 2026년 사보(ksdian) 제작사 선정">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2025-12-22</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37119" target="_blank" rel="noopener">[한예 제 2025-32호] 2026년 사보(KSDian) 제작사 선정</a>
             
           </td>
         </tr>
@@ -3787,6 +4435,30 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="영상회의시스템 유지보수 용역">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2025-12-18</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37117" target="_blank" rel="noopener">영상회의시스템 유지보수 용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="영상회의시스템 유지보수 용역(취소공고)">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2025-12-18</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37116" target="_blank" rel="noopener">영상회의시스템 유지보수 용역(취소공고)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="영상회의시스템 유지보수 용역">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2025-12-17</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37114" target="_blank" rel="noopener">영상회의시스템 유지보수 용역</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="카카오뱅크" data-title="전산단말기 정리 및 매각">
           <td class="c-bank"><span class="chip chip-카카오뱅크">카카오뱅크</span></td>
           <td class="c-date">2025-12-16</td>
@@ -3808,6 +4480,14 @@ footer {
           <td class="c-date">2025-12-16</td>
           <td class="c-title">
             <a href="https://www.woorifcapital.com/intro/tndr/view.do?bdwrNo=1011&amp;menuNo=000000000000000000000000000763" target="_blank" rel="noopener">(마감)2026년 우리금융캐피탈 보안관제 서비스 사업 입찰 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 it인프라(network-juniper) 유지보수(ma) 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-12-16</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 IT인프라(Network-Juniper) 유지보수(MA) 사업자 선정 공고</a>
             
           </td>
         </tr>
@@ -3899,6 +4579,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제 2025-31호] 2026년도 전자금융거래 배상책임보험 가입보험사 선정">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2025-12-09</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37111" target="_blank" rel="noopener">[한예 제 2025-31호] 2026년도 전자금융거래 배상책임보험 가입보험사 선정</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="(재공고) 케이뱅크 스크래핑 병행 운영 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-12-04</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">(재공고) 케이뱅크 스크래핑 병행 운영 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리캐피탈" data-title="(마감)부실채권매각 주관사 선정을 위한 입찰제안 공고">
           <td class="c-bank"><span class="chip chip-우리캐피탈">우리캐피탈</span></td>
           <td class="c-date">2025-12-03</td>
@@ -3912,6 +4608,14 @@ footer {
           <td class="c-date">2025-12-02</td>
           <td class="c-title">
             <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1796" target="_blank" rel="noopener">[입찰공고] AI 러닝 플랫폼 원격분석 시스템 인프라 고도화 사업</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 it인프라(hitachi 스토리지) 운영 유지보수(ma) 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-12-02</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 IT인프라(Hitachi 스토리지) 운영 유지보수(MA) 사업자 선정 공고</a>
             
           </td>
         </tr>
@@ -3955,11 +4659,35 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 구매시스템 구축 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-12-01</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 구매시스템 구축 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 시스템 성능 관리 솔루션 구축 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-12-01</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 시스템 성능 관리 솔루션 구축 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리캐피탈" data-title="(마감)(재공고)우리금융캐피탈 정보보안통합관제시스템 구축 사업">
           <td class="c-bank"><span class="chip chip-우리캐피탈">우리캐피탈</span></td>
           <td class="c-date">2025-11-28</td>
           <td class="c-title">
             <a href="https://www.woorifcapital.com/intro/tndr/view.do?bdwrNo=1001&amp;menuNo=000000000000000000000000000763" target="_blank" rel="noopener">(마감)(재공고)우리금융캐피탈 정보보안통합관제시스템 구축 사업</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 스크래핑 병행 운영 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-11-28</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 스크래핑 병행 운영 사업자 선정 공고</a>
             
           </td>
         </tr>
@@ -3971,11 +4699,43 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="서울사옥 지능형 영상 감시시스템 유지보수 용역(재공고)">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2025-11-27</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37106" target="_blank" rel="noopener">서울사옥 지능형 영상 감시시스템 유지보수 용역(재공고)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="여신금융협회" data-title="[입찰공고] 2025년도 종합 it시스템 취약점 분석・평가">
           <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
           <td class="c-date">2025-11-25</td>
           <td class="c-title">
             <a href="https://www.crefia.or.kr/portal/board/boardDataDetail.do?boardid=bbs003&amp;dataid=161833" target="_blank" rel="noopener">[입찰공고] 2025년도 종합 IT시스템 취약점 분석・평가</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="aml 운영 프로세스 고도화를 위한 컨설팅 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-11-25</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">AML 운영 프로세스 고도화를 위한 컨설팅 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 모바일 모니터링 솔루션 공급 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-11-25</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 모바일 모니터링 솔루션 공급 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 rpa 솔루션 uipath 라이선스 구매 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-11-25</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 RPA 솔루션 UiPath 라이선스 구매 사업자 선정 공고</a>
             
           </td>
         </tr>
@@ -4019,6 +4779,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 업무 프로세스 자동화 확대 구축 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-11-20</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 업무 프로세스 자동화 확대 구축 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 데이터관리 솔루션 고도화 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-11-20</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 데이터관리 솔루션 고도화 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="서민금융진흥원" data-title="서민금융진흥원 정보시스템 권한 관리체계 고도화 사업">
           <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
           <td class="c-date">2025-11-18</td>
@@ -4048,6 +4824,14 @@ footer {
           <td class="c-date">2025-11-14</td>
           <td class="c-title">
             <a href="https://www.woorifcapital.com/intro/tndr/view.do?bdwrNo=995&amp;menuNo=000000000000000000000000000763" target="_blank" rel="noopener">(마감)(재공고)2025년 우리금융캐피탈 대고객 AI상담 에이전트(음성봇) 시스템 감리 사업</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 asm(attack surface management) 라이선스 구매 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-11-13</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 ASM(Attack Surface Management) 라이선스 구매 사업자 선정 공고</a>
             
           </td>
         </tr>
@@ -4083,6 +4867,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2025-30호] 2026~2027년 부산국제금융센터(bifc) 공동식당 위탁운영업체 선정">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2025-11-10</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37100" target="_blank" rel="noopener">[한예 제2025-30호] 2026~2027년 부산국제금융센터(BIFC) 공동식당 위탁운영업체 선정</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리캐피탈" data-title="(마감)신용정보조회ㆍ비금융휴대전화번호조회 및 개인채무자보호법 관련 전자문서ㆍ우편 발송 사업 입찰공고">
           <td class="c-bank"><span class="chip chip-우리캐피탈">우리캐피탈</span></td>
           <td class="c-date">2025-11-07</td>
@@ -4099,11 +4891,35 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2025-29호] 2025년 금융기관종합보험(bbb) 가입보험사 선정(재공고)">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2025-11-05</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37098" target="_blank" rel="noopener">[한예 제2025-29호] 2025년 금융기관종합보험(BBB) 가입보험사 선정(재공고)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="서울사옥 지능형 영상 감시시스템 유지보수 용역">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2025-11-05</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37097" target="_blank" rel="noopener">서울사옥 지능형 영상 감시시스템 유지보수 용역</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="카카오뱅크" data-title="판교오피스 ups실 조성 공사">
           <td class="c-bank"><span class="chip chip-카카오뱅크">카카오뱅크</span></td>
           <td class="c-date">2025-11-04</td>
           <td class="c-title">
             <a href="https://www.kakaobank.com/Corp/News/Bidding" target="_blank" rel="noopener">판교오피스 UPS실 조성 공사</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="예탁결제원" data-title="[한예 제2025-28호] 동절기 사무실 에너지 절감을 위한 근무복 구입">
+          <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
+          <td class="c-date">2025-11-04</td>
+          <td class="c-title">
+            <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37096" target="_blank" rel="noopener">[한예 제2025-28호] 동절기 사무실 에너지 절감을 위한 근무복 구입</a>
             
           </td>
         </tr>
@@ -4235,6 +5051,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="(재공고)케이뱅크 서비스 관리자포털 구축 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-10-20</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">(재공고)케이뱅크 서비스 관리자포털 구축 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="금융결제원" data-title="(재공고) 금융결제원 협업 sw 고도화 관련 it자원 도입">
           <td class="c-bank"><span class="chip chip-금융결제원">금융결제원</span></td>
           <td class="c-date">2025-10-17</td>
@@ -4248,6 +5072,14 @@ footer {
           <td class="c-date">2025-10-16</td>
           <td class="c-title">
             <a href="https://www.kakaobank.com/Corp/News/Bidding" target="_blank" rel="noopener">죽전 데이터센터 VDI 스토리지 도입</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 fatca/crs 보고 시스템 구축 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-10-16</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 FATCA/CRS 보고 시스템 구축 사업자 선정 공고</a>
             
           </td>
         </tr>
@@ -4336,6 +5168,14 @@ footer {
           <td class="c-date">2025-10-13</td>
           <td class="c-title">
             <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=33134" target="_blank" rel="noopener">서민금융진흥원 통합 알림톡 중개사업자 선정 입찰공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 서비스 관리자포털 구축 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-10-13</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 서비스 관리자포털 구축 사업자 선정 공고</a>
             
           </td>
         </tr>
@@ -4443,6 +5283,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 rpa 시스템 프레임워크 고도화 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-09-19</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 RPA 시스템 프레임워크 고도화 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="카카오뱅크" data-title="[재공고] 전산소모품(apple외) 구매 단가 계약">
           <td class="c-bank"><span class="chip chip-카카오뱅크">카카오뱅크</span></td>
           <td class="c-date">2025-09-17</td>
@@ -4499,6 +5347,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 25년도 it 인프라(oracle dbms) 공급 및 유지보수 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-09-12</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 25년도 IT 인프라(ORACLE DBMS) 공급 및 유지보수 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 전자금융기반시설 취약점 분석, 평가 및 isms-p 인증 사후 심사 대응 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-09-12</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 전자금융기반시설 취약점 분석, 평가 및 ISMS-P 인증 사후 심사 대응 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="금융결제원" data-title="(새로 공고)금융결제원 신 사옥(서울n스퀘어) 구내식당 주방기구 구입 및 설치 입찰유의서">
           <td class="c-bank"><span class="chip chip-금융결제원">금융결제원</span></td>
           <td class="c-date">2025-09-11</td>
@@ -4528,6 +5392,14 @@ footer {
           <td class="c-date">2025-09-08</td>
           <td class="c-title">
             <a href="https://www.ibkc.co.kr/ib20/mnu/MNUPCKCOMP117?SEQ=107&amp;NO=26646" target="_blank" rel="noopener">[IBK캐피탈] 2025년도 창의혁신연수 진행 용역업체 입찰 재공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="(재공고) 케이뱅크 자동전화발신 시스템(pds 및 acs) 구축 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-09-02</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">(재공고) 케이뱅크 자동전화발신 시스템(PDS 및 ACS) 구축 사업자 선정 공고</a>
             
           </td>
         </tr>
@@ -4579,6 +5451,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 법률 자문사 포괄업무 사업자 선정공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-08-25</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 법률 자문사 포괄업무 사업자 선정공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="신용정보원" data-title="[입찰공고] ai기반 소상공인 성장성 평가모형 개발용역">
           <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
           <td class="c-date">2025-08-20</td>
@@ -4616,6 +5496,14 @@ footer {
           <td class="c-date">2025-08-18</td>
           <td class="c-title">
             <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32914" target="_blank" rel="noopener">서민금융진흥원 하이브리드 보안관제 운영</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 자동전화발신 시스템(pds 및 acs) 구축 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-08-14</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 자동전화발신 시스템(PDS 및 ACS) 구축 사업자 선정 공고</a>
             
           </td>
         </tr>
@@ -4667,6 +5555,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="(재공고) 케이뱅크 document parser 및 한글 embedding 모델 구축 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-08-04</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">(재공고) 케이뱅크 Document Parser 및 한글 Embedding 모델 구축 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 채널시스템 spa 전환 구축 it감리 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-08-04</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 채널시스템 SPA 전환 구축 IT감리 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="카카오뱅크" data-title="ai수어상담 3d 아바타 및 영상 제작">
           <td class="c-bank"><span class="chip chip-카카오뱅크">카카오뱅크</span></td>
           <td class="c-date">2025-08-01</td>
@@ -4688,6 +5592,14 @@ footer {
           <td class="c-date">2025-07-28</td>
           <td class="c-title">
             <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32736" target="_blank" rel="noopener">서민금융진흥원  청년자산형성 정보시스템 구축 ISP 수립 용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 document parser 및 한글 embedding 모델 구축 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-07-25</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 Document Parser 및 한글 Embedding 모델 구축 사업자 선정 공고</a>
             
           </td>
         </tr>
@@ -4755,11 +5667,59 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="(재공고) 케이뱅크 gitlab 기반 형상관리 시범 전환 구축 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-07-04</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">(재공고) 케이뱅크 GitLab 기반 형상관리 시범 전환 구축 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="(재공고)케이뱅크 ums 접수 성능 개선 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-07-01</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">(재공고)케이뱅크 UMS 접수 성능 개선 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="신용정보원" data-title="[입찰공고] sas 관리도구 소프트웨어(connect) 라이선스 구매">
           <td class="c-bank"><span class="chip chip-신용정보원">신용정보원</span></td>
           <td class="c-date">2025-06-27</td>
           <td class="c-title">
             <a href="https://kcredit.or.kr:1441/notice/notice.do?menuNo=330&amp;hpBoardSn=NOTICE&amp;hpBoardIdSn=1729" target="_blank" rel="noopener">[입찰공고] SAS 관리도구 소프트웨어(Connect) 라이선스 구매</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="(재공고) 케이뱅크 25년 1차 it자산 폐기/매각 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-06-27</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">(재공고) 케이뱅크 25년 1차 IT자산 폐기/매각 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 vmware 라이선스 및 기술지원 서비스 공급 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-06-26</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 VMware 라이선스 및 기술지원 서비스 공급 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 gitlab 기반 형상관리 시범 전환 구축 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-06-26</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 GitLab 기반 형상관리 시범 전환 구축 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 ums 접수 성능 개선 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-06-25</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 UMS 접수 성능 개선 사업자 선정 공고</a>
             
           </td>
         </tr>
@@ -4779,6 +5739,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 25년 1차 it자산 폐기/매각 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-06-20</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 25년 1차 IT자산 폐기/매각 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="한국은행" data-title="가계부채 가구화 db 개인정보 영향평가 입찰공고 실시">
           <td class="c-bank"><span class="chip chip-한국은행">한국은행</span></td>
           <td class="c-date">2025-06-17</td>
@@ -4792,6 +5760,14 @@ footer {
           <td class="c-date">2025-06-17</td>
           <td class="c-title">
             <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32514" target="_blank" rel="noopener">서민금융진흥원 위탁운용사(OCIO) 선정(긴급)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 지식관리시스템(kms) 고도화 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-06-16</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 지식관리시스템(KMS) 고도화 사업자 선정 공고</a>
             
           </td>
         </tr>
@@ -4840,6 +5816,22 @@ footer {
           <td class="c-date">2025-06-02</td>
           <td class="c-title">
             <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32415" target="_blank" rel="noopener">2025년 서민금융진흥원 유튜브채널 운영 및 영상콘텐츠 제작 용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 개발 환경 고도화용 네트워크 장비 공급 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-06-02</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 개발 환경 고도화용 네트워크 장비 공급 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="(재공고) 케이뱅크 비밀번호 관리 솔루션 공급 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-06-02</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">(재공고) 케이뱅크 비밀번호 관리 솔루션 공급 사업자 선정 공고</a>
             
           </td>
         </tr>
@@ -4920,6 +5912,14 @@ footer {
           <td class="c-date">2025-05-22</td>
           <td class="c-title">
             <a href="https://www.kinfa.or.kr/notificationPromotion/noticeDetail.do?seq=32354" target="_blank" rel="noopener">서민금융진흥원 사무집기(책상 등) 매각 재공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 비밀번호 관리 솔루션 공급 사업자 선정 공고">
+          <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
+          <td class="c-date">2025-05-22</td>
+          <td class="c-title">
+            <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 비밀번호 관리 솔루션 공급 사업자 선정 공고</a>
             
           </td>
         </tr>
