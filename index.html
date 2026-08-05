@@ -42,6 +42,7 @@
   --bank-wooriib: #6a8ac9;
   --bank-meritz: #8a4a4a;
   --bank-mirae: #3a7a5a;
+  --bank-kbcap: #2e6b8a;
   --shadow: 0 1px 2px rgba(27,36,48,0.04), 0 4px 16px rgba(27,36,48,0.04);
 }
 @media (prefers-color-scheme: dark) {
@@ -83,6 +84,7 @@
     --bank-wooriib: #a3c0e8;
     --bank-meritz: #d19393;
     --bank-mirae: #7ec49e;
+    --bank-kbcap: #7ec0e0;
     --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 20px rgba(0,0,0,0.25);
   }
 }
@@ -97,7 +99,7 @@
   --bank-imsec: #d1ab85; --bank-imcap: #7ec4c4;
   --bank-crefia: #a3b38a; --bank-kcis: #8aa8c9; --bank-kinfa: #e0955a; --bank-kftc: #9aabd6;
   --bank-kbank: #6ec4d6; --bank-ksd: #d19a7e; --bank-kyobo: #d1b06e; --bank-wooriib: #a3c0e8;
-  --bank-meritz: #d19393; --bank-mirae: #7ec49e;
+  --bank-meritz: #d19393; --bank-mirae: #7ec49e; --bank-kbcap: #7ec0e0;
   --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 20px rgba(0,0,0,0.25);
 }
 :root[data-theme="light"] {
@@ -111,7 +113,7 @@
   --bank-imsec: #a0785a; --bank-imcap: #4a8a8a;
   --bank-crefia: #6a7a5a; --bank-kcis: #4a6a8a; --bank-kinfa: #b8622a; --bank-kftc: #4a5a9c;
   --bank-kbank: #2e8a9c; --bank-ksd: #9c5a3a; --bank-kyobo: #a08030; --bank-wooriib: #6a8ac9;
-  --bank-meritz: #8a4a4a; --bank-mirae: #3a7a5a;
+  --bank-meritz: #8a4a4a; --bank-mirae: #3a7a5a; --bank-kbcap: #2e6b8a;
   --shadow: 0 1px 2px rgba(27,36,48,0.04), 0 4px 16px rgba(27,36,48,0.04);
 }
 
@@ -275,6 +277,7 @@ td { padding: 10px 14px; vertical-align: top; }
 .chip-한국은행 { background: color-mix(in srgb, var(--bank-bok) 16%, transparent); color: var(--bank-bok); }
 .chip-우정사업본부 { background: color-mix(in srgb, var(--bank-kpost) 16%, transparent); color: var(--bank-kpost); }
 .chip-KDB캐피탈 { background: color-mix(in srgb, var(--bank-kdbcap) 16%, transparent); color: var(--bank-kdbcap); }
+.chip-KB캐피탈 { background: color-mix(in srgb, var(--bank-kbcap) 16%, transparent); color: var(--bank-kbcap); }
 .chip-iM증권 { background: color-mix(in srgb, var(--bank-imsec) 16%, transparent); color: var(--bank-imsec); }
 .chip-iM캐피탈 { background: color-mix(in srgb, var(--bank-imcap) 16%, transparent); color: var(--bank-imcap); }
 .chip-여신금융협회 { background: color-mix(in srgb, var(--bank-crefia) 16%, transparent); color: var(--bank-crefia); }
@@ -324,29 +327,29 @@ footer {
   <div class="masthead">
     <div>
       <h1>은행·카드사·SI사 입찰·구매 공고 모니터</h1>
-      <div class="sub">우리은행 · IBK기업은행 · 카카오뱅크 · 국민은행 · iM뱅크 · 산업은행 · 한국은행 · 우정사업본부 · 우리카드 · 신한카드 · 비씨카드 · 국민카드 · 우리캐피탈 · IBK캐피탈 · KDB캐피탈 · iM증권 · iM캐피탈 · SK AX · LG CNS · 삼성SDS · 여신금융협회 · 신용정보원 · 서민금융진흥원 · 금융결제원 · 케이뱅크 · 예탁결제원 · 교보증권 · 우리투자증권 · 메리츠증권 · 미래에셋증권 · 총 30개사 공고 통합 현황</div>
+      <div class="sub">우리은행 · IBK기업은행 · 카카오뱅크 · 국민은행 · iM뱅크 · 산업은행 · 한국은행 · 우정사업본부 · 우리카드 · 신한카드 · 비씨카드 · 국민카드 · 우리캐피탈 · IBK캐피탈 · KDB캐피탈 · KB캐피탈 · iM증권 · iM캐피탈 · SK AX · LG CNS · 삼성SDS · 여신금융협회 · 신용정보원 · 서민금융진흥원 · 금융결제원 · 케이뱅크 · 예탁결제원 · 교보증권 · 우리투자증권 · 메리츠증권 · 미래에셋증권 · 총 31개사 공고 통합 현황</div>
     </div>
-    <div class="sub">최근 갱신 2026-08-05 09:24</div>
+    <div class="sub">최근 갱신 2026-08-05 10:27</div>
   </div>
 
   <div class="stat-row">
     <div class="stat-card stat-new">
-      <div class="num">5</div>
+      <div class="num">12</div>
       <div class="label">이번 실행 신규 공고</div>
     </div>
     <div class="stat-card">
-      <div class="num">1069</div>
+      <div class="num">1078</div>
       <div class="label">현재 추적 중인 공고 (회사별 최근분)</div>
     </div>
     <div class="stat-card">
-      <div class="num">30</div>
+      <div class="num">31</div>
       <div class="label">모니터링 회사 수</div>
     </div>
   </div>
 
   <div class="toolbar">
-    <button class="filter-chip active" data-filter="__all__">전체 <span class="fc-count">1069</span></button>
-    <button class="filter-chip" data-filter="우리은행">우리은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK기업은행">IBK기업은행 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="카카오뱅크">카카오뱅크 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="국민은행">국민은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="iM뱅크">iM뱅크 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="산업은행">산업은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="한국은행">한국은행 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="우정사업본부">우정사업본부 <span class="fc-count">0</span></button><button class="filter-chip" data-filter="우리카드">우리카드 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="신한카드">신한카드 <span class="fc-count">2</span></button><button class="filter-chip" data-filter="비씨카드">비씨카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="국민카드">국민카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="우리캐피탈">우리캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK캐피탈">IBK캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="KDB캐피탈">KDB캐피탈 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="iM증권">iM증권 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="iM캐피탈">iM캐피탈 <span class="fc-count">31</span></button><button class="filter-chip" data-filter="SK AX">SK AX <span class="fc-count">0</span></button><button class="filter-chip" data-filter="LG CNS">LG CNS <span class="fc-count">1</span></button><button class="filter-chip" data-filter="삼성SDS">삼성SDS <span class="fc-count">2</span></button><button class="filter-chip" data-filter="여신금융협회">여신금융협회 <span class="fc-count">34</span></button><button class="filter-chip" data-filter="신용정보원">신용정보원 <span class="fc-count">47</span></button><button class="filter-chip" data-filter="서민금융진흥원">서민금융진흥원 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="금융결제원">금융결제원 <span class="fc-count">53</span></button><button class="filter-chip" data-filter="케이뱅크">케이뱅크 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="예탁결제원">예탁결제원 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="교보증권">교보증권 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="우리투자증권">우리투자증권 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="메리츠증권">메리츠증권 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="미래에셋증권">미래에셋증권 <span class="fc-count">2</span></button>
+    <button class="filter-chip active" data-filter="__all__">전체 <span class="fc-count">1078</span></button>
+    <button class="filter-chip" data-filter="우리은행">우리은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK기업은행">IBK기업은행 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="카카오뱅크">카카오뱅크 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="국민은행">국민은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="iM뱅크">iM뱅크 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="산업은행">산업은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="한국은행">한국은행 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="우정사업본부">우정사업본부 <span class="fc-count">0</span></button><button class="filter-chip" data-filter="우리카드">우리카드 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="신한카드">신한카드 <span class="fc-count">2</span></button><button class="filter-chip" data-filter="비씨카드">비씨카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="국민카드">국민카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="우리캐피탈">우리캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK캐피탈">IBK캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="KDB캐피탈">KDB캐피탈 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="KB캐피탈">KB캐피탈 <span class="fc-count">1</span></button><button class="filter-chip" data-filter="iM증권">iM증권 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="iM캐피탈">iM캐피탈 <span class="fc-count">31</span></button><button class="filter-chip" data-filter="SK AX">SK AX <span class="fc-count">0</span></button><button class="filter-chip" data-filter="LG CNS">LG CNS <span class="fc-count">1</span></button><button class="filter-chip" data-filter="삼성SDS">삼성SDS <span class="fc-count">2</span></button><button class="filter-chip" data-filter="여신금융협회">여신금융협회 <span class="fc-count">34</span></button><button class="filter-chip" data-filter="신용정보원">신용정보원 <span class="fc-count">47</span></button><button class="filter-chip" data-filter="서민금융진흥원">서민금융진흥원 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="금융결제원">금융결제원 <span class="fc-count">53</span></button><button class="filter-chip" data-filter="케이뱅크">케이뱅크 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="예탁결제원">예탁결제원 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="교보증권">교보증권 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="우리투자증권">우리투자증권 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="메리츠증권">메리츠증권 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="미래에셋증권">미래에셋증권 <span class="fc-count">10</span></button>
     <input class="search-input" type="search" placeholder="제목 검색..." id="searchBox">
   </div>
 
@@ -366,6 +369,22 @@ footer {
           <td class="c-date">2026-08-05</td>
           <td class="c-title">
             <a href="https://spot.wooribank.com/pot/Dream?withyou=BPPBC0038" target="_blank" rel="noopener">근로복지공단 중계 서버 스토리지 용량 증설(Hitachi 스토리지 부문)</a>
+            <span class="pill pill-new">신규</span>
+          </td>
+        </tr>
+        <tr class="row" data-bank="미래에셋증권" data-title="미래에셋증권 광고대행사 선정 입찰공고">
+          <td class="c-bank"><span class="chip chip-미래에셋증권">미래에셋증권</span></td>
+          <td class="c-date">2026-07-23</td>
+          <td class="c-title">
+            <a href="https://securities.miraeasset.com/bbs/board/message/view.do?categoryId=1959&amp;messageId=2341429&amp;curPage=1" target="_blank" rel="noopener">미래에셋증권 광고대행사 선정 입찰공고</a>
+            <span class="pill pill-new">신규</span>
+          </td>
+        </tr>
+        <tr class="row" data-bank="미래에셋증권" data-title="미래에셋증권 sns 대행사 선정 입찰공고">
+          <td class="c-bank"><span class="chip chip-미래에셋증권">미래에셋증권</span></td>
+          <td class="c-date">2026-07-20</td>
+          <td class="c-title">
+            <a href="https://securities.miraeasset.com/bbs/board/message/view.do?categoryId=1959&amp;messageId=2341328&amp;curPage=1" target="_blank" rel="noopener">미래에셋증권 SNS 대행사 선정 입찰공고</a>
             <span class="pill pill-new">신규</span>
           </td>
         </tr>
@@ -710,6 +729,14 @@ footer {
           <td class="c-date">2026-07-28</td>
           <td class="c-title">
             <a href="https://www.kdb.co.kr/CHBIPR23N00.act?_mnuId=IHIHIR0087" target="_blank" rel="noopener">[사전규격공개] 일반기업 신용평가모형 전면 재개발</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="KB캐피탈" data-title="ai ocr bmt 실시 공고">
+          <td class="c-bank"><span class="chip chip-KB캐피탈">KB캐피탈</span></td>
+          <td class="c-date">2026-07-28</td>
+          <td class="c-title">
+            <a href="https://m.kbcapital.co.kr/custCenr/cmknMtrEvnt/cmknMtrDtl.kbc?blbdSeqno=108784" target="_blank" rel="noopener">AI OCR BMT 실시 공고</a>
             
           </td>
         </tr>
@@ -2481,6 +2508,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="미래에셋증권" data-title="미래에셋증권 ai 서비스 개발 및 신규모델 서빙을 위한 gpu 서버  증설 사업 입찰공고">
+          <td class="c-bank"><span class="chip chip-미래에셋증권">미래에셋증권</span></td>
+          <td class="c-date">2026-06-12</td>
+          <td class="c-title">
+            <a href="https://securities.miraeasset.com/bbs/board/message/view.do?categoryId=1959&amp;messageId=2340461&amp;curPage=1" target="_blank" rel="noopener">미래에셋증권 AI 서비스 개발 및 신규모델 서빙을 위한 GPU 서버  증설 사업 입찰공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="미래에셋증권" data-title="미래에셋그룹 판촉물 구매대행업체 선정 입찰 공고">
+          <td class="c-bank"><span class="chip chip-미래에셋증권">미래에셋증권</span></td>
+          <td class="c-date">2026-06-12</td>
+          <td class="c-title">
+            <a href="https://securities.miraeasset.com/bbs/board/message/view.do?categoryId=1959&amp;messageId=2340458&amp;curPage=1" target="_blank" rel="noopener">미래에셋그룹 판촉물 구매대행업체 선정 입찰 공고</a>
+            <span class="pill pill-new">신규</span>
+          </td>
+        </tr>
         <tr class="row" data-bank="우리카드" data-title="[입찰공고] 로그 보관기간 확대를 위한 신규 스토리지 도입">
           <td class="c-bank"><span class="chip chip-우리카드">우리카드</span></td>
           <td class="c-date">2026-06-11</td>
@@ -3671,6 +3714,14 @@ footer {
           <td class="c-title">
             <a href="https://home.imeritz.com/bbs/BbsRead.go?bbsGrpId=bascGrp&amp;bbsId=bidding&amp;bbsCnttTurnNo=293&amp;listCnt=10&amp;pageNum=1" target="_blank" rel="noopener">[입찰공고] 취약점진단시스템 구축의 건</a>
             
+          </td>
+        </tr>
+        <tr class="row" data-bank="미래에셋증권" data-title="퇴직연금 irp 로보어드바이저 일임형서비스 업체 입찰 공고">
+          <td class="c-bank"><span class="chip chip-미래에셋증권">미래에셋증권</span></td>
+          <td class="c-date">2026-04-08</td>
+          <td class="c-title">
+            <a href="https://securities.miraeasset.com/bbs/board/message/view.do?categoryId=1959&amp;messageId=2339037&amp;curPage=1" target="_blank" rel="noopener">퇴직연금 IRP 로보어드바이저 일임형서비스 업체 입찰 공고</a>
+            <span class="pill pill-new">신규</span>
           </td>
         </tr>
         <tr class="row" data-bank="금융결제원" data-title="내부 개발자 플랫폼(idp) 구축 추진 관련 it자원 도입">
@@ -4873,6 +4924,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="미래에셋증권" data-title="연금차세대시스템 진단컨설팅 사업 입찰공고">
+          <td class="c-bank"><span class="chip chip-미래에셋증권">미래에셋증권</span></td>
+          <td class="c-date">2026-01-07</td>
+          <td class="c-title">
+            <a href="https://securities.miraeasset.com/bbs/board/message/view.do?categoryId=1959&amp;messageId=2337073&amp;curPage=1" target="_blank" rel="noopener">연금차세대시스템 진단컨설팅 사업 입찰공고</a>
+            <span class="pill pill-new">신규</span>
+          </td>
+        </tr>
+        <tr class="row" data-bank="미래에셋증권" data-title="미래에셋증권 여의도 전산센터 이전 pmo 입찰공고">
+          <td class="c-bank"><span class="chip chip-미래에셋증권">미래에셋증권</span></td>
+          <td class="c-date">2026-01-07</td>
+          <td class="c-title">
+            <a href="https://securities.miraeasset.com/bbs/board/message/view.do?categoryId=1959&amp;messageId=2337067&amp;curPage=1" target="_blank" rel="noopener">미래에셋증권 여의도 전산센터 이전 PMO 입찰공고</a>
+            <span class="pill pill-new">신규</span>
+          </td>
+        </tr>
         <tr class="row" data-bank="우리은행" data-title="[재공고]“모바일 신분증 구축”(ips 부문)">
           <td class="c-bank"><span class="chip chip-우리은행">우리은행</span></td>
           <td class="c-date">2026-01-06</td>
@@ -4959,6 +5026,14 @@ footer {
           <td class="c-title">
             <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=126" target="_blank" rel="noopener">[긴급] 채권관리시스템 서버 구매</a>
             
+          </td>
+        </tr>
+        <tr class="row" data-bank="미래에셋증권" data-title="미래에셋증권 여의도 전산센터 이전 사업 입찰공고">
+          <td class="c-bank"><span class="chip chip-미래에셋증권">미래에셋증권</span></td>
+          <td class="c-date">2025-12-31</td>
+          <td class="c-title">
+            <a href="https://securities.miraeasset.com/bbs/board/message/view.do?categoryId=1959&amp;messageId=2336964&amp;curPage=1" target="_blank" rel="noopener">미래에셋증권 여의도 전산센터 이전 사업 입찰공고</a>
+            <span class="pill pill-new">신규</span>
           </td>
         </tr>
         <tr class="row" data-bank="우리은행" data-title="“스마트키오스크 및 디지털데스크 고도화”(아크테라 이중화솔루션 부문) 사업 입찰 공고">
