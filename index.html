@@ -43,6 +43,7 @@
   --bank-meritz: #8a4a4a;
   --bank-mirae: #3a7a5a;
   --bank-kbcap: #2e6b8a;
+  --bank-koscom: #7a5a2e;
   --shadow: 0 1px 2px rgba(27,36,48,0.04), 0 4px 16px rgba(27,36,48,0.04);
 }
 @media (prefers-color-scheme: dark) {
@@ -85,6 +86,7 @@
     --bank-meritz: #d19393;
     --bank-mirae: #7ec49e;
     --bank-kbcap: #7ec0e0;
+    --bank-koscom: #d1ac7e;
     --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 20px rgba(0,0,0,0.25);
   }
 }
@@ -99,7 +101,7 @@
   --bank-imsec: #d1ab85; --bank-imcap: #7ec4c4;
   --bank-crefia: #a3b38a; --bank-kcis: #8aa8c9; --bank-kinfa: #e0955a; --bank-kftc: #9aabd6;
   --bank-kbank: #6ec4d6; --bank-ksd: #d19a7e; --bank-kyobo: #d1b06e; --bank-wooriib: #a3c0e8;
-  --bank-meritz: #d19393; --bank-mirae: #7ec49e; --bank-kbcap: #7ec0e0;
+  --bank-meritz: #d19393; --bank-mirae: #7ec49e; --bank-kbcap: #7ec0e0; --bank-koscom: #d1ac7e;
   --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 20px rgba(0,0,0,0.25);
 }
 :root[data-theme="light"] {
@@ -113,7 +115,7 @@
   --bank-imsec: #a0785a; --bank-imcap: #4a8a8a;
   --bank-crefia: #6a7a5a; --bank-kcis: #4a6a8a; --bank-kinfa: #b8622a; --bank-kftc: #4a5a9c;
   --bank-kbank: #2e8a9c; --bank-ksd: #9c5a3a; --bank-kyobo: #a08030; --bank-wooriib: #6a8ac9;
-  --bank-meritz: #8a4a4a; --bank-mirae: #3a7a5a; --bank-kbcap: #2e6b8a;
+  --bank-meritz: #8a4a4a; --bank-mirae: #3a7a5a; --bank-kbcap: #2e6b8a; --bank-koscom: #7a5a2e;
   --shadow: 0 1px 2px rgba(27,36,48,0.04), 0 4px 16px rgba(27,36,48,0.04);
 }
 
@@ -290,6 +292,7 @@ td { padding: 10px 14px; vertical-align: top; }
 .chip-우리투자증권 { background: color-mix(in srgb, var(--bank-wooriib) 16%, transparent); color: var(--bank-wooriib); }
 .chip-메리츠증권 { background: color-mix(in srgb, var(--bank-meritz) 16%, transparent); color: var(--bank-meritz); }
 .chip-미래에셋증권 { background: color-mix(in srgb, var(--bank-mirae) 16%, transparent); color: var(--bank-mirae); }
+.chip-코스콤 { background: color-mix(in srgb, var(--bank-koscom) 16%, transparent); color: var(--bank-koscom); }
 
 .pill {
   display: inline-block;
@@ -327,9 +330,9 @@ footer {
   <div class="masthead">
     <div>
       <h1>은행·카드사·SI사 입찰·구매 공고 모니터</h1>
-      <div class="sub">우리은행 · IBK기업은행 · 카카오뱅크 · 국민은행 · iM뱅크 · 산업은행 · 한국은행 · 우정사업본부 · 우리카드 · 신한카드 · 비씨카드 · 국민카드 · 우리캐피탈 · IBK캐피탈 · KDB캐피탈 · KB캐피탈 · iM증권 · iM캐피탈 · SK AX · LG CNS · 삼성SDS · 여신금융협회 · 신용정보원 · 서민금융진흥원 · 금융결제원 · 케이뱅크 · 예탁결제원 · 교보증권 · 우리투자증권 · 메리츠증권 · 미래에셋증권 · 총 31개사 공고 통합 현황</div>
+      <div class="sub">우리은행 · IBK기업은행 · 카카오뱅크 · 국민은행 · iM뱅크 · 산업은행 · 한국은행 · 우정사업본부 · 우리카드 · 신한카드 · 비씨카드 · 국민카드 · 우리캐피탈 · IBK캐피탈 · KDB캐피탈 · KB캐피탈 · iM증권 · iM캐피탈 · SK AX · LG CNS · 삼성SDS · 여신금융협회 · 신용정보원 · 서민금융진흥원 · 금융결제원 · 케이뱅크 · 예탁결제원 · 교보증권 · 우리투자증권 · 메리츠증권 · 미래에셋증권 · 코스콤 · 총 32개사 공고 통합 현황</div>
     </div>
-    <div class="sub">최근 갱신 2026-08-10 09:16</div>
+    <div class="sub">최근 갱신 2026-08-10 09:42</div>
   </div>
 
   <div class="stat-row">
@@ -338,18 +341,18 @@ footer {
       <div class="label">이번 실행 신규 공고</div>
     </div>
     <div class="stat-card">
-      <div class="num">1077</div>
+      <div class="num">1120</div>
       <div class="label">현재 추적 중인 공고 (회사별 최근분)</div>
     </div>
     <div class="stat-card">
-      <div class="num">31</div>
+      <div class="num">32</div>
       <div class="label">모니터링 회사 수</div>
     </div>
   </div>
 
   <div class="toolbar">
-    <button class="filter-chip active" data-filter="__all__">전체 <span class="fc-count">1077</span></button>
-    <button class="filter-chip" data-filter="우리은행">우리은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK기업은행">IBK기업은행 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="카카오뱅크">카카오뱅크 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="국민은행">국민은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="iM뱅크">iM뱅크 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="산업은행">산업은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="한국은행">한국은행 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="우정사업본부">우정사업본부 <span class="fc-count">0</span></button><button class="filter-chip" data-filter="우리카드">우리카드 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="신한카드">신한카드 <span class="fc-count">2</span></button><button class="filter-chip" data-filter="비씨카드">비씨카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="국민카드">국민카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="우리캐피탈">우리캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK캐피탈">IBK캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="KDB캐피탈">KDB캐피탈 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="KB캐피탈">KB캐피탈 <span class="fc-count">1</span></button><button class="filter-chip" data-filter="iM증권">iM증권 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="iM캐피탈">iM캐피탈 <span class="fc-count">31</span></button><button class="filter-chip" data-filter="SK AX">SK AX <span class="fc-count">0</span></button><button class="filter-chip" data-filter="LG CNS">LG CNS <span class="fc-count">1</span></button><button class="filter-chip" data-filter="삼성SDS">삼성SDS <span class="fc-count">1</span></button><button class="filter-chip" data-filter="여신금융협회">여신금융협회 <span class="fc-count">34</span></button><button class="filter-chip" data-filter="신용정보원">신용정보원 <span class="fc-count">47</span></button><button class="filter-chip" data-filter="서민금융진흥원">서민금융진흥원 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="금융결제원">금융결제원 <span class="fc-count">52</span></button><button class="filter-chip" data-filter="케이뱅크">케이뱅크 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="예탁결제원">예탁결제원 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="교보증권">교보증권 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="우리투자증권">우리투자증권 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="메리츠증권">메리츠증권 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="미래에셋증권">미래에셋증권 <span class="fc-count">11</span></button>
+    <button class="filter-chip active" data-filter="__all__">전체 <span class="fc-count">1120</span></button>
+    <button class="filter-chip" data-filter="우리은행">우리은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK기업은행">IBK기업은행 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="카카오뱅크">카카오뱅크 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="국민은행">국민은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="iM뱅크">iM뱅크 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="산업은행">산업은행 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="한국은행">한국은행 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="우정사업본부">우정사업본부 <span class="fc-count">0</span></button><button class="filter-chip" data-filter="우리카드">우리카드 <span class="fc-count">60</span></button><button class="filter-chip" data-filter="신한카드">신한카드 <span class="fc-count">2</span></button><button class="filter-chip" data-filter="비씨카드">비씨카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="국민카드">국민카드 <span class="fc-count">3</span></button><button class="filter-chip" data-filter="우리캐피탈">우리캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="IBK캐피탈">IBK캐피탈 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="KDB캐피탈">KDB캐피탈 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="KB캐피탈">KB캐피탈 <span class="fc-count">1</span></button><button class="filter-chip" data-filter="iM증권">iM증권 <span class="fc-count">7</span></button><button class="filter-chip" data-filter="iM캐피탈">iM캐피탈 <span class="fc-count">31</span></button><button class="filter-chip" data-filter="SK AX">SK AX <span class="fc-count">0</span></button><button class="filter-chip" data-filter="LG CNS">LG CNS <span class="fc-count">1</span></button><button class="filter-chip" data-filter="삼성SDS">삼성SDS <span class="fc-count">1</span></button><button class="filter-chip" data-filter="여신금융협회">여신금융협회 <span class="fc-count">34</span></button><button class="filter-chip" data-filter="신용정보원">신용정보원 <span class="fc-count">47</span></button><button class="filter-chip" data-filter="서민금융진흥원">서민금융진흥원 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="금융결제원">금융결제원 <span class="fc-count">52</span></button><button class="filter-chip" data-filter="케이뱅크">케이뱅크 <span class="fc-count">75</span></button><button class="filter-chip" data-filter="예탁결제원">예탁결제원 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="교보증권">교보증권 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="우리투자증권">우리투자증권 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="메리츠증권">메리츠증권 <span class="fc-count">50</span></button><button class="filter-chip" data-filter="미래에셋증권">미래에셋증권 <span class="fc-count">4</span></button><button class="filter-chip" data-filter="코스콤">코스콤 <span class="fc-count">50</span></button>
     <input class="search-input" type="search" placeholder="제목 검색..." id="searchBox">
   </div>
 
@@ -401,14 +404,6 @@ footer {
           <td class="c-date">2026-08-07</td>
           <td class="c-title">
             <a href="https://kftc.or.kr/notice/bidAll?seq=1394" target="_blank" rel="noopener">(재공고) 금융결제원 임·직원 단체보험 보험사 선정</a>
-            
-          </td>
-        </tr>
-        <tr class="row" data-bank="미래에셋증권" data-title="미래에셋증권 제휴대행사 선정 입찰공고">
-          <td class="c-bank"><span class="chip chip-미래에셋증권">미래에셋증권</span></td>
-          <td class="c-date">2026-08-07</td>
-          <td class="c-title">
-            <a href="https://securities.miraeasset.com/bbs/board/message/view.do?categoryId=1959&amp;messageId=2341877&amp;curPage=1" target="_blank" rel="noopener">미래에셋증권 제휴대행사 선정 입찰공고</a>
             
           </td>
         </tr>
@@ -465,6 +460,14 @@ footer {
           <td class="c-date">2026-08-06</td>
           <td class="c-title">
             <a href="https://home.imeritz.com/bbs/BbsRead.go?bbsGrpId=bascGrp&amp;bbsId=bidding&amp;bbsCnttTurnNo=303&amp;listCnt=10&amp;pageNum=1" target="_blank" rel="noopener">[재입찰공고] 사이버위협 인텔리전스 및 공격표면관리 솔루션 도입 입찰 실시</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="마이데이터 정보수신체계 실증을 위한 개발용역 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-08-06</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30657&amp;menuNo=200264" target="_blank" rel="noopener">마이데이터 정보수신체계 실증을 위한 개발용역 제한경쟁입찰(협상에의한계약)</a>
             
           </td>
         </tr>
@@ -668,6 +671,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="코스콤" data-title="사무환경 개선 사업 사업관리(pm) 용역 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-08-03</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30650&amp;menuNo=200264" target="_blank" rel="noopener">사무환경 개선 사업 사업관리(PM) 용역 제한경쟁입찰(협상에의한계약)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK기업은행" data-title="[제안요청 재공고]ibk캐피탈 인트라넷 시스템 고도화">
           <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
           <td class="c-date">2026-07-31</td>
@@ -809,6 +820,22 @@ footer {
           <td class="c-date">2026-07-29</td>
           <td class="c-title">
             <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 GPU 플랫폼 구축 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="경영정보시스템 재구축 컨설팅 용역 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-07-29</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30645&amp;menuNo=200264" target="_blank" rel="noopener">경영정보시스템 재구축 컨설팅 용역 제한경쟁입찰(협상에의한계약)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="코스콤 업무용 차량 임차(일반경쟁입찰)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-07-29</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30644&amp;menuNo=200264" target="_blank" rel="noopener">코스콤 업무용 차량 임차(일반경쟁입찰)</a>
             
           </td>
         </tr>
@@ -1068,14 +1095,6 @@ footer {
             
           </td>
         </tr>
-        <tr class="row" data-bank="미래에셋증권" data-title="미래에셋증권 매체대행사 선정 입찰공고">
-          <td class="c-bank"><span class="chip chip-미래에셋증권">미래에셋증권</span></td>
-          <td class="c-date">2026-07-23</td>
-          <td class="c-title">
-            <a href="https://securities.miraeasset.com/bbs/board/message/view.do?categoryId=1959&amp;messageId=2341427&amp;curPage=1" target="_blank" rel="noopener">미래에셋증권 매체대행사 선정 입찰공고</a>
-            
-          </td>
-        </tr>
         <tr class="row" data-bank="산업은행" data-title="한국산업은행 금융자산 평가 용역 공고">
           <td class="c-bank"><span class="chip chip-산업은행">산업은행</span></td>
           <td class="c-date">2026-07-22</td>
@@ -1233,14 +1252,6 @@ footer {
           <td class="c-date">2026-07-20</td>
           <td class="c-title">
             <a href="https://www.imbank.co.kr/bbs_ebz_10010_bord.act?bbsId=NEW001&amp;siteCd=03&amp;menuCd=A" target="_blank" rel="noopener">『웹 방화벽 솔루션 도입』 업체 선정을 위한 사업자 모집 공고</a>
-            
-          </td>
-        </tr>
-        <tr class="row" data-bank="미래에셋증권" data-title="미래에셋증권 sns 대행사 선정 입찰공고">
-          <td class="c-bank"><span class="chip chip-미래에셋증권">미래에셋증권</span></td>
-          <td class="c-date">2026-07-20</td>
-          <td class="c-title">
-            <a href="https://securities.miraeasset.com/bbs/board/message/view.do?categoryId=1959&amp;messageId=2341328&amp;curPage=1" target="_blank" rel="noopener">미래에셋증권 SNS 대행사 선정 입찰공고</a>
             
           </td>
         </tr>
@@ -1404,6 +1415,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="코스콤" data-title="구내식당 위탁운영 업체 선정(제한경쟁입찰 협상에 의한 계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-07-15</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30632&amp;menuNo=200264" target="_blank" rel="noopener">구내식당 위탁운영 업체 선정(제한경쟁입찰 협상에 의한 계약)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="IBK기업은행" data-title="[입찰공고] ibk글로벌시스템 dbms 재설치 기술지원">
           <td class="c-bank"><span class="chip chip-IBK기업은행">IBK기업은행</span></td>
           <td class="c-date">2026-07-14</td>
@@ -1457,6 +1476,14 @@ footer {
           <td class="c-date">2026-07-14</td>
           <td class="c-title">
             <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=148" target="_blank" rel="noopener">소스코드 진단(분석) 솔루션 구축(재공고)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="check 사업용 모니터 도입 일반경쟁입찰 실시">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-07-14</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30631&amp;menuNo=200264" target="_blank" rel="noopener">CHECK 사업용 모니터 도입 일반경쟁입찰 실시</a>
             
           </td>
         </tr>
@@ -1833,6 +1860,14 @@ footer {
           <td class="c-date">2026-07-07</td>
           <td class="c-title">
             <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 FATCA/CRS 상시실사 업무 대행 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="증권망 시세 스위치 고객사 서버 추가 접속용 네트워크 부품(gbic) 구매 제한경쟁입찰 실시">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-07-07</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30627&amp;menuNo=200264" target="_blank" rel="noopener">증권망 시세 스위치 고객사 서버 추가 접속용 네트워크 부품(GBIC) 구매 제한경쟁입찰 실시</a>
             
           </td>
         </tr>
@@ -2556,14 +2591,6 @@ footer {
             
           </td>
         </tr>
-        <tr class="row" data-bank="미래에셋증권" data-title="미래에셋그룹 판촉물 구매대행업체 선정 입찰 공고">
-          <td class="c-bank"><span class="chip chip-미래에셋증권">미래에셋증권</span></td>
-          <td class="c-date">2026-06-12</td>
-          <td class="c-title">
-            <a href="https://securities.miraeasset.com/bbs/board/message/view.do?categoryId=1959&amp;messageId=2340458&amp;curPage=1" target="_blank" rel="noopener">미래에셋그룹 판촉물 구매대행업체 선정 입찰 공고</a>
-            
-          </td>
-        </tr>
         <tr class="row" data-bank="우리카드" data-title="[입찰공고] 로그 보관기간 확대를 위한 신규 스토리지 도입">
           <td class="c-bank"><span class="chip chip-우리카드">우리카드</span></td>
           <td class="c-date">2026-06-11</td>
@@ -2593,6 +2620,14 @@ footer {
           <td class="c-date">2026-06-10</td>
           <td class="c-title">
             <a href="https://pc.wooricard.com/dcpc/yh1/cct/cct02/anc/H1CCT202S04.do" target="_blank" rel="noopener">[입찰공고] 「우리WON멤버스」비용분담 체계 고도화 및 합리화 프로젝트 수행사 선정</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="2026년 안양센터 건물환경관리 용역 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-06-10</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30597&amp;menuNo=200264" target="_blank" rel="noopener">2026년 안양센터 건물환경관리 용역 제한경쟁입찰(협상에의한계약)</a>
             
           </td>
         </tr>
@@ -3372,6 +3407,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="코스콤" data-title="코스콤 업무용 차량 임차(일반경쟁입찰)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-05-07</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30579&amp;menuNo=200264" target="_blank" rel="noopener">코스콤 업무용 차량 임차(일반경쟁입찰)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="예탁결제원" data-title="[한예 근복기금 제2026-2호] 2026년 단체보험 가입보험사 선정">
           <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
           <td class="c-date">2026-05-06</td>
@@ -3660,6 +3703,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="코스콤" data-title="2026년 pb 모바일 운용용역 도급(제한경쟁입찰, 협상에 의한 계약)-재공고">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-04-15</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30559&amp;menuNo=200264" target="_blank" rel="noopener">2026년 PB 모바일 운용용역 도급(제한경쟁입찰, 협상에 의한 계약)-재공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="2026년 pb매체 운용 용역도급 (제한경쟁입찰, 협상에 의한 계약) - 재공고">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-04-15</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30558&amp;menuNo=200264" target="_blank" rel="noopener">2026년 PB매체 운용 용역도급 (제한경쟁입찰, 협상에 의한 계약) - 재공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-12호] 하절기 사무실 에너지 절감을 위한 근무복 구입">
           <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
           <td class="c-date">2026-04-14</td>
@@ -3756,6 +3815,78 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="코스콤" data-title="2026년 금융솔루션 운용 용역도급 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-04-08</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30552&amp;menuNo=200264" target="_blank" rel="noopener">2026년 금융솔루션 운용 용역도급 제한경쟁입찰(협상에의한계약)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="2026년 코스콤 콜센터 운용 용역도급 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-04-08</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30551&amp;menuNo=200264" target="_blank" rel="noopener">2026년 코스콤 콜센터 운용 용역도급 제한경쟁입찰(협상에의한계약)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="2026년 pb 야간시장 및 야간데일리 운용 용역도급 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-04-08</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30550&amp;menuNo=200264" target="_blank" rel="noopener">2026년 PB 야간시장 및 야간데일리 운용 용역도급 제한경쟁입찰(협상에의한계약)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="2026년 pb 금융상품 운용 용역도급 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-04-08</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30549&amp;menuNo=200264" target="_blank" rel="noopener">2026년 PB 금융상품 운용 용역도급 제한경쟁입찰(협상에의한계약)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="2026년 pb 매매업무 운용 용역도급 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-04-08</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30548&amp;menuNo=200264" target="_blank" rel="noopener">2026년 PB 매매업무 운용 용역도급 제한경쟁입찰(협상에의한계약)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="2026년 pb 경영지원 운용 용역도급 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-04-08</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30547&amp;menuNo=200264" target="_blank" rel="noopener">2026년 PB 경영지원 운용 용역도급 제한경쟁입찰(협상에의한계약)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="2026년 pb 계좌업무 운용 용역도급 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-04-08</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30546&amp;menuNo=200264" target="_blank" rel="noopener">2026년 PB 계좌업무 운용 용역도급 제한경쟁입찰(협상에의한계약)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="2026년 pb 모바일 운용용역 도급(제한경쟁입찰, 협상에 의한 계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-04-08</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30545&amp;menuNo=200264" target="_blank" rel="noopener">2026년 PB 모바일 운용용역 도급(제한경쟁입찰, 협상에 의한 계약)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="2026년 pb매체 운용 용역도급 (제한경쟁입찰, 협상에 의한 계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-04-08</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30544&amp;menuNo=200264" target="_blank" rel="noopener">2026년 PB매체 운용 용역도급 (제한경쟁입찰, 협상에 의한 계약)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="금융결제원" data-title="내부 개발자 플랫폼(idp) 구축 추진 관련 it자원 도입">
           <td class="c-bank"><span class="chip chip-금융결제원">금융결제원</span></td>
           <td class="c-date">2026-04-07</td>
@@ -3769,6 +3900,14 @@ footer {
           <td class="c-date">2026-04-06</td>
           <td class="c-title">
             <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 게임 리워드 서비스 구축 및 운영 업체 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="2026년 통합솔루션관련 통합보수정비 제한경쟁입찰(협상에의한계약)-재공고">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-04-06</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30541&amp;menuNo=200264" target="_blank" rel="noopener">2026년 통합솔루션관련 통합보수정비 제한경쟁입찰(협상에의한계약)-재공고</a>
             
           </td>
         </tr>
@@ -3825,6 +3964,14 @@ footer {
           <td class="c-date">2026-04-02</td>
           <td class="c-title">
             <a href="https://iprovest.com/weblogic/CINRServlet?scr_id=1399&amp;mode=detail&amp;ymd=20260402&amp;seqno=8899&amp;gubun=14&amp;pageNum=3&amp;searchGubun=0" target="_blank" rel="noopener">망분리 QOS 장비 라이센스 업그레이드 관련 입찰</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="금융정보 고가용성 솔루션 교체 도입 제항경쟁 입찰 실시">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-04-02</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30540&amp;menuNo=200264" target="_blank" rel="noopener">금융정보 고가용성 솔루션 교체 도입 제항경쟁 입찰 실시</a>
             
           </td>
         </tr>
@@ -4020,6 +4167,30 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="코스콤" data-title="check단말 및 정보웹서비스 운용 용역도급 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-03-23</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30536&amp;menuNo=200264" target="_blank" rel="noopener">CHECK단말 및 정보웹서비스 운용 용역도급 제한경쟁입찰(협상에의한계약)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="정보db 및 check서버 운용 용역도급 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-03-23</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30535&amp;menuNo=200264" target="_blank" rel="noopener">정보DB 및 CHECK서버 운용 용역도급 제한경쟁입찰(협상에의한계약)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="정보콘텐츠 운용 용역도급 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-03-23</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30534&amp;menuNo=200264" target="_blank" rel="noopener">정보콘텐츠 운용 용역도급 제한경쟁입찰(협상에의한계약)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리은행" data-title="교세라 taskalfa mz4000i용 대형복합기 정품토너 단가계약 입찰 공고">
           <td class="c-bank"><span class="chip chip-우리은행">우리은행</span></td>
           <td class="c-date">2026-03-20</td>
@@ -4049,6 +4220,22 @@ footer {
           <td class="c-date">2026-03-18</td>
           <td class="c-title">
             <a href="https://www.ksd.or.kr/ko/about-ksd/ksd-news/bid-notice?nttId=37171" target="_blank" rel="noopener">토큰증권 플랫폼 운영 구축 사업 전산감리 용역</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="코스콤 본사 지하주차장 누수 보수 공사 - 제한경쟁입찰">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-03-18</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30533&amp;menuNo=200264" target="_blank" rel="noopener">코스콤 본사 지하주차장 누수 보수 공사 - 제한경쟁입찰</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="powerbase 고객사 노후 스위치 교체 제한경쟁입찰">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-03-18</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30532&amp;menuNo=200264" target="_blank" rel="noopener">PowerBASE 고객사 노후 스위치 교체 제한경쟁입찰</a>
             
           </td>
         </tr>
@@ -4161,6 +4348,22 @@ footer {
           <td class="c-date">2026-03-12</td>
           <td class="c-title">
             <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">(재공고) 케이뱅크 26년도 업무플랫폼 운영 유지보수(SM) 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="2026년 통합솔루션관련 통합보수정비 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-03-12</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30531&amp;menuNo=200264" target="_blank" rel="noopener">2026년 통합솔루션관련 통합보수정비 제한경쟁입찰(협상에의한계약)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="2026년 금융인프라관련 통합보수정비 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-03-12</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30530&amp;menuNo=200264" target="_blank" rel="noopener">2026년 금융인프라관련 통합보수정비 제한경쟁입찰(협상에의한계약)</a>
             
           </td>
         </tr>
@@ -4372,6 +4575,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="코스콤" data-title="2026년 사내집합교육 및 디지털 교육 플랫폼 위탁운영 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-02-25</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30522&amp;menuNo=200264" target="_blank" rel="noopener">2026년 사내집합교육 및 디지털 교육 플랫폼 위탁운영 제한경쟁입찰(협상에의한계약)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="예탁결제원" data-title="[한예 제2026-8호] 2026년 창문봉투 연간 단가계약">
           <td class="c-bank"><span class="chip chip-예탁결제원">예탁결제원</span></td>
           <td class="c-date">2026-02-24</td>
@@ -4524,6 +4735,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="코스콤" data-title="2026년 정보보호 취약점 분석평가 컨설팅 용역 일반경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-02-13</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30519&amp;menuNo=200264" target="_blank" rel="noopener">2026년 정보보호 취약점 분석평가 컨설팅 용역 일반경쟁입찰(협상에의한계약)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="케이뱅크" data-title="케이뱅크 게임 공급 및 운영 업체 선정 공고">
           <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
           <td class="c-date">2026-02-12</td>
@@ -4577,6 +4796,14 @@ footer {
           <td class="c-date">2026-02-10</td>
           <td class="c-title">
             <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=132" target="_blank" rel="noopener">[긴급] 영상통화솔루션 서버 구매</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="ai 개발망(연구,개발망) 구축을 위한 인프라(방화벽) 도입 제한경쟁입찰 실시">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-02-10</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30518&amp;menuNo=200264" target="_blank" rel="noopener">AI 개발망(연구,개발망) 구축을 위한 인프라(방화벽) 도입 제한경쟁입찰 실시</a>
             
           </td>
         </tr>
@@ -4641,6 +4868,22 @@ footer {
           <td class="c-date">2026-02-09</td>
           <td class="c-title">
             <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=129" target="_blank" rel="noopener">[긴급] 우리투자증권 영상통화솔루션 도입</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="여의도dc  무정전 전원공급장치(ups)  교체  제한경쟁입찰(협상에의한 계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-02-09</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30517&amp;menuNo=200264" target="_blank" rel="noopener">여의도DC  무정전 전원공급장치(UPS)  교체  제한경쟁입찰(협상에의한 계약)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="ai 개발망 (연구,개발망) 구축을 위한 인프라(dlp 솔루션) 도입 제한경쟁입찰 실시">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-02-09</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30516&amp;menuNo=200264" target="_blank" rel="noopener">AI 개발망 (연구,개발망) 구축을 위한 인프라(DLP 솔루션) 도입 제한경쟁입찰 실시</a>
             
           </td>
         </tr>
@@ -4780,6 +5023,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="코스콤" data-title="2026년  코스콤 임직원 단체상해보험(치과, 실손보험) 가입(제한경쟁입찰)  재공고">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-01-27</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30511&amp;menuNo=200264" target="_blank" rel="noopener">2026년  코스콤 임직원 단체상해보험(치과, 실손보험) 가입(제한경쟁입찰)  재공고</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="iM캐피탈" data-title="[입찰공고] 2026년 im캐피탈 채권 매각 주간사 선정">
           <td class="c-bank"><span class="chip chip-iM캐피탈">iM캐피탈</span></td>
           <td class="c-date">2026-01-23</td>
@@ -4804,11 +5055,27 @@ footer {
             
           </td>
         </tr>
-        <tr class="row" data-bank="미래에셋증권" data-title="미래에셋증권 전산센터 이전을 위한 네트워크 구축 사업">
-          <td class="c-bank"><span class="chip chip-미래에셋증권">미래에셋증권</span></td>
+        <tr class="row" data-bank="코스콤" data-title="데이터사업관리시스템운용 용역도급 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
           <td class="c-date">2026-01-20</td>
           <td class="c-title">
-            <a href="https://securities.miraeasset.com/bbs/board/message/view.do?categoryId=1959&amp;messageId=2337339&amp;curPage=1" target="_blank" rel="noopener">미래에셋증권 전산센터 이전을 위한 네트워크 구축 사업</a>
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30504&amp;menuNo=200264" target="_blank" rel="noopener">데이터사업관리시스템운용 용역도급 제한경쟁입찰(협상에의한계약)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="2026년 코스콤 임직원 단체상해보험(치과, 살손보험 포함) 가입(제한경쟁입찰)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-01-19</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30503&amp;menuNo=200264" target="_blank" rel="noopener">2026년 코스콤 임직원 단체상해보험(치과, 살손보험 포함) 가입(제한경쟁입찰)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="2026년  코스콤 손해보험(전자기기 등) 가입(제한경쟁입찰)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-01-19</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30502&amp;menuNo=200264" target="_blank" rel="noopener">2026년  코스콤 손해보험(전자기기 등) 가입(제한경쟁입찰)</a>
             
           </td>
         </tr>
@@ -4857,6 +5124,14 @@ footer {
           <td class="c-date">2026-01-14</td>
           <td class="c-title">
             <a href="https://kftc.or.kr/notice/bidAll?seq=1347" target="_blank" rel="noopener">금융분산ID 블록체인 시스템 효율화 추진 관련 전산기기 도입</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="취약점 분석평가 자동화 진단도구 도입 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2026-01-14</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30499&amp;menuNo=200264" target="_blank" rel="noopener">취약점 분석평가 자동화 진단도구 도입 제한경쟁입찰(협상에의한계약)</a>
             
           </td>
         </tr>
@@ -4972,11 +5247,11 @@ footer {
             
           </td>
         </tr>
-        <tr class="row" data-bank="미래에셋증권" data-title="미래에셋증권 여의도 전산센터 이전 pmo 입찰공고">
-          <td class="c-bank"><span class="chip chip-미래에셋증권">미래에셋증권</span></td>
+        <tr class="row" data-bank="코스콤" data-title="2026년 코스콤 손해보험 가입(제한경쟁입찰)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
           <td class="c-date">2026-01-07</td>
           <td class="c-title">
-            <a href="https://securities.miraeasset.com/bbs/board/message/view.do?categoryId=1959&amp;messageId=2337067&amp;curPage=1" target="_blank" rel="noopener">미래에셋증권 여의도 전산센터 이전 PMO 입찰공고</a>
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30494&amp;menuNo=200264" target="_blank" rel="noopener">2026년 코스콤 손해보험 가입(제한경쟁입찰)</a>
             
           </td>
         </tr>
@@ -5057,14 +5332,6 @@ footer {
           <td class="c-date">2025-12-31</td>
           <td class="c-title">
             <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=126" target="_blank" rel="noopener">[긴급] 채권관리시스템 서버 구매</a>
-            
-          </td>
-        </tr>
-        <tr class="row" data-bank="미래에셋증권" data-title="미래에셋증권 여의도 전산센터 이전 사업 입찰공고">
-          <td class="c-bank"><span class="chip chip-미래에셋증권">미래에셋증권</span></td>
-          <td class="c-date">2025-12-31</td>
-          <td class="c-title">
-            <a href="https://securities.miraeasset.com/bbs/board/message/view.do?categoryId=1959&amp;messageId=2336964&amp;curPage=1" target="_blank" rel="noopener">미래에셋증권 여의도 전산센터 이전 사업 입찰공고</a>
             
           </td>
         </tr>
@@ -5236,6 +5503,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="코스콤" data-title="금융 클라우드 서비스 운용 용역도급 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2025-12-16</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30470&amp;menuNo=200264" target="_blank" rel="noopener">금융 클라우드 서비스 운용 용역도급 제한경쟁입찰(협상에의한계약)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="서민금융진흥원" data-title="2026년 서민금융진흥원 청년미래적금 종합홍보대행 용역">
           <td class="c-bank"><span class="chip chip-서민금융진흥원">서민금융진흥원</span></td>
           <td class="c-date">2025-12-15</td>
@@ -5340,6 +5615,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="코스콤" data-title="026년 본사 등 여의도 사무실 환경관리 용역 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2025-12-10</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30462&amp;menuNo=200264" target="_blank" rel="noopener">026년 본사 등 여의도 사무실 환경관리 용역 제한경쟁입찰(협상에의한계약)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리캐피탈" data-title="(마감) (재공고) 감정평가법인 선정 입찰공고">
           <td class="c-bank"><span class="chip chip-우리캐피탈">우리캐피탈</span></td>
           <td class="c-date">2025-12-09</td>
@@ -5364,6 +5647,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="코스콤" data-title="dc기반시설 운용 용역도급 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2025-12-05</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30457&amp;menuNo=200264" target="_blank" rel="noopener">DC기반시설 운용 용역도급 제한경쟁입찰(협상에의한계약)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="dc 기반설비 통합유지보수 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2025-12-05</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30456&amp;menuNo=200264" target="_blank" rel="noopener">DC 기반설비 통합유지보수 제한경쟁입찰(협상에의한계약)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="케이뱅크" data-title="(재공고) 케이뱅크 스크래핑 병행 운영 사업자 선정 공고">
           <td class="c-bank"><span class="chip chip-케이뱅크">케이뱅크</span></td>
           <td class="c-date">2025-12-04</td>
@@ -5377,6 +5676,14 @@ footer {
           <td class="c-date">2025-12-03</td>
           <td class="c-title">
             <a href="https://www.woorifcapital.com/intro/tndr/view.do?bdwrNo=1004&amp;menuNo=000000000000000000000000000763" target="_blank" rel="noopener">(마감)부실채권매각 주관사 선정을 위한 입찰제안 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="powerbase aml 고도화를 위한 인프라 도입 제한경쟁입찰">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2025-12-03</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30444&amp;menuNo=200264" target="_blank" rel="noopener">PowerBASE AML 고도화를 위한 인프라 도입 제한경쟁입찰</a>
             
           </td>
         </tr>
@@ -5508,6 +5815,22 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="코스콤" data-title="2026년 통합빌링업무 운용도급 용역 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2025-11-26</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30435&amp;menuNo=200264" target="_blank" rel="noopener">2026년 통합빌링업무 운용도급 용역 제한경쟁입찰(협상에의한계약)</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="2026년 경영정보시스템 운용도급 용역 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2025-11-26</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30434&amp;menuNo=200264" target="_blank" rel="noopener">2026년 경영정보시스템 운용도급 용역 제한경쟁입찰(협상에의한계약)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="여신금융협회" data-title="[입찰공고] 2025년도 종합 it시스템 취약점 분석・평가">
           <td class="c-bank"><span class="chip chip-여신금융협회">여신금융협회</span></td>
           <td class="c-date">2025-11-25</td>
@@ -5537,6 +5860,14 @@ footer {
           <td class="c-date">2025-11-25</td>
           <td class="c-title">
             <a href="https://www.kbanknow.com/web/about/notice/list?tab=biz-noti" target="_blank" rel="noopener">케이뱅크 RPA 솔루션 UiPath 라이선스 구매 사업자 선정 공고</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="2026년 코스콤 경비 및 안내 용역 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2025-11-25</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30433&amp;menuNo=200264" target="_blank" rel="noopener">2026년 코스콤 경비 및 안내 용역 제한경쟁입찰(협상에의한계약)</a>
             
           </td>
         </tr>
@@ -5620,6 +5951,14 @@ footer {
             
           </td>
         </tr>
+        <tr class="row" data-bank="코스콤" data-title="안양 데이터센터 시스템 이전 컨설팅 용역 제한경쟁입찰(협상에의한계약)">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2025-11-18</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30423&amp;menuNo=200264" target="_blank" rel="noopener">안양 데이터센터 시스템 이전 컨설팅 용역 제한경쟁입찰(협상에의한계약)</a>
+            
+          </td>
+        </tr>
         <tr class="row" data-bank="우리캐피탈" data-title="(재공고)신용정보조회ㆍ비금융휴대전화번호조회 및 개인채무자보호법 관련 전자문서ㆍ우편 발송 사업 입찰공고">
           <td class="c-bank"><span class="chip chip-우리캐피탈">우리캐피탈</span></td>
           <td class="c-date">2025-11-17</td>
@@ -5641,6 +5980,14 @@ footer {
           <td class="c-date">2025-11-17</td>
           <td class="c-title">
             <a href="https://securities.wooriib.com/HPKOPublicNoticeAction.do?method=hppublicnoticedtl&amp;BOARD_ID=37&amp;B_ID=119" target="_blank" rel="noopener">[긴급] 통합메시지(UMS) 서버 구매</a>
+            
+          </td>
+        </tr>
+        <tr class="row" data-bank="코스콤" data-title="노후 네트워크 접근제어(nac) 솔루션 교체 제한경쟁입찰 실시">
+          <td class="c-bank"><span class="chip chip-코스콤">코스콤</span></td>
+          <td class="c-date">2025-11-17</td>
+          <td class="c-title">
+            <a href="https://www.koscom.co.kr/portal/bbs/B0000002/view.do?nttId=30421&amp;menuNo=200264" target="_blank" rel="noopener">노후 네트워크 접근제어(NAC) 솔루션 교체 제한경쟁입찰 실시</a>
             
           </td>
         </tr>
