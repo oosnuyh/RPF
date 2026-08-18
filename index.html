@@ -3,15 +3,21 @@
 <head>
 <meta charset="utf-8">
 <title>은행·카드사·SI사 입찰·구매 공고 모니터</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
 <style>
 :root {
-  --bg: #F8F6FD;
+  --bg: #eef1f6;
   --surface: #ffffff;
-  --ink: #241F33;
-  --muted: #6E6580;
-  --border: #EAE4F7;
-  --accent: #7C5CFC;
-  --accent-soft: #EDE7FD;
+  --ink: #1a1d24;
+  --muted: #6f727a;
+  --border: #dde2ea;
+  --border-strong: #c3ccd9;
+  --accent: #1c69d4;
+  --accent-deep: #0653b6;
+  --accent-soft: #e9f1fd;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
   --bank-woori: #5470c4;
   --bank-ibk: #c1694f;
   --bank-kakao: #b8901f;
@@ -45,17 +51,19 @@
   --bank-kbcap: #2e6b8a;
   --bank-koscom: #7a5a2e;
   --bank-jbwoori: #4a5a7a;
-  --shadow: 0 1px 2px rgba(27,36,48,0.04), 0 4px 16px rgba(27,36,48,0.04);
+  --shadow: 0 1px 2px rgba(20,25,40,0.05), 0 1px 10px rgba(20,25,40,0.04);
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #12181c;
-    --surface: #182226;
-    --ink: #eaeef0;
-    --muted: #8c9aa3;
-    --border: #2a3438;
-    --accent: #6fbdb9;
-    --accent-soft: #1e3336;
+    --bg: #10151c;
+    --surface: #171e28;
+    --ink: #e8ecf3;
+    --muted: #92a0b3;
+    --border: #26303d;
+    --border-strong: #34404f;
+    --accent: #5b9dfa;
+    --accent-deep: #3d7fd6;
+    --accent-soft: #1c2a3d;
     --bank-woori: #8ea2e8;
     --bank-ibk: #e0977c;
     --bank-kakao: #e0bb56;
@@ -93,8 +101,8 @@
   }
 }
 :root[data-theme="dark"] {
-  --bg: #12181c; --surface: #182226; --ink: #eaeef0; --muted: #8c9aa3;
-  --border: #2a3438; --accent: #6fbdb9; --accent-soft: #1e3336;
+  --bg: #10151c; --surface: #171e28; --ink: #e8ecf3; --muted: #92a0b3;
+  --border: #26303d; --border-strong: #34404f; --accent: #5b9dfa; --accent-deep: #3d7fd6; --accent-soft: #1c2a3d;
   --bank-woori: #8ea2e8; --bank-ibk: #e0977c; --bank-kakao: #e0bb56; --bank-kb: #cf94c1;
   --bank-wcard: #7ecab8; --bank-shcard: #ab9de0; --bank-bccard: #e0879f; --bank-kbcard: #9dc47c;
   --bank-skax: #e08a89; --bank-lgcns: #7ec8e0; --bank-sdssds: #9aa8b5; --bank-imbank: #d1af6e;
@@ -108,8 +116,8 @@
   --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 20px rgba(0,0,0,0.25);
 }
 :root[data-theme="light"] {
-  --bg: #F8F6FD; --surface: #ffffff; --ink: #241F33; --muted: #6E6580;
-  --border: #EAE4F7; --accent: #7C5CFC; --accent-soft: #EDE7FD;
+  --bg: #eef1f6; --surface: #ffffff; --ink: #1a1d24; --muted: #6f727a;
+  --border: #dde2ea; --border-strong: #c3ccd9; --accent: #1c69d4; --accent-deep: #0653b6; --accent-soft: #e9f1fd;
   --bank-woori: #5470c4; --bank-ibk: #c1694f; --bank-kakao: #b8901f; --bank-kb: #9c5b8c;
   --bank-wcard: #3f8f7f; --bank-shcard: #6f5fb0; --bank-bccard: #a34a6f; --bank-kbcard: #5c8a3a;
   --bank-skax: #b3403f; --bank-lgcns: #3f8fb0; --bank-sdssds: #5c6b7a; --bank-imbank: #8a6d3a;
@@ -128,12 +136,29 @@ html, body { margin: 0; padding: 0; }
 body {
   background: var(--bg);
   color: var(--ink);
-  font-family: -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Segoe UI", sans-serif;
+  font-family: 'Pretendard Variable', 'Pretendard', -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Segoe UI", sans-serif;
   font-size: 15px;
   line-height: 1.5;
-  padding: 32px 20px 64px;
 }
-.wrap { max-width: 980px; margin: 0 auto; }
+.topbar {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  box-shadow: 0 1px 2px rgba(20,25,40,0.04);
+}
+.topbar .brand {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.01em;
+}
+.wrap { max-width: 980px; margin: 0 auto; padding: 32px 20px 64px; }
 
 .masthead {
   display: flex;
@@ -164,7 +189,7 @@ body {
 .stat-card {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: var(--radius-lg);
   padding: 14px 16px;
   box-shadow: var(--shadow);
 }
@@ -214,8 +239,8 @@ body {
   font: inherit;
   font-size: 13px;
   padding: 7px 12px;
-  border-radius: 8px;
-  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-strong);
   background: var(--surface);
   color: var(--ink);
   min-width: 180px;
@@ -225,10 +250,23 @@ body {
 .table-card {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
   overflow: hidden;
 }
+.card-title {
+  font-size: 12.5px;
+  color: #fff;
+  letter-spacing: 0.02em;
+  padding: 11px 18px;
+  font-weight: 700;
+  background: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.card-title::before { content: '◆'; font-size: 10px; color: var(--accent-soft); }
+.card-title .sub { font-weight: 400; color: rgba(255,255,255,0.6); font-size: 11.5px; margin-left: 4px; }
 .table-scroll { overflow-x: auto; max-height: 640px; overflow-y: auto; }
 table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
 thead th {
@@ -236,12 +274,11 @@ thead th {
   background: var(--surface);
   text-align: left;
   font-size: 11.5px;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--muted);
-  font-weight: 600;
+  color: var(--ink);
+  opacity: 0.7;
+  font-weight: 700;
   padding: 10px 14px;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1.5px solid var(--border-strong);
   z-index: 1;
 }
 tbody tr { border-bottom: 1px solid var(--border); }
@@ -331,13 +368,14 @@ footer {
 </style>
 </head>
 <body>
+<div class="topbar"><span class="brand">◆ 입찰공고 모니터</span></div>
 <div class="wrap">
   <div class="masthead">
     <div>
       <h1>은행·카드사·SI사 입찰·구매 공고 모니터</h1>
       <div class="sub">우리은행 · IBK기업은행 · 카카오뱅크 · 국민은행 · iM뱅크 · 산업은행 · 한국은행 · 우정사업본부 · 우리카드 · 신한카드 · 비씨카드 · 국민카드 · 우리캐피탈 · IBK캐피탈 · KDB캐피탈 · KB캐피탈 · iM증권 · iM캐피탈 · SK AX · LG CNS · 삼성SDS · 여신금융협회 · 신용정보원 · 서민금융진흥원 · 금융결제원 · 케이뱅크 · 예탁결제원 · 교보증권 · 우리투자증권 · 메리츠증권 · 미래에셋증권 · 코스콤 · JB우리캐피탈 · 총 33개사 공고 통합 현황</div>
     </div>
-    <div class="sub">최근 갱신 2026-08-18 17:03</div>
+    <div class="sub">최근 갱신 2026-08-18 17:21</div>
   </div>
 
   <div class="stat-row">
@@ -362,6 +400,7 @@ footer {
   </div>
 
   <div class="table-card">
+    <div class="card-title">입찰·구매 공고 목록<span class="sub">최신순</span></div>
     <div class="table-scroll">
       <table>
         <thead>
